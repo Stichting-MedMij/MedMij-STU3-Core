@@ -1,0 +1,6 @@
+title: MedMij STU3 Core IG 1.0.0-alpha.1
+description: FHIR IG for MedMij STU3 Core
+version: 1.0.0-alpha.1
+style-root: project
+style-name: MedMij
+numbered-headings: true
