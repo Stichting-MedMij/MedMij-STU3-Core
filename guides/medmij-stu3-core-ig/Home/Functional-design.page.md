@@ -10,16 +10,16 @@ topic: FO
 ## Granular exchange
 
 ### Ambitie
-Our ambition is to exchange healthcare data in a granular (modular) way within the frameworks of the MedMij Agreements System (MedMij Afsprakenstelsel), taking into account the principles of reuse, privacy flexibility, and scalability. This document explains the application using the domains Oral Healthcare and Long-Term Care. The focus is on “collecting” data.
+Our ambition is to exchange healthcare data in a granular (modular) way within the frameworks of the MedMij Agreements System (MedMij Afsprakenstelsel), taking into account the principles of reuse, privacy flexibility, and scalability. This document explains the application using the domains Dental Care and Long-Term Care. The focus is on “collecting” data (Verzamelen).
 
 ### Principles
 - Each data service is linked to one or more FHIR profiles, based on a zib or another clinical concept (such as ASA score).
 - We apply two layers: cross-domain (MedMij-core) and domain-specific data services.
-    - Cross-domain data services: one data service per clinical concept, reusable across care domains
-    - MedMij-core is more than the sum of data services: it also denotes the working approach around granular exchange and other MedMij-wide topics that belong in an IG.
+    - Cross-domain data services: one data service per clinical concept, reusable across care domains;
+    - MedMij-core is more than the sum of data services: it also defones the working approach around granular exchange and other MedMij-wide topics that belong in an IG.
 - Domain-specific data services: derived data services that tailor a data service from MedMij-core to a specific domain, or data services that apply exclusively within a specific domain.
 - Context (e.g., provider type, care setting, performer, source, etc.) is provided in the FHIR resources via elements such as .subject, .effective[x], and .performer, and via the Provenance resource. Provider type is made available via .meta.tag. Provider type is the category of the organization responsible for the delivered care (e.g., dental practice, hospital). It helps citizens and systems interpret the origin and context of data.
-- The MedMij Healthcare Provider List (Zorgaanbiederslijst) and the OAuthClient list determine which data services are available per provider and supported by the DVP. We call this the capability of an actor. In the MedMij network, the following actors are active:
+- The MedMij Healthcare Provider List (Zorgaanbiederslijst) and the OAuthClient list (OCL) determine which data services are available per provider and supported by the DVP. We call this the capability of an actor. In the MedMij network, the following actors are active:
     - DVP
     - DVA in combination with the healthcare provider
     - Citizen
@@ -28,7 +28,7 @@ Our ambition is to exchange healthcare data in a granular (modular) way within t
 
 ### Objectives
 - Provide patients (via DVP) access to data that is relevant for a specific care domain (such as Long-Term Care or Dental Care).
-- Gegevens granulair uitwisselen tussen DVA (zorgaanbieder) en DVP (PGO), afgestemd op wat daadwerkelijk ondersteund wordt per zorgaanbieder.
+- Exchange data granularly between DVA (healthcare provider) and DVP (PHE), aligned with what is actually supported per healthcare provider.
 
 ### Benefits of this approach
 - Flexible and scalable (no bundled BgZ or BgLZ data services needed);
@@ -85,7 +85,7 @@ Table 1: Cross-domain data services Oral Healthcare and Long-Term Care
 Table 2: Domain-specific data services Oral Healthcare and Long-Term Care
 | Display name | Canonical URL | FHIR version | Functional version|
 | --- | --- | --- | --- |
-| Langdurige Zorg-Dagrapportage | [nl-core-nursingreport] | STU3 | onbekend |
+| Long-Term care nursingreport| [nl-core-nursingreport] | STU3 | Unknown |
 
 
 ### Metatags for provider type
