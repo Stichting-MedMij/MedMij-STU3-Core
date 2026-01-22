@@ -44,7 +44,7 @@ Purpose: MedMij-core contains zibs or structured datasets that are cross-domain.
 
 
 Domain-specific:
-Purpose: zibs that apply only within one domain, and zibs that are cross-domain but have a different functional interpretation or profile implementation across domains, are registered per domain on the ZAL. Examples: Oral Healthcare – Oral Hygiene, Long-Term Care – Daily Report.
+Purpose: zibs that apply only within one domain, and zibs that are cross-domain but have a different functional interpretation or profile implementation across domains, are registered per domain on the ZAL. Examples: Dental Care – Oral Hygiene, Long-Term Care – Daily Report.
 
 
 #### Publication in the Healthcare Provider List (ZAL) and Data Service Name List (GNL)
@@ -63,7 +63,7 @@ Version:
 - The functional version of the Clinical Information Model (CIM)
     - Example: v3.2(2020)
 
-Table 1: Cross-domain data services Oral Healthcare and Long-Term Care
+Table 1: Cross-domain data services Dental Care and Long-Term Care
 
 | Display name | Canonical URL | FHIR version | Functional version|
 | --- | --- | --- | --- |
@@ -82,14 +82,14 @@ Table 1: Cross-domain data services Oral Healthcare and Long-Term Care
 | MedMij-core-Betaler | [Zib-Payer](https://simplifier.net/nictizstu3-zib2017/zib-payer) | STU3 | v3.1(2017) |
 | MedMij-core-Contact | [Zib-Encounter] | STU3 | v3.1(2017) |
 
-Table 2: Domain-specific data services Oral Healthcare and Long-Term Care
+Table 2: Domain-specific data services Dental Care and Long-Term Care
 | Display name | Canonical URL | FHIR version | Functional version|
 | --- | --- | --- | --- |
 | Long-Term care nursingreport| [nl-core-nursingreport] | STU3 | Unknown |
 
 
 ### Metatags for care type
-Purpose: .meta.tag indicates for each exchanged data element which type of healthcare provider is responsible (e.g., “dental and maxillofacial surgery,” “primary care,” “pharmacy”). This makes the origin and context clear for the citizen and helps DVPs with filtering, grouping, and logging. Metatags are included with every FHIR resource. For the definition of care type, we use VEKTIS AGB (table COD016), which encodes the specialty of the (performing) healthcare provider. For example code 1100: Dental specialists in oral diseases and oral and maxillofacial surgery.
+Purpose: .meta.tag indicates for each exchanged data element which type of healthcare provider is responsible (e.g., “dental and maxillofacial surgery,” “primary care,” “pharmacy”). This makes the origin and context clear for the citizen and helps DVPs with filtering, grouping, and logging. Metatags are included with every FHIR resource. For the definition of care type, we use VEKTIS AGB (table COD016), which encodes the specialty of the (performing) healthcare provider. For example code 1100: Dental specialists in dental diseases and dental and maxillofacial surgery.
 
 How to read the metatag:
 - 11 = the provider type
