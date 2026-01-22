@@ -2,70 +2,70 @@
 topic: FO
 ---
 
-# Functioneel ontwerp
+# Functional design
 
-## Algemeen
+## General
 
 
-## Granulair uitwisselen
+## Granular exchange
 
 ### Ambitie
-Onze ambitie is het granulair (modulair) uitwisselen van zorggegevens binnen de kaders van het MedMij Afsprakenstelsel, met inachtneming van de uitgangspunten voor hergebruik, privacy flexibiliteit, en schaalbaarheid. In dit document wordt de toepassing toegelicht aan de hand van de domeinen Mondzorg en Langdurige zorg. Focus ligt op het ‘verzamelen’ van gegevens. 
+Our ambition is to exchange healthcare data in a granular (modular) way within the frameworks of the MedMij Agreements System (MedMij Afsprakenstelsel), taking into account the principles of reuse, privacy flexibility, and scalability. This document explains the application using the domains Oral Healthcare and Long-Term Care. The focus is on “collecting” data.
 
-### Uitgangspunten
-- Elke gegevensdienst is gekoppeld aan één of meerdere FHIR-profielen, die gebaseerd zijn op een zib of een ander klinisch concept (zoals ASA-score).
-- We hanteren twee lagen: domeinoverstijgend (MedMij-core) en domeinspecifieke gegevensdiensten.
-    - Domeinoverstijgende gegevensdiensten: één gegevensdienst per klinisch concept, en herbruikbaar over zorgdomeinen.
-        - MedMij‑core is méér dan de som van gegevensdiensten: het duidt tevens de werkwijze rondom granulaire uitwisseling en andere MedMij‑brede onderwerpen die in een IG thuishoren.
-- Domeinspecifieke gegevensdiensten: afgeleide gegevensdiensten die een gegevensdienst uit MedMij-core toespitsen op een specifiek domein of gegevensdiensten die uitsluitend van toepassing zijn binnen een specifiek domein.
-- De context (bijv. zorgaanbiederstype, zorgsetting, uitvoerder, bron, etc.) wordt meegegeven in de FHIR-resources, via elementen als .subject, .effective[x] en .performer, en de Provenance-resource. Het zorgaanbiederstype wordt beschikbaar gemaakt via .meta.tag.  De Zorgaanbiederstype is de categorie van de organisatie die verantwoordelijk is voor de geleverde zorg (bijv. tandartspraktijk, ziekenhuis). Het helpt burgers en systemen om de herkomst en context van gegevens te duiden.
-- De MedMij Zorgaanbiederslijst en de OAuthClientlijst bepalen welke gegevensdiensten beschikbaar zijn per zorgaanbieder en ondersteund worden door de DVP. Dit noemen we de capability van een actor. In het MedMij netwerk zijn de volgende actoren actief:
+### Principles
+- Each data service is linked to one or more FHIR profiles, based on a zib or another clinical concept (such as ASA score).
+- We apply two layers: cross-domain (MedMij-core) and domain-specific data services.
+    - Cross-domain data services: one data service per clinical concept, reusable across care domains
+    - MedMij-core is more than the sum of data services: it also denotes the working approach around granular exchange and other MedMij-wide topics that belong in an IG.
+- Domain-specific data services: derived data services that tailor a data service from MedMij-core to a specific domain, or data services that apply exclusively within a specific domain.
+- Context (e.g., provider type, care setting, performer, source, etc.) is provided in the FHIR resources via elements such as .subject, .effective[x], and .performer, and via the Provenance resource. Provider type is made available via .meta.tag. Provider type is the category of the organization responsible for the delivered care (e.g., dental practice, hospital). It helps citizens and systems interpret the origin and context of data.
+- The MedMij Healthcare Provider List (Zorgaanbiederslijst) and the OAuthClient list determine which data services are available per provider and supported by the DVP. We call this the capability of an actor. In the MedMij network, the following actors are active:
     - DVP
-    - DVA i.c.m. de zorgaanbieder
-    - Burger
-- DVP bepaalt de op te halen set van gegevensdiensten.
-    - Geen extra query parameter voor domein nodig. De FHIR‑requests blijven standaard zoekvragen per FHIR-resource.
+    - DVA in combination with the healthcare provider
+    - Citizen
+- The DVP determines the set of data services to retrieve.
+    - No additional query parameter for domain is required. The FHIR requests remain standard search queries per FHIR resource.
 
-### Doelstellingen
-- Patiënten (via DVP) toegang geven tot gegevens relevant voor een bepaald zorgdomein (zoals Langdurige Zorg of Mondzorg).
+### Objectives
+- Provide patients (via DVP) access to data that is relevant for a specific care domain (such as Long-Term Care or Dental Care).
 - Gegevens granulair uitwisselen tussen DVA (zorgaanbieder) en DVP (PGO), afgestemd op wat daadwerkelijk ondersteund wordt per zorgaanbieder.
 
-### Voordelen van deze aanpak
-- Flexibel en schaalbaar (geen gebundelde BgZ of BgLZ gegevensdiensten nodig);
-- Betere afstemming tussen DVP-capaciteit (OAuthClientlijst) en DVA-aanbod (Zorgaanbiederslijst);
-- Context blijft beschikbaar via FHIR-standaardvelden, zoals .meta.tag en referenties. Of via de Provenance-resource; 
-- Verantwoordelijkheid voor orkestratie ligt bij de DVP, passend bij de MedMij-principes.
+### Benefits of this approach
+- Flexible and scalable (no bundled BgZ or BgLZ data services needed);
+- Better alignment between DVP capability (OAuthClient list) and DVA offering (Healthcare Provider List);
+- Context remains available via standard FHIR fields, such as .meta.tag and references, or via the Provenance resource;
+- Responsibility for orchestration lies with the DVP, consistent with MedMij principles.
 
-### Uitwerking domeinoverstijgend en domeinspecifieke klinische concepten
-Dit hoofdstuk beschrijft hoe domeinoverstijgende en domeinspecifieke klinische concepten als afzonderlijke gegevensdiensten worden vastgelegd en gepubliceerd. Het richt zich op weergave in de Zorgaanbiederslijst (ZAL) en de Gegevensdienstnamenlijst (GNL) van MedMij. Het sluit aan op het tweelaags model, dat bestaat uit MedMij‑core (voor generieke, domeinoverstijgende concepten) en domeinspecifieke gegevensdiensten (voor concepten die uitsluitend in een domein van toepassing zijn of extra aanscherping behoeven).
+### Cross-domain and domain-specific clinical concepts
+This chapter describes how cross-domain and domain-specific clinical concepts are defined and published as separate data services. It focuses on representation in the Healthcare Provider List (ZAL) and the Data Service Name List (GNL) of MedMij. It aligns with the two-layer model, consisting of MedMij-core (for generic, cross-domain concepts) and domain-specific data services (for concepts that apply only within a domain or require additional specialization).
 
-Domeinoverstijgend:
-Doel: MedMij‑core bevat zibs of gestructureerde datasets die domeinoverstijgend zijn. Deze worden als generieke gegevensdiensten gepubliceerd op de Zorgaanbiederslijst.
-
-
-Domeinspecifiek:
-Doel: Zibs die alleen binnen één domein gelden, én zibs die domeinoverstijgend zijn maar in verschillende domeinen een andere functionele of profielinvulling hebben, worden per domein op de ZAL geregistreerd. Voorbeelden: Mondzorg – Mondhygiëne, Langdurige Zorg – Dagrapportage.
+Cross-domain:
+Purpose: MedMij-core contains zibs or structured datasets that are cross-domain. These are published as generic data services on the Healthcare Provider List.
 
 
-#### publicatie op de Zorgaanbiederslijst (ZAL) en Gegevensdienstnamemlijst (GNL)
+Domain-specific:
+Purpose: zibs that apply only within one domain, and zibs that are cross-domain but have a different functional interpretation or profile implementation across domains, are registered per domain on the ZAL. Examples: Oral Healthcare – Oral Hygiene, Long-Term Care – Daily Report.
+
+
+#### Publication in the Healthcare Provider List (ZAL) and Data Service Name List (GNL)
 ID:
-- Gegevensdienstnummer
+- Data service number
 
-Weergavenaam:
-- Domeinoverstijgend: MedMij‑core - <KlinischConceptNaam>.
-    - Voorbeeld Medmij-core - ASA-score
-- Domeinspecifiek: <Domein> - <KlinischConceptNaam>.
-    - Voorbeeld Mondzorg - Mondhygiëne
+Display name:
+- Cross-domain: MedMij‑core - <KlinischConceptNaam>.
+    - Example Medmij-core - ASA-score
+- Domain-specific: <Domein> - <KlinischConceptNaam>.
+    - Example Mondzorg - Mondhygiëne
 
-Versie:
-- FHIR-versie
-    - Voorbeeld: STU3
-- De functionele versie van het klinische concept
-    - Voorbeeld: v3.2(2020)
+Version:
+- FHIR version
+    - Example: STU3
+- The functional version of the clinical concept
+    - Example: v3.2(2020)
 
-Tabel 1: Domeinoverstijgende gegevensdiensten Mondzorg en Langdurige Zorg
+Table 1: Cross-domain data services Oral Healthcare and Long-Term Care
 
-| Weegavenaam | Canonical URL | FHIR-versie | Functionele versie|
+| Display name | Canonical URL | FHIR version | Functional version|
 | --- | --- | --- | --- |
 | MedMij-core-Patient | [nl-core-patient](https://simplifier.net/nictizstu3-zib2017/nl-core-patient) | STU3 | v3.1(2017) |
 | MedMij-core-Zorgaanbieder | [nl-core-organization](https://simplifier.net/nictizstu3-zib2017/nl-core-organization) | STU3 | v3.1(2017) |
@@ -82,15 +82,15 @@ Tabel 1: Domeinoverstijgende gegevensdiensten Mondzorg en Langdurige Zorg
 | MedMij-core-Betaler | [Zib-Payer](https://simplifier.net/nictizstu3-zib2017/zib-payer) | STU3 | v3.1(2017) |
 | MedMij-core-Contact | [Zib-Encounter] | STU3 | v3.1(2017) |
 
-Tabel 2: Domeinspecifieke gegevensdiensten Mondzorg en Langdurige Zorg
-| Weegavenaam | Canonical URL | FHIR-versie | Functionele versie|
+Table 2: Domain-specific data services Oral Healthcare and Long-Term Care
+| Display name | Canonical URL | FHIR version | Functional version|
 | --- | --- | --- | --- |
 | Langdurige Zorg-Dagrapportage | [nl-core-nursingreport] | STU3 | onbekend |
 
 
-### Metatags voor zorgaanbiederstype
-Doel: De .meta.tag geeft voor elk uitgewisseld gegeven aan wat voor type zorgaanbieder verantwoordelijk is (bijv. “kaakchirurgie”, “huisarts”, “apotheek”). Dit maakt de herkomst en context voor de burger duidelijk en helpt DVP’s bij filteren, groeperen en logging. Metatags worden bij elke FHIR-resource meegeleverd. Voor de definitie van het zorgaanbiederstype hanteren we VEKTIS AGB (tabel COD016), waarmee het specialisme van de (uitvoerende) zorgaanbieder wordt gecodeerd. Bijvoorbeeld code 1100: Tandartsspecialisten mondziekten en kaakchirurgie. 
+### Metatags for provider type
+Purpose: .meta.tag indicates for each exchanged data element which type of healthcare provider is responsible (e.g., “dental and maxillofacial surgery,” “primary care,” “pharmacy”). This makes the origin and context clear for the citizen and helps DVPs with filtering, grouping, and logging. Metatags are included with every FHIR resource. For the definition of provider type, we use VEKTIS AGB (table COD016), which encodes the specialty of the (performing) healthcare provider. For example code 1100: Dental specialists in oral diseases and oral and maxillofacial surgery.
 
-Zo lees je de metatag:
-- 11 = het zorgaanbiedertype
-- kwalificatie (optioneel): naast het type kan een kwalificatiecode worden meegegeven voor nadere duiding van de organisatiecategorie. Voorbeeld 0630 - Militaire ziekenhuizen. 
+How to read the metatag:
+- 11 = the provider type
+- Qualification (optional): in addition to the type, a qualification code can be provided for further clarification of the organization category. Example: Military hospitals - 0630.
