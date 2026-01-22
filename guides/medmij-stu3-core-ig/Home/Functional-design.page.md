@@ -13,9 +13,9 @@ topic: FO
 Our ambition is to exchange healthcare data in a granular (modular) way within the frameworks of the MedMij Agreements System (MedMij Afsprakenstelsel), taking into account the principles of reuse, privacy flexibility, and scalability. This document explains the application using the domains Dental Care and Long-Term Care. The focus is on “collecting” data (Verzamelen).
 
 ### Principles
-- Each data service is linked to one or more FHIR profiles, based on a zib or another clinical concept (such as ASA score).
+- Each data service is linked to one or more FHIR profiles, based on a zib or another Clinical Information Model (CIM) (such as ASA score).
 - We apply two layers: cross-domain (MedMij-core) and domain-specific data services.
-    - Cross-domain data services: one data service per clinical concept, reusable across care domains;
+    - Cross-domain data services: one data service per Clinical Information Model (CIM), reusable across care domains;
     - MedMij-core is more than the sum of data services: it also defones the working approach around granular exchange and other MedMij-wide topics that belong in an IG.
 - Domain-specific data services: derived data services that tailor a data service from MedMij-core to a specific domain, or data services that apply exclusively within a specific domain.
 - Context (e.g., care type, care setting, performer, source, etc.) is provided in the FHIR resources via elements such as .subject, .effective[x], and .performer, and via the Provenance resource. Care type is made available via .meta.tag. Care type is the category of the organization responsible for the delivered care (e.g., dental practice, hospital). It helps citizens and systems interpret the origin and context of data.
@@ -36,8 +36,8 @@ Our ambition is to exchange healthcare data in a granular (modular) way within t
 - Context remains available via standard FHIR fields, such as .meta.tag and references, or via the Provenance resource;
 - Responsibility for orchestration lies with the DVP, consistent with MedMij principles.
 
-### Cross-domain and domain-specific clinical concepts
-This chapter describes how cross-domain and domain-specific clinical concepts are defined and published as separate data services. It focuses on representation in the Healthcare Provider List (ZAL) and the Data Service Name List (GNL) of MedMij. It aligns with the two-layer model, consisting of MedMij-core (for generic, cross-domain concepts) and domain-specific data services (for concepts that apply only within a domain or require additional specialization).
+### Cross-domain and domain-specific Clinical Information Model (CIM)
+This chapter describes how cross-domain and domain-specific Clinical Information Models (CIM) are defined and published as separate data services. It focuses on representation in the Healthcare Provider List (ZAL) and the Data Service Name List (GNL) of MedMij. It aligns with the two-layer model, consisting of MedMij-core (for generic, cross-domain concepts) and domain-specific data services (for concepts that apply only within a domain or require additional specialization).
 
 Cross-domain:
 Purpose: MedMij-core contains zibs or structured datasets that are cross-domain. These are published as generic data services on the Healthcare Provider List.
@@ -60,7 +60,7 @@ Display name:
 Version:
 - FHIR version
     - Example: STU3
-- The functional version of the clinical concept
+- The functional version of the Clinical Information Model (CIM)
     - Example: v3.2(2020)
 
 Table 1: Cross-domain data services Oral Healthcare and Long-Term Care
