@@ -18,7 +18,7 @@ Our ambition is to exchange healthcare data in a granular (modular) way within t
     - Cross-domain data services: one data service per clinical concept, reusable across care domains;
     - MedMij-core is more than the sum of data services: it also defones the working approach around granular exchange and other MedMij-wide topics that belong in an IG.
 - Domain-specific data services: derived data services that tailor a data service from MedMij-core to a specific domain, or data services that apply exclusively within a specific domain.
-- Context (e.g., provider type, care setting, performer, source, etc.) is provided in the FHIR resources via elements such as .subject, .effective[x], and .performer, and via the Provenance resource. Provider type is made available via .meta.tag. Provider type is the category of the organization responsible for the delivered care (e.g., dental practice, hospital). It helps citizens and systems interpret the origin and context of data.
+- Context (e.g., care type, care setting, performer, source, etc.) is provided in the FHIR resources via elements such as .subject, .effective[x], and .performer, and via the Provenance resource. Care type is made available via .meta.tag. Care type is the category of the organization responsible for the delivered care (e.g., dental practice, hospital). It helps citizens and systems interpret the origin and context of data.
 - The MedMij Healthcare Provider List (Zorgaanbiederslijst) and the OAuthClient list (OCL) determine which data services are available per provider and supported by the DVP. We call this the capability of an actor. In the MedMij network, the following actors are active:
     - DVP
     - DVA in combination with the healthcare provider
@@ -88,8 +88,8 @@ Table 2: Domain-specific data services Oral Healthcare and Long-Term Care
 | Long-Term care nursingreport| [nl-core-nursingreport] | STU3 | Unknown |
 
 
-### Metatags for provider type
-Purpose: .meta.tag indicates for each exchanged data element which type of healthcare provider is responsible (e.g., “dental and maxillofacial surgery,” “primary care,” “pharmacy”). This makes the origin and context clear for the citizen and helps DVPs with filtering, grouping, and logging. Metatags are included with every FHIR resource. For the definition of provider type, we use VEKTIS AGB (table COD016), which encodes the specialty of the (performing) healthcare provider. For example code 1100: Dental specialists in oral diseases and oral and maxillofacial surgery.
+### Metatags for care type
+Purpose: .meta.tag indicates for each exchanged data element which type of healthcare provider is responsible (e.g., “dental and maxillofacial surgery,” “primary care,” “pharmacy”). This makes the origin and context clear for the citizen and helps DVPs with filtering, grouping, and logging. Metatags are included with every FHIR resource. For the definition of care type, we use VEKTIS AGB (table COD016), which encodes the specialty of the (performing) healthcare provider. For example code 1100: Dental specialists in oral diseases and oral and maxillofacial surgery.
 
 How to read the metatag:
 - 11 = the provider type
