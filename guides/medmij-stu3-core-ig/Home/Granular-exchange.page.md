@@ -36,7 +36,7 @@ The table below gives an overview of all granular data services that use FHIR ST
 
 | Data service name | Functional version| FHIR profile(s) |
 | --- | --- | --- |
-| MedMij Core - Patient | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/nl-core-patient](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018966) |
+| MedMij Core - Patiënt | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/nl-core-patient](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018966) |
 | MedMij Core - Zorgaanbieder | v3.1.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/nl-core-organization](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018965) |
 | MedMij Core - Zorgverlener | v3.2(2017) | [http://nictiz.nl/fhir/StructureDefinition/nl-core-practitioner](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018968) <br/> [http://nictiz.nl/fhir/StructureDefinition/nl-core-practitionerrole](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018969) |
 | MedMij Core - Bloeddruk | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-BloodPressure](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019007) |
@@ -54,9 +54,21 @@ The table below gives an overview of all granular data services that use FHIR ST
 
 **Table 1: Granular data services**
 
-## Metatags for care type
-Purpose: `.meta.tag` indicates for each exchanged data element which type of healthcare provider is responsible (e.g., “dental and maxillofacial surgery,” “primary care,” “pharmacy”). This makes the origin and context clear for the citizen and helps DVPs with filtering, grouping, and logging. Metatags are included with every FHIR resource. For the definition of care type, we use VEKTIS AGB (table COD016), which encodes the specialty of the (performing) healthcare provider. For example code 1100: Dental specialists in dental diseases and dental and maxillofacial surgery.
+## Care type
+In the transition from traditional to granular data services the context of exchanged data becomes less evident, as this context would normally be provided by the data service itself and its underlying use cases. In order to make the origin and context of data clear, the corresponding care type SHOULD be conveyed. This helps DVPs with filtering, grouping and logging, and makes it easier for citizens to interpret their data.
 
-How to read the metatag:
-- 11 = the provider type
-- Qualification (optional): in addition to the type, a qualification code can be provided for further clarification of the organization category. Example: Military hospitals - 0630.
+Technically, the `.meta.tag` element (which is available in all FHIR resources) is used to indicate the type of healthcare provider that is responsible for the data present in the respective FHIR resource (e.g. dental care, primary care, pharmacy). The care type is conveyed by using the medical specialties defined by Vektis (AGB) in table [COD016-VEKT](https://www.vektis.nl/standaardisatie/codelijsten/COD016-VEKT), and thus specifies the specialty of the department and/or health professional that delivered care. The codes within this table consists of four digits, of which the first two specify the healthcare provider type, while the last two are a further (optional) specification of that type. For instance, the code *0300* pertains to 'Medical specialists, not further specified', while code *0320* pertains to 'Medical specialists, cardiology'.
+
+Note that it is possible to include multiple `.meta.tag` elements in case (the data within) a resource pertains to multiple care types. Moreover, at least one `.meta.tag` SHOULD be added to each FHIR resource, provided the care type is known in the source system. If the care type is unknown in the source system for the data in a certain resource, no `.meta.tag` containing a code from the COD016-VEKT table is provided in that resource.
+
+The code snippet below provides an example of the `.meta.tag` element.
+
+```xml
+<meta>
+    <tag>
+        <system value="urn:oid:2.16.840.1.113883.2.4.6.7"/>
+        <code value="0320"/>
+        <display value="Medisch specialisten, cardiologie"/>
+    </tag>
+</meta>
+```
