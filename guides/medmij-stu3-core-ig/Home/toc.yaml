@@ -1,9 +1,7 @@
 - name: Index
   filename: Index.page.md
-- name: Functional design
-  filename: Functional-design.page.md
-- name: FHIR IG
-  filename: FHIR-IG.page.md
+- name: Granular exchange
+  filename: Granular-exchange.page.md
 - name: Dependencies
   filename: Dependencies.page.md
 - name: Release notes
