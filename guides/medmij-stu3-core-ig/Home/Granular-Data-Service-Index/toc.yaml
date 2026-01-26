@@ -1,0 +1,4 @@
+- name: MedMij Core - Patient
+  filename: MedMij-Core-Patient.page.md
+- name: MedMij Core - Healthcare provider
+  filename: MedMij-Core-HealthcareProvider.page.md

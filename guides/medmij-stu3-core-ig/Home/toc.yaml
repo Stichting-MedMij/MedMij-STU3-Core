@@ -2,6 +2,8 @@
   filename: Index.page.md
 - name: Granular exchange
   filename: Granular-exchange.page.md
+- name: Granular data service index
+  filename: Granular-Data-Service-Index
 - name: Dependencies
   filename: Dependencies.page.md
 - name: Release notes
