@@ -34,25 +34,27 @@ The following metadata is added to the ZAL and GNL for each granular data servic
 ## Overview of granular data services
 The table below gives an overview of all granular data services that use FHIR STU3 in their technical implementation. Hence the FHIR version for these data services is set to *STU3*.
 
-| Id | Data service name (Dutch) | Data service name (English) | Functional version| FHIR profile(s) |
+| Id | Data service name (English) | Data service name (Dutch) | Functional version| FHIR profile(s) |
 | --- | --- | --- | --- | --- |
-| TBD | MedMij Core - Patiënt | MedMij Core - Patient | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/nl-core-patient](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018966) |
-| TBD | MedMij Core - Zorgaanbieder | MedMij Core - Healthcare provider | v3.1.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/nl-core-organization](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018965) |
-| TBD | MedMij Core - Zorgverlener | MedMij Core -  Health professional | v3.2(2017) | [http://nictiz.nl/fhir/StructureDefinition/nl-core-practitioner](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018968) <br/> [http://nictiz.nl/fhir/StructureDefinition/nl-core-practitionerrole](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018969) |
-| TBD | MedMij Core - Bloeddruk | MedMij Core -  Blood pressure | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-BloodPressure](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019007) |
-| TBD | MedMij Core - Lichaamsgewicht | MedMij Core -  Body weight | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-BodyWeight](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019010) |
-| TBD | MedMij Core - Lichaamslengte | MedMij Core -  Body height | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-BodyHeight](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019008) |
 | TBD | MedMij Core - Alert | MedMij Core - Alert | v3.2(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-Alert](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019001) |
-| TBD | MedMij Core - Voedingsadvies | MedMij Core - Nutrition advice | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019091) |
-| TBD | MedMij Core - Lichaamstemperatuur | MedMij Core - Body temperature | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-BodyTemperature](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019009) |
-| TBD | MedMij Core - Vochtbalans | MedMij Core - Fluid balance | v1.0(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-FluidBalance](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019038) |
-| TBD | MedMij Core - Ademhaling | MedMij Core - Respiration | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-Respiration](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019114) |
-| TBD | MedMij Core - Polsfrequentie | MedMij Core - Pulse rate | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-PulseRate](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019113) |
-| TBD | MedMij Core - Betaler | MedMij Core - Payer | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-Payer](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019098) |
-| TBD | MedMij Core - Contact | MedMij Core - Encounter | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-Encounter](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019026) |
-| TBD | Langdurige Zorg - Dagrapportage | Long-term Healthcare - Nursing report | TBD | [https://nuts.nl/fhir/StructureDefinition/nl-core-nursingreport](https://simplifier.net/anw/nl-core-nursingreport) |
+| TBD | MedMij Core -  Blood pressure | MedMij Core - Bloeddruk | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-BloodPressure](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019007) |
+| TBD | MedMij Core -  Body height | MedMij Core - Lichaamslengte | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-BodyHeight](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019008) |
+| TBD | MedMij Core - Body temperature | MedMij Core - Lichaamstemperatuur | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-BodyTemperature](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019009) |
+| TBD | MedMij Core -  Body weight | MedMij Core - Lichaamsgewicht | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-BodyWeight](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019010) |
+| TBD | MedMij Core - Encounter | MedMij Core - Contact | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-Encounter](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019026) |
+| TBD | MedMij Core - Fluid balance | MedMij Core - Vochtbalans | v1.0(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-FluidBalance](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019038) |
+| TBD | MedMij Core - Healthcare provider (organization) | MedMij Core - Zorgaanbieder (organisatie) | v3.1.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/nl-core-organization](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018965) |
+| TBD | MedMij Core - Healthcare provider (location) | MedMij Core - Zorgaanbieder (locatie) | v3.1.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/nl-core-location](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018963) |
+| TBD | MedMij Core -  Health professional | MedMij Core - Zorgverlener | v3.2(2017) | [http://nictiz.nl/fhir/StructureDefinition/nl-core-practitioner](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018968) <br/> [http://nictiz.nl/fhir/StructureDefinition/nl-core-practitionerrole](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018969) |
+| TBD | MedMij Core - Nutrition advice | MedMij Core - Voedingsadvies | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019091) |
+| TBD | MedMij Core - Patient | MedMij Core - Patiënt | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/nl-core-patient](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018966) |
+| TBD | MedMij Core - Payer | MedMij Core - Betaler | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-Payer](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019098) |
+| TBD | MedMij Core - Pulse rate | MedMij Core - Polsfrequentie | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-PulseRate](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019113) |
+| TBD | MedMij Core - Respiration | MedMij Core - Ademhaling | v3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-Respiration](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019114) |
 
 **Table 1: Granular data services**
+
+In the Granular data service index every granular data service is described in more detail. Note that domain-specific data services are not included here, as these are not part of MedMij STU3 Core. Instead, these are further specified within the respective IGs corresponding to their domain. For instance, the granular data service 'Long-term Healthcare - Nursing report' is described in the IG of [MedMij STU3 Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare).
 
 ## Care type
 In the transition from traditional to granular data services the context of exchanged data becomes less evident, as this context would normally be provided by the data service itself and its underlying use cases. In order to make the origin and context of data clear, the corresponding care type SHOULD be conveyed. This helps DVPs with filtering, grouping and logging, and makes it easier for citizens to interpret their data.

@@ -1,4 +1,30 @@
+- name: MedMij Core - Alert
+  filename: MedMij-Core-Alert.page.md
+- name: MedMij Core - Blood pressure
+  filename: MedMij-Core-BloodPressure.page.md
+- name: MedMij Core - Body height
+  filename: MedMij-Core-BodyHeight.page.md
+- name: MedMij Core - Body temperature
+  filename: MedMij-Core-BodyTemperature.page.md
+- name: MedMij Core - Body weight
+  filename: MedMij-Core-BodyWeight.page.md
+- name: MedMij Core - Encounter
+  filename: MedMij-Core-Encounter.page.md
+- name: MedMij Core - Fluid balance
+  filename: MedMij-Core-FluidBalance.page.md
+- name: MedMij Core - Healthcare provider (location)
+  filename: MedMij-Core-HealthcareProvider-Location.page.md
+- name: MedMij Core - Healthcare provider (organization)
+  filename: MedMij-Core-HealthcareProvider-Organization.page.md
+- name: MedMij Core - Health professional
+  filename: MedMij-Core-HealthProfessional.page.md
+- name: MedMij Core - Nutrition advice
+  filename: MedMij-Core-NutritionAdvice.page.md
 - name: MedMij Core - Patient
   filename: MedMij-Core-Patient.page.md
-- name: MedMij Core - Healthcare provider
-  filename: MedMij-Core-HealthcareProvider.page.md
+- name: MedMij Core - Payer
+  filename: MedMij-Core-Payer.page.md
+- name: MedMij Core - Pulse rate
+  filename: MedMij-Core-Pulse rate.page.md
+- name: MedMij Core - Patient
+  filename: MedMij-Core-Patient.page.md
