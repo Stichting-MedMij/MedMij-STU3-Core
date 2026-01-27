@@ -21,9 +21,9 @@ This page explains the way in which granular exchange takes place in the context
 - The DVP determines the set of granular data services to retrieve. Hence, the responsibility for orchestration lies with the DVP, consistent with the MedMij principles. Moreover, the FHIR queries for retrieving the underlying data remain unchanged, as no additional search parameter for domain is required.
 
 ## Publication of granular data services
-This section describes how cross-domain and domain-specific CIMs are defined and published as separate data services. It focuses on the representation of these data services in the ZAL and the Data Service Name List (Gegevendienstnamenlijst, abbreviated GNL) of MedMij. It aligns with the two-layer model, consisting of cross-domain and domain-specific data services.
+This section describes how cross-domain and domain-specific CIMs are defined and published as separate data services. It focuses on the representation of these data services in the ZAL and the Data Service Name List (Gegevensdienstnamenlijst, abbreviated GNL) of MedMij. It aligns with the two-layer model, consisting of cross-domain and domain-specific data services.
 
-Cross-domain data services are published as generic data services on the ZAL, and are given a display name of the form 'MedMij Core - [CIM name in Dutch]', for instance 'MedMij Core - Bloeddruk'. On the other hand, domain-specific data services are registered on the ZAL per domain. This is reflected in the display name, which is of the form '[Domain name in Dutch] - [CIM name in Dutch]', for instance 'Langdurige Zorg - Dagrapportage'.
+Cross-domain data services are published as generic data services on the ZAL, and are given a display name of the form 'MedMij Core - [CIM name in Dutch]', for instance 'MedMij Core - Bloeddruk'. On the other hand, domain-specific data services are registered on the ZAL per domain. This is reflected in the display name, which is of the form '[Domain name in Dutch] - [CIM name in Dutch]', for instance 'Langdurige Zorg - Dagrapportage'. Note that in this IG, mainly the English names for the granular data services are used.
 
 The following metadata is added to the ZAL and GNL for each granular data service:
 - The *Id* contains the data service number. The exact format of this number for granular data services still needs to be decided upon.

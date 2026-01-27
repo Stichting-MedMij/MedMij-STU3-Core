@@ -25,6 +25,6 @@
 - name: MedMij Core - Payer
   filename: MedMij-Core-Payer.page.md
 - name: MedMij Core - Pulse rate
-  filename: MedMij-Core-Pulse rate.page.md
-- name: MedMij Core - Patient
-  filename: MedMij-Core-Patient.page.md
+  filename: MedMij-Core-PulseRate.page.md
+- name: MedMij Core - Respiration
+  filename: MedMij-Core-Respiration.page.md
