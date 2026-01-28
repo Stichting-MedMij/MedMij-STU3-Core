@@ -6,7 +6,7 @@
 | **Id**                          | TBD |
 | **Data service name (English)** | MedMij Core - Fluid balance |
 | **Data service name (Dutch)**   | MedMij Core - Vochtbalans |
-| **CIM**                         | [zib FluidBalance](hhttps://zibs.nl/wiki/FluidBalance-v1.0(2017EN)) |
+| **CIM**                         | [zib FluidBalance](https://zibs.nl/wiki/FluidBalance-v1.0(2017EN)) |
 | **Functional version**          | v1.0(2017) |
 
 ## Functional model

@@ -12,16 +12,10 @@
   filename: MedMij-Core-Encounter.page.md
 - name: MedMij Core - Fluid balance
   filename: MedMij-Core-FluidBalance.page.md
-- name: MedMij Core - Healthcare provider (location)
-  filename: MedMij-Core-HealthcareProvider-Location.page.md
-- name: MedMij Core - Healthcare provider (organization)
-  filename: MedMij-Core-HealthcareProvider-Organization.page.md
-- name: MedMij Core - Health professional
-  filename: MedMij-Core-HealthProfessional.page.md
+- name: MedMij Core - Living situation
+  filename: MedMij-Core-LivingSituation.page.md
 - name: MedMij Core - Nutrition advice
   filename: MedMij-Core-NutritionAdvice.page.md
-- name: MedMij Core - Patient
-  filename: MedMij-Core-Patient.page.md
 - name: MedMij Core - Payer
   filename: MedMij-Core-Payer.page.md
 - name: MedMij Core - Pulse rate
