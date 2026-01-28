@@ -32,7 +32,7 @@ The following metadata is added to the ZAL and GNL for each granular data servic
 - The *functional version* indicates the version of the CIM. For a CIM that is a zib, this version is of the form 'v*x.y*([zib publication])', e.g. 'v3.1(2017)'. For CIMs that are defined by MedMij as a Logical Model, the version of the corresponding FHIR package is suitable as the functional version.
 
 ## Overview of granular data services
-The table below gives an overview of all granular data services that use FHIR STU3 in their technical implementation. Hence the FHIR version for these data services is set to *STU3*.
+The table below gives an overview of all granular data services that use FHIR STU3 in their technical implementation.
 
 | Id | Data service name (English) | Data service name (Dutch) | Functional version| FHIR profile(s) |
 | --- | --- | --- | --- | --- |
@@ -51,7 +51,9 @@ The table below gives an overview of all granular data services that use FHIR ST
 
 **Table 1: Granular data services**
 
-In the Granular data service index every granular data service is described in more detail. Note that domain-specific data services are not included here, as these are not part of MedMij STU3 Core. Instead, these are further specified within the respective IGs corresponding to their domain. For instance, the granular data service 'Long-term Healthcare - Nursing report' is described in the IG of [MedMij STU3 Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare).
+In the Granular data service index each granular data service is described in more detail.
+
+Note that domain-specific data services are not included here, as these are not part of MedMij STU3 Core. Instead, these are further specified within the respective IGs corresponding to their domain. For instance, the granular data service 'Long-term Healthcare - Nursing report' is described in the IG of [MedMij STU3 Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare).
 
 ## Care type
 In the transition from traditional to granular data services the context of exchanged data becomes less evident, as this context would normally be provided by the data service itself and its underlying use cases. In order to make the origin and context of data clear, the corresponding care type SHOULD be conveyed. This helps DVPs with filtering, grouping and logging, and makes it easier for citizens to interpret their data.
