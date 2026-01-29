@@ -32,22 +32,22 @@ The following metadata is added to the ZAL and GNL for each granular data servic
 - The *functional version* indicates the version of the CIM. For a CIM that is a zib, this version is of the form 'v*x.y*([zib publication])', e.g. 'v3.1(2017)'. For CIMs that are defined by MedMij as a Logical Model, the version of the corresponding FHIR package is suitable as the functional version.
 
 ## Overview of granular data services
-The table below gives an overview of all granular data services that use FHIR STU3 in their technical implementation.
+The table below gives an overview of all cross-domain granular data services that use FHIR STU3 in their technical implementation.
 
-| Id | Data service name (English) | Data service name (Dutch) | Functional version| FHIR profile(s) |
+| Id | Data service name (English) | Data service name (Dutch) | Data service version|
 | --- | --- | --- | --- | --- |
-| TBD | MedMij Core - Alert | MedMij Core - Alert | 3.2(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-Alert](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019001) |
-| TBD | MedMij Core -  Blood pressure | MedMij Core - Bloeddruk | 3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-BloodPressure](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019007) |
-| TBD | MedMij Core -  Body height | MedMij Core - Lichaamslengte | 3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-BodyHeight](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019008) |
-| TBD | MedMij Core - Body temperature | MedMij Core - Lichaamstemperatuur | 3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-BodyTemperature](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019009) |
-| TBD | MedMij Core -  Body weight | MedMij Core - Lichaamsgewicht | 3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-BodyWeight](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019010) |
-| TBD | MedMij Core - Encounter | MedMij Core - Contact | 3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-Encounter](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019026) |
-| TBD | MedMij Core - Fluid balance | MedMij Core - Vochtbalans | 1.0(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-FluidBalance](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019038) |
-| TBD | MedMij Core - Living situation | MedMij Core - Woonsituatie | 3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-LivingSituation](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019063) |
-| TBD | MedMij Core - Nutrition advice | MedMij Core - Voedingsadvies | 3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019091) |
-| TBD | MedMij Core - Payer | MedMij Core - Betaler | 3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-Payer](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019098) |
-| TBD | MedMij Core - Pulse rate | MedMij Core - Polsfrequentie | 3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-PulseRate](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019113) |
-| TBD | MedMij Core - Respiration | MedMij Core - Ademhaling | 3.1(2017) | [http://nictiz.nl/fhir/StructureDefinition/zib-Respiration](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019114) |
+| TBD | MedMij Core - Alert | MedMij Core - Alert | 1.0.0-beta.1 |
+| TBD | MedMij Core - Blood pressure | MedMij Core - Bloeddruk | 1.0.0-beta.1 |
+| TBD | MedMij Core - Body height | MedMij Core - Lichaamslengte | 1.0.0-beta.1 |
+| TBD | MedMij Core - Body temperature | MedMij Core - Lichaamstemperatuur | 1.0.0-beta.1 |
+| TBD | MedMij Core - Body weight | MedMij Core - Lichaamsgewicht | 1.0.0-beta.1 |
+| TBD | MedMij Core - Encounter | MedMij Core - Contact | 1.0.0-beta.1 |
+| TBD | MedMij Core - Fluid balance | MedMij Core - Vochtbalans | 1.0.0-beta.1 |
+| TBD | MedMij Core - Living situation | MedMij Core - Woonsituatie | 1.0.0-beta.1 |
+| TBD | MedMij Core - Nutrition advice | MedMij Core - Voedingsadvies | 1.0.0-beta.1 |
+| TBD | MedMij Core - Payer | MedMij Core - Betaler | 1.0.0-beta.1 |
+| TBD | MedMij Core - Pulse rate | MedMij Core - Polsfrequentie | 1.0.0-beta.1 |
+| TBD | MedMij Core - Respiration | MedMij Core - Ademhaling | 1.0.0-beta.1 |
 
 **Table 1: Granular data services**
 
