@@ -7,7 +7,7 @@
 | **Data service name (English)** | MedMij Core - Pulse rate |
 | **Data service name (Dutch)**   | MedMij Core - Polsfrequentie |
 | **CIM**                         | [zib PulseRate](https://zibs.nl/wiki/PulseRate-v3.1(2017EN)) |
-| **Functional version**          | v3.1(2017) |
+| **Functional version**          | 3.1(2017) |
 | **Relevant domain(s)**          | [Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare/) |
 
 ## Functional model

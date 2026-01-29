@@ -7,7 +7,7 @@
 | **Data service name (English)** | MedMij Core - Fluid balance |
 | **Data service name (Dutch)**   | MedMij Core - Vochtbalans |
 | **CIM**                         | [zib FluidBalance](https://zibs.nl/wiki/FluidBalance-v1.0(2017EN)) |
-| **Functional version**          | v1.0(2017) |
+| **Functional version**          | 1.0(2017) |
 | **Relevant domain(s)**          | [Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare/) |
 
 ## Functional model

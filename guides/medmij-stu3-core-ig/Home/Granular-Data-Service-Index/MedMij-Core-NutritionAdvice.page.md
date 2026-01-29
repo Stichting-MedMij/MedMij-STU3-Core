@@ -7,7 +7,7 @@
 | **Data service name (English)** | MedMij Core - Nutrition advice |
 | **Data service name (Dutch)**   | MedMij Core - Voedingsadvies |
 | **CIM**                         | [zib NutritionAdvice](https://zibs.nl/wiki/NutritionAdvice-v3.1(2017EN)) |
-| **Functional version**          | v3.1(2017) |
+| **Functional version**          | 3.1(2017) |
 | **Relevant domain(s)**          | [Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare/) |
 
 ## Functional model
