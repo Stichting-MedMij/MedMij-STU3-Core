@@ -8,8 +8,6 @@
   filename: MedMij-Core-BodyTemperature.page.md
 - name: MedMij Core - Body weight
   filename: MedMij-Core-BodyWeight.page.md
-- name: MedMij Core - Encounter
-  filename: MedMij-Core-Encounter.page.md
 - name: MedMij Core - Fluid balance
   filename: MedMij-Core-FluidBalance.page.md
 - name: MedMij Core - Living situation

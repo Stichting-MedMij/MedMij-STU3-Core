@@ -41,7 +41,6 @@ The table below gives an overview of all cross-domain granular data services tha
 | TBD | MedMij Core - Body height | MedMij Core - Lichaamslengte | 1.0.0-beta.1 |
 | TBD | MedMij Core - Body temperature | MedMij Core - Lichaamstemperatuur | 1.0.0-beta.1 |
 | TBD | MedMij Core - Body weight | MedMij Core - Lichaamsgewicht | 1.0.0-beta.1 |
-| TBD | MedMij Core - Encounter | MedMij Core - Contact | 1.0.0-beta.1 |
 | TBD | MedMij Core - Fluid balance | MedMij Core - Vochtbalans | 1.0.0-beta.1 |
 | TBD | MedMij Core - Living situation | MedMij Core - Woonsituatie | 1.0.0-beta.1 |
 | TBD | MedMij Core - Nutrition advice | MedMij Core - Voedingsadvies | 1.0.0-beta.1 |
