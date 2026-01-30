@@ -23,7 +23,5 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/zib-BodyWeight](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019010) |
 | **FHIR package** | [nictiz.fhir.nl.stu3.zib2017](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017) version 2.0.0 or compatible |
 | **FHIR version** | STU3 |
-
-The corresponding FHIR search request is:
-
-`GET [base]/Observation?code=http://loinc.org|29463-7`
+| **Search request** | `GET [base]/Observation?code=http://loinc.org|29463-7` |
+| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effective[x]` <li> `.performer` (including the http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference extension) |

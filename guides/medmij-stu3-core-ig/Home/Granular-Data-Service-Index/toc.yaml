@@ -1,24 +1,24 @@
 - name: Index
   filename: Index.page.md
-- name: MedMij Core - Alert
+- name: Retrieve MedMij Core - Alert (zib2017/STU3)
   filename: MedMij-Core-Alert.page.md
-- name: MedMij Core - Blood pressure
+- name: Retrieve MedMij Core - Blood pressure (zib2017/STU3)
   filename: MedMij-Core-BloodPressure.page.md
-- name: MedMij Core - Body height
+- name: Retrieve MedMij Core - Body height (zib2017/STU3)
   filename: MedMij-Core-BodyHeight.page.md
-- name: MedMij Core - Body temperature
+- name: Retrieve MedMij Core - Body temperature (zib2017/STU3)
   filename: MedMij-Core-BodyTemperature.page.md
-- name: MedMij Core - Body weight
+- name: Retrieve MedMij Core - Body weight (zib2017/STU3)
   filename: MedMij-Core-BodyWeight.page.md
-- name: MedMij Core - Fluid balance
+- name: Retrieve MedMij Core - Fluid balance (zib2017/STU3)
   filename: MedMij-Core-FluidBalance.page.md
-- name: MedMij Core - Living situation
+- name: Retrieve MedMij Core - Living situation (zib2017/STU3)
   filename: MedMij-Core-LivingSituation.page.md
-- name: MedMij Core - Nutrition advice
+- name: Retrieve MedMij Core - Nutrition advice (zib2017/STU3)
   filename: MedMij-Core-NutritionAdvice.page.md
-- name: MedMij Core - Payer
+- name: Retrieve MedMij Core - Payer (zib2017/STU3)
   filename: MedMij-Core-Payer.page.md
-- name: MedMij Core - Pulse rate
+- name: Retrieve MedMij Core - Pulse rate (zib2017/STU3)
   filename: MedMij-Core-PulseRate.page.md
-- name: MedMij Core - Respiration
+- name: Retrieve MedMij Core - Respiration (zib2017/STU3)
   filename: MedMij-Core-Respiration.page.md
