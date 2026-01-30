@@ -4,7 +4,7 @@
   "description": "Package of FHIR STU3 conformance resources for MedMij STU3 Core version 1.0.0.",
   "author": "MedMij",
   "license": "CC0-1.0",
-  "title": "FHIR implementation of MedMij STU3 Code",
+  "title": "FHIR implementation of MedMij STU3 Core",
   "maintainers": [
     {
       "name": "MedMij"

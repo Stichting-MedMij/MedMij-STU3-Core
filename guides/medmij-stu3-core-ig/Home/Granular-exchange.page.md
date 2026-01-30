@@ -9,7 +9,7 @@ It is the ambition of MedMij to exchange healthcare data in a granular (modular)
 
 Granular exchange happens between service provider in the healthcare providers domain (DVA) and personal health environment (PHE or DVP), and takes into account which data is actually available and supported by both parties. Moreover, it provides patients (via DVP) access to data that is relevant for a specific care domain (such as Long-term Healthcare).
 
-This page explains the way in which granular exchange takes place in the context of MedMij. Note that the focus of granular exchange is on collecting data (i.e. the function ['Verzamelen'](https://afsprakenstelsel.medmij.nl/asverplicht/mmverplicht/verzamelen)).
+This page explains the way in which granular exchange takes place in the context of MedMij. Note that the focus of granular exchange is on retrieving data (i.e. the function ['Verzamelen'](https://afsprakenstelsel.medmij.nl/asverplicht/mmverplicht/verzamelen)).
 
 ## Principles
 - Each granular data service is linked to a single Clinical Information Model (CIM), which is often a zib but could possibly be any other functional model. A CIM is either domain overarching or only applicable to a single domain. Technically, each CIM corresponds to one or more FHIR profiles.
