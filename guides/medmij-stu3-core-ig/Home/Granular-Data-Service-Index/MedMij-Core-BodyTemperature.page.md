@@ -1,3 +1,7 @@
+---
+topic: BodyTemperature
+---
+
 # Retrieve MedMij Core - Body temperature (zib2017/STU3)
 
 ## Overview

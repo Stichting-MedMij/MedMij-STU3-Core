@@ -38,17 +38,17 @@ The table below gives an overview of all cross-domain granular data services tha
 
 | Id | Data service name without version (English) | Data service name without version (Dutch) | Data service version|
 | --- | --- | --- | --- | --- |
-| TBD | Retrieve MedMij Core - Alert (zib2017/STU3) | Verzamelen MedMij Core - Alert (zib2017/STU3) | 1.0.0-beta.1 |
-| TBD | Retrieve MedMij Core - Blood pressure (zib2017/STU3) | Verzamelen MedMij Core - Bloeddruk (zib2017/STU3) | 1.0.0-beta.1 |
-| TBD | Retrieve MedMij Core - Body height (zib2017/STU3) | Verzamelen MedMij Core - Lichaamslengte (zib2017/STU3) | 1.0.0-beta.1 |
-| TBD | Retrieve MedMij Core - Body temperature (zib2017/STU3) | Verzamelen MedMij Core - Lichaamstemperatuur (zib2017/STU3) | 1.0.0-beta.1 |
-| TBD | Retrieve MedMij Core - Body weight (zib2017/STU3) | Verzamelen MedMij Core - Lichaamsgewicht (zib2017/STU3) | 1.0.0-beta.1 |
-| TBD | Retrieve MedMij Core - Fluid balance (zib2017/STU3) | Verzamelen MedMij Core - Vochtbalans (zib2017/STU3) | 1.0.0-beta.1 |
-| TBD | Retrieve MedMij Core - Living situation (zib2017/STU3) | Verzamelen MedMij Core - Woonsituatie (zib2017/STU3) | 1.0.0-beta.1 |
-| TBD | Retrieve MedMij Core - Nutrition advice (zib2017/STU3) | Verzamelen MedMij Core - Voedingsadvies (zib2017/STU3) | 1.0.0-beta.1 |
-| TBD | Retrieve MedMij Core - Payer (zib2017/STU3) | Verzamelen MedMij Core - Betaler (zib2017/STU3) | 1.0.0-beta.1 |
-| TBD | Retrieve MedMij Core - Pulse rate (zib2017/STU3) | Verzamelen MedMij Core - Polsfrequentie (zib2017/STU3) | 1.0.0-beta.1 |
-| TBD | Retrieve MedMij Core - Respiration (zib2017/STU3) | Verzamelen MedMij Core - Ademhaling (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | {{pagelink:Alert, text: Retrieve MedMij Core - Alert (zib2017/STU3)}} | Verzamelen MedMij Core - Alert (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | {{pagelink:BloodPressure, text: Retrieve MedMij Core - Blood pressure (zib2017/STU3)}} | Verzamelen MedMij Core - Bloeddruk (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | {{pagelink:BodyHeight, text: Retrieve MedMij Core - Body height (zib2017/STU3)}} | Verzamelen MedMij Core - Lichaamslengte (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | {{pagelink:BodyTemperature, text: Retrieve MedMij Core - Body temperature (zib2017/STU3)}} | Verzamelen MedMij Core - Lichaamstemperatuur (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | {{pagelink:BodyWeight, text: Retrieve MedMij Core - Body weight (zib2017/STU3)}} | Verzamelen MedMij Core - Lichaamsgewicht (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | {{pagelink:FluidBalance, text: Retrieve MedMij Core - Fluid balance (zib2017/STU3)}} | Verzamelen MedMij Core - Vochtbalans (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | {{pagelink:LivingSituation, text: Retrieve MedMij Core - Living situation (zib2017/STU3)}} | Verzamelen MedMij Core - Woonsituatie (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | {{pagelink:NutritionAdvice, text: Retrieve MedMij Core - Nutrition advice (zib2017/STU3)}} | Verzamelen MedMij Core - Voedingsadvies (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | {{pagelink:Payer, text: Retrieve MedMij Core - Payer (zib2017/STU3)}} | Verzamelen MedMij Core - Betaler (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | {{pagelink:PulseRate, text: Retrieve MedMij Core - Pulse rate (zib2017/STU3)}} | Verzamelen MedMij Core - Polsfrequentie (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | {{pagelink:Respiration, text: Retrieve MedMij Core - Respiration (zib2017/STU3)}} | Verzamelen MedMij Core - Ademhaling (zib2017/STU3) | 1.0.0-beta.1 |
 
 **Table 1: Granular data services**
 

@@ -1,3 +1,7 @@
+---
+topic: BloodPressure
+---
+
 # Retrieve MedMij Core - Blood pressure (zib2017/STU3)
 
 ## Overview

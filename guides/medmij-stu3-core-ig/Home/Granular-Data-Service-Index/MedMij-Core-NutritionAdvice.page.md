@@ -1,3 +1,7 @@
+---
+topic: NutritionAdvice
+---
+
 # Retrieve MedMij Core - Nutrition advice (zib2017/STU3)
 
 ## Overview

@@ -1,3 +1,7 @@
+---
+topic: BodyWeight
+---
+
 # Retrieve MedMij Core - Body weight (zib2017/STU3)
 
 ## Overview

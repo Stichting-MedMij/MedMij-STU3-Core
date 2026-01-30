@@ -1,3 +1,7 @@
+---
+topic: Alert
+---
+
 # Retrieve MedMij Core - Alert (zib2017/STU3)
 
 ## Overview

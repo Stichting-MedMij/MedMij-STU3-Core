@@ -1,3 +1,7 @@
+---
+topic: PulseRate
+---
+
 # Retrieve MedMij Core - Pulse rate (zib2017/STU3)
 
 ## Overview

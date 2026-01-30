@@ -1,3 +1,7 @@
+---
+topic: Payer
+---
+
 # Retrieve MedMij Core - Payer (zib2017/STU3)
 
 ## Overview

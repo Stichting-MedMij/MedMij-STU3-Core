@@ -1,3 +1,7 @@
+---
+topic: LivingSituation
+---
+
 # Retrieve MedMij Core - Living situation (zib2017/STU3)
 
 ## Overview
