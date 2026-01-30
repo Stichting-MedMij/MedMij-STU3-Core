@@ -25,3 +25,17 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Coverage` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subscriber` (only reference to [nl-core-patient](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018966)) <li> `.beneficiary` <li> `.period` <li> `.payor` (including the [practitionerrole-reference extension](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018979)) |
+
+The FHIR profile is included below.
+
+<tabs>
+    <tab title="Tree view" active="true">
+      {{tree:http://nictiz.nl/fhir/StructureDefinition/zib-Payer, buttons}}
+    </tab>
+    <tab title="Xml">
+      {{xml:http://nictiz.nl/fhir/StructureDefinition/zib-Payer}}
+    </tab>
+    <tab title="Json">
+      {{json:http://nictiz.nl/fhir/StructureDefinition/zib-Payer}}
+    </tab>
+</tabs>
