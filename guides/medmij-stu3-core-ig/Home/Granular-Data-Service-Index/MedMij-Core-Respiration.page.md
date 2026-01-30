@@ -24,4 +24,4 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR package** | [nictiz.fhir.nl.stu3.zib2017](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017) version 2.0.0 or compatible |
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|422834003` |
-| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effective[x]` <li> `.performer` (including the http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference extension) |
+| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effective[x]` <li> `.performer` (including the [practitionerrole-reference extension](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018979)) |
