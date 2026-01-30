@@ -1,0 +1,21 @@
+{
+  "name": "medmij.fhir.nl.stu3.core",
+  "version": "1.0.0",
+  "description": "Package of FHIR STU3 conformance resources for MedMij STU3 Core version 1.0.0.",
+  "author": "MedMij",
+  "license": "CC0-1.0",
+  "title": "FHIR implementation of MedMij STU3 Code",
+  "maintainers": [
+    {
+      "name": "MedMij"
+    }
+  ],
+  "dependencies": {
+    "nictiz.fhir.nl.stu3.zib2017": "2.3.2",
+    "hl7.fhir.r3.core": "3.0.2"
+  },
+  "fhirVersions": [
+    "3.0.2"
+  ],
+  "jurisdiction": "urn:iso:std:iso:3166#NL"
+}
