@@ -1,3 +1,5 @@
+- name: Index
+  filename: Index.page.md
 - name: MedMij Core - Alert
   filename: MedMij-Core-Alert.page.md
 - name: MedMij Core - Blood pressure

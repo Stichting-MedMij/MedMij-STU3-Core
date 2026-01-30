@@ -23,30 +23,32 @@ This page explains the way in which granular exchange takes place in the context
 ## Publication of granular data services
 This section describes how cross-domain and domain-specific CIMs are defined and published as separate data services. It focuses on the representation of these data services in the ZAL and the Data Service Name List (Gegevensdienstnamenlijst, abbreviated GNL) of MedMij. It aligns with the two-layer model, consisting of cross-domain and domain-specific data services.
 
-Cross-domain data services are published as generic data services on the ZAL, and are given a display name of the form 'MedMij Core - [CIM name in Dutch]', for instance 'MedMij Core - Bloeddruk'. On the other hand, domain-specific data services are registered on the ZAL per domain. This is reflected in the display name, which is of the form '[Domain name in Dutch] - [CIM name in Dutch]', for instance 'Langdurige Zorg - Dagrapportage'. Note that in this IG, mainly the English names for the granular data services are used.
+Cross-domain data services are published as generic data services on the ZAL, and are given a display name of the form '[Function] MedMij Core - [CIM name in Dutch] ([Suffix (optional)]) [Data service version]', for instance 'Verzamelen MedMij Core - Bloeddruk (zib2017/STU3) 1.0.0'. The suffix is an optional addition to the data service name necessary to differentiate data services that have multiple variants (for instance, different functional versions or different FHIR versions). In case a granular data service corresponds to a zib, the corresponding baseline is used as suffix, e.g. 'zib2017/STU3'. 
+
+On the other hand, domain-specific data services are registered on the ZAL per domain. This is reflected in the display name, which is of the form '[Function] [Domain name in Dutch] - [CIM name in Dutch] ([Suffix (optional)]) [Data service version]', for instance 'Verzamelen Langdurige Zorg - Dagrapportage 1.0.0'. 
+
+Note that in this IG, mainly the English names for the granular data services are used.
 
 The following metadata is added to the ZAL and GNL for each granular data service:
 - The *Id* contains the data service number. The exact format of this number for granular data services still needs to be decided upon.
 - The *Data service name* (Gegevensdienstnaam) is the display name of the data service, and follows the formats described above.
-- The *FHIR version* states in what version of FHIR the profile(s) corresponding to the CIM have been created. For all data services mentioned in or linked to from this IG, the FHIR version will be *STU3*.
-- The *functional version* indicates the version of the CIM. For a CIM that is a zib, this version is of the form 'v*x.y*([zib publication])', e.g. 'v3.1(2017)'. For CIMs that are defined by MedMij as a Logical Model, the version of the corresponding FHIR package is suitable as the functional version.
 
 ## Overview of granular data services
 The table below gives an overview of all cross-domain granular data services that use FHIR STU3 in their technical implementation.
 
-| Id | Data service name (English) | Data service name (Dutch) | Data service version|
+| Id | Data service name without version (English) | Data service name without version (Dutch) | Data service version|
 | --- | --- | --- | --- | --- |
-| TBD | MedMij Core - Alert | MedMij Core - Alert | 1.0.0-beta.1 |
-| TBD | MedMij Core - Blood pressure | MedMij Core - Bloeddruk | 1.0.0-beta.1 |
-| TBD | MedMij Core - Body height | MedMij Core - Lichaamslengte | 1.0.0-beta.1 |
-| TBD | MedMij Core - Body temperature | MedMij Core - Lichaamstemperatuur | 1.0.0-beta.1 |
-| TBD | MedMij Core - Body weight | MedMij Core - Lichaamsgewicht | 1.0.0-beta.1 |
-| TBD | MedMij Core - Fluid balance | MedMij Core - Vochtbalans | 1.0.0-beta.1 |
-| TBD | MedMij Core - Living situation | MedMij Core - Woonsituatie | 1.0.0-beta.1 |
-| TBD | MedMij Core - Nutrition advice | MedMij Core - Voedingsadvies | 1.0.0-beta.1 |
-| TBD | MedMij Core - Payer | MedMij Core - Betaler | 1.0.0-beta.1 |
-| TBD | MedMij Core - Pulse rate | MedMij Core - Polsfrequentie | 1.0.0-beta.1 |
-| TBD | MedMij Core - Respiration | MedMij Core - Ademhaling | 1.0.0-beta.1 |
+| TBD | Retrieve MedMij Core - Alert (zib2017/STU3) | Verzamelen MedMij Core - Alert (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | Retrieve MedMij Core - Blood pressure (zib2017/STU3) | Verzamelen MedMij Core - Bloeddruk (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | Retrieve MedMij Core - Body height (zib2017/STU3) | Verzamelen MedMij Core - Lichaamslengte (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | Retrieve MedMij Core - Body temperature (zib2017/STU3) | Verzamelen MedMij Core - Lichaamstemperatuur (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | Retrieve MedMij Core - Body weight (zib2017/STU3) | Verzamelen MedMij Core - Lichaamsgewicht (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | Retrieve MedMij Core - Fluid balance (zib2017/STU3) | Verzamelen MedMij Core - Vochtbalans (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | Retrieve MedMij Core - Living situation (zib2017/STU3) | Verzamelen MedMij Core - Woonsituatie (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | Retrieve MedMij Core - Nutrition advice (zib2017/STU3) | Verzamelen MedMij Core - Voedingsadvies (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | Retrieve MedMij Core - Payer (zib2017/STU3) | Verzamelen MedMij Core - Betaler (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | Retrieve MedMij Core - Pulse rate (zib2017/STU3) | Verzamelen MedMij Core - Polsfrequentie (zib2017/STU3) | 1.0.0-beta.1 |
+| TBD | Retrieve MedMij Core - Respiration (zib2017/STU3) | Verzamelen MedMij Core - Ademhaling (zib2017/STU3) | 1.0.0-beta.1 |
 
 **Table 1: Granular data services**
 
