@@ -15,3 +15,4 @@ This index contains all active granular data services that use FHIR STU3 in thei
     - **FHIR profile(s)** - the FHIR profiles that are used to exchange the CIM.
     - **FHIR package** - the FHIR package in which the FHIR profiles have been published.
     - **FHIR version** - the version of FHIR in which the profiles corresponding to the CIM have been created; for all data services mentioned in or linked to from this IG, the FHIR version will be *STU3*.
+    - Moreover, the corresponding search request is specified, as well as the elements that have to be supported (i.e. *Must Support*). Whenever an element is marked as *Must Support*, that element SHALL be conveyed in the FHIR resource if the corresponding data is present in the source system.
