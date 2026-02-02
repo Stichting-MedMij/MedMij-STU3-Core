@@ -24,11 +24,11 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/zib-Alert](https://simplifier.net/resolve?canonical=http://fhir.nl/fhir/StructureDefinition/nl-core-patient&scope=nictiz.fhir.nl.stu3.zib2017@{{zib2017-package}}) |
+| **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/zib-Alert](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/zib-Alert&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) |
 | **FHIR package** | [nictiz.fhir.nl.stu3.zib2017](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017) version 2.0.0 or compatible |
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Flag` |
-| **Must Support** | <ul> <li> `.identifier` <li> `.subject` (only reference to {{link: http://fhir.nl/fhir/StructureDefinition/nl-core-patient, title: nl-core-patient}}) <li> `.period` <li> `.author` (only reference to {{link: http://fhir.nl/fhir/StructureDefinition/nl-core-organization, title: nl-core-organization}} and {{link: http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner, title: nl-core-practitioner}}, including the {{link: http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference, title: practitionerrole-reference extension}}) |
+| **Must Support** | <ul> <li> `.identifier` <li> `.subject` (only reference to [http://fhir.nl/fhir/StructureDefinition/nl-core-patient](https://simplifier.net/resolve?canonical=http://fhir.nl/fhir/StructureDefinition/nl-core-patient&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2)) <li> `.period` <li> `.author` (only reference to [http://fhir.nl/fhir/StructureDefinition/nl-core-organization](https://simplifier.net/resolve?canonical=http://fhir.nl/fhir/StructureDefinition/nl-core-organization&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) and {{link: http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner, title: nl-core-practitioner}}, including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) |
 
 The FHIR profile is included below.
 

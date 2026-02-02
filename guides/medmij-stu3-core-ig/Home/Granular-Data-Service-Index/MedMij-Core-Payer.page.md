@@ -24,11 +24,11 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | {{link: http://nictiz.nl/fhir/StructureDefinition/zib-Payer, title: http://nictiz.nl/fhir/StructureDefinition/zib-Payer}} |
+| **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/zib-Payer](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/zib-Payer&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) |
 | **FHIR package** | [nictiz.fhir.nl.stu3.zib2017](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017) version 2.0.0 or compatible |
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Coverage` |
-| **Must Support** | <ul> <li> `.identifier` <li> `.subscriber` (only reference to {{link: http://fhir.nl/fhir/StructureDefinition/nl-core-patient, title: nl-core-patient}}) <li> `.beneficiary` <li> `.period` <li> `.payor` (including the {{link: http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference, title: practitionerrole-reference extension}}) |
+| **Must Support** | <ul> <li> `.identifier` <li> `.subscriber` (only reference to [http://fhir.nl/fhir/StructureDefinition/nl-core-patient](https://simplifier.net/resolve?canonical=http://fhir.nl/fhir/StructureDefinition/nl-core-patient&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2)) <li> `.beneficiary` <li> `.period` <li> `.payor` (including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) |
 
 The FHIR profile is included below.
 

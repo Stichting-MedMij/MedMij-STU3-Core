@@ -24,11 +24,11 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | {{link: http://nictiz.nl/fhir/StructureDefinition/zib-Respiration, title: http://nictiz.nl/fhir/StructureDefinition/zib-Respiration}} |
+| **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/zib-Respiration](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/zib-Respiration&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) |
 | **FHIR package** | [nictiz.fhir.nl.stu3.zib2017](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017) version 2.0.0 or compatible |
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|422834003` |
-| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effective[x]` <li> `.performer` (including the {{link: http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference, title: practitionerrole-reference extension}}) |
+| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effective[x]` <li> `.performer` (including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) |
 
 The FHIR profile is included below.
 
