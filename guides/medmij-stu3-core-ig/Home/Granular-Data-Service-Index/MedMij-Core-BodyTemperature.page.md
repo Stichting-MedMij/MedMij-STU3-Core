@@ -24,11 +24,11 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/zib-BodyTemperature](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019009) |
+| **FHIR profile(s)** | {{link: http://nictiz.nl/fhir/StructureDefinition/zib-BodyTemperature, title: http://nictiz.nl/fhir/StructureDefinition/zib-BodyTemperature}} |
 | **FHIR package** | [nictiz.fhir.nl.stu3.zib2017](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017) version 2.0.0 or compatible |
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Observation?code=http://loinc.org|8310-5` |
-| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effective[x]` <li> `.performer` (including the [practitionerrole-reference extension](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018979)) |
+| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effective[x]` <li> `.performer` (including the {{link: http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference, title: practitionerrole-reference extension}}) |
 
 The FHIR profile is included below.
 

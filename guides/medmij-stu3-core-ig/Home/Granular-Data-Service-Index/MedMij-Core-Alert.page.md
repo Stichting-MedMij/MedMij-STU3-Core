@@ -24,11 +24,11 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/zib-Alert](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3019001) |
+| **FHIR profile(s)** | {{link: http://nictiz.nl/fhir/StructureDefinition/zib-Alert, title: http://nictiz.nl/fhir/StructureDefinition/zib-Alert}} |
 | **FHIR package** | [nictiz.fhir.nl.stu3.zib2017](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017) version 2.0.0 or compatible |
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Flag` |
-| **Must Support** | <ul> <li> `.identifier` <li> `.subject` (only reference to [nl-core-patient](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018966)) <li> `.period` <li> `.author` (only reference to [nl-core-organization](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018965) and [nl-core-practitioner](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018968), including the [practitionerrole-reference extension](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.3.2/files/3018979)) |
+| **Must Support** | <ul> <li> `.identifier` <li> `.subject` (only reference to {{link: http://fhir.nl/fhir/StructureDefinition/nl-core-patient, title: nl-core-patient}}) <li> `.period` <li> `.author` (only reference to {{link: http://fhir.nl/fhir/StructureDefinition/nl-core-organization, title: nl-core-organization}} and {{link: http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner, title: nl-core-practitioner}}, including the {{link: http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference, title: practitionerrole-reference extension}}) |
 
 The FHIR profile is included below.
 

@@ -1,4 +1,8 @@
-# {{page-title}}
+---
+topic: GranularDataServiceIndex
+---
+
+# Granular data service index
 
 This index contains all active granular data services that use FHIR STU3 in their technical implementation. The following is specified for each data service:
 
@@ -16,4 +20,4 @@ This index contains all active granular data services that use FHIR STU3 in thei
     - **FHIR package** - the FHIR package in which the FHIR profiles have been published.
     - **FHIR version** - the version of FHIR in which the profiles corresponding to the CIM have been created; for all data services mentioned in or linked to from this IG, the FHIR version will be *STU3*.
     - **Search request** - the request to be executed by the PHR to retrieve the data corresponding to the granular data service.
-    - **Must Support** - the elements that have to be supported, which means that these elements SHALL be conveyed in the FHIR resource if the corresponding data is present in the source system.
+    - **Must Support** - the elements that have to be supported in the manner described {{pagelink: GranularExchange, text: here, anchor: MustSupport}}
