@@ -24,7 +24,7 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | {{link: http://nictiz.nl/fhir/StructureDefinition/zib-Alert, title: http://nictiz.nl/fhir/StructureDefinition/zib-Alert}} |
+| **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/zib-Alert](https://simplifier.net/resolve?canonical=http://fhir.nl/fhir/StructureDefinition/nl-core-patient&scope=nictiz.fhir.nl.stu3.zib2017@{{zib2017-package}}) |
 | **FHIR package** | [nictiz.fhir.nl.stu3.zib2017](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017) version 2.0.0 or compatible |
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Flag` |
