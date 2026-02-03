@@ -7,10 +7,11 @@ topic: BodyTemperature
 ## Overview
 | | |
 | --- | --- |
-| **Id** | TBD |
+| **Id** | 900000409 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Body temperature (zib2017/STU3) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Lichaamstemperatuur (zib2017/STU3) |
 | **Data service version** | 1.0.0-beta.1 |
+| **System role(s)** | MMC-BTR-zib2017/STU3-1.0.0-beta.1-FHIR (PHR) <br/> MMC-BTB-zib2017/STU3-1.0.0-beta.1-FHIR (XIS) |
 | **Relevant domain(s)** | [Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare/) |
 
 ## Functional model

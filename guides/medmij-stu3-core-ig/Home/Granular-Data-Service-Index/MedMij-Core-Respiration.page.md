@@ -7,10 +7,11 @@ topic: Respiration
 ## Overview
 | | |
 | --- | --- |
-| **Id** | TBD |
+| **Id** | 900000411 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Respiration (zib2017/STU3) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Ademhaling (zib2017/STU3) |
 | **Data service version** | 1.0.0-beta.1 |
+| **System role(s)** | MMC-RER-zib2017/STU3-1.0.0-beta.1-FHIR (PHR) <br/> MMC-REB-zib2017/STU3-1.0.0-beta.1-FHIR (XIS) |
 | **Relevant domain(s)** | [Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare/) |
 
 ## Functional model
