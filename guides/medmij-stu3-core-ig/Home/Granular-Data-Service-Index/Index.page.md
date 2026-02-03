@@ -10,6 +10,7 @@ This index contains all active granular data services that use FHIR STU3 in thei
     - **Id** - the id of the data service that is used to uniquely define it in the [MedMij Catalogus](https://catalogus.medmij.nl/overzicht/actueel/actuele-catalogus).
     - **Data service name without version** - the name of the data service, both in English and Dutch, of which the Dutch one, appended with the data service version, is used in the MedMij Catalogus.
     - **Data service version** - the version assigned to the data service as a whole (not to be confused with the version of the corresponding functional model or the package version of the corresponding FHIR profiles).
+    - **System role(s)** - the system roles corresponding to the different transactions within each data service.
     - **Relevant domain(s)** - the domains in which the granular data service is used, with links to the corresponding Simplifier projects.
 - **Functional model**
     - **CIM** - the underlying Clinical Information Model, which is often a zib.
@@ -21,3 +22,4 @@ This index contains all active granular data services that use FHIR STU3 in thei
     - **FHIR version** - the version of FHIR in which the profiles corresponding to the CIM have been created; for all data services mentioned in or linked to from this IG, the FHIR version will be *STU3*.
     - **Search request** - the request to be executed by the PHR to retrieve the data corresponding to the granular data service.
     - **Must Support** - the elements that have to be supported in the manner described {{pagelink: GranularExchange, text: here, anchor: MustSupport}}.
+    - Moreover, the relevant FHIR profiles are added in this section.
