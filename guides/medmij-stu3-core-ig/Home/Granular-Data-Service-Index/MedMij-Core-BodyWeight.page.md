@@ -30,6 +30,7 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Observation?code=http://loinc.org|29463-7` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effective[x]` <li> `.performer` (including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) |
+| **CapabilityStatement(s)** | [MedMij Core BodyWeight Retrieve](http://medmij.nl/fhir/CapabilityStatement/medmij-core-BodyWeight-Retrieve) <br/> [MedMij Core BodyWeight Serve](http://medmij.nl/fhir/CapabilityStatement/medmij-core-BodyWeight-Serve) |
 
 The FHIR profile is included below.
 

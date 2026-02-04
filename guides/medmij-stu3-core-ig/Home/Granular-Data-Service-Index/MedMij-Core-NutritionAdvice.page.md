@@ -30,6 +30,7 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/NutritionOrder` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.patient` <li> `.dateTime` <li> `.orderer` (including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) |
+| **CapabilityStatement(s)** | [MedMij Core NutritionAdvice Retrieve](http://medmij.nl/fhir/CapabilityStatement/medmij-core-NutritionAdvice-Retrieve) <br/> [MedMij Core NutritionAdvice Serve](http://medmij.nl/fhir/CapabilityStatement/medmij-core-NutritionAdvice-Serve) |
 
 The FHIR profile is included below.
 

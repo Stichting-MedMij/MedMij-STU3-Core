@@ -30,6 +30,7 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Coverage` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subscriber` (only reference to [http://fhir.nl/fhir/StructureDefinition/nl-core-patient](https://simplifier.net/resolve?canonical=http://fhir.nl/fhir/StructureDefinition/nl-core-patient&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2)) <li> `.beneficiary` <li> `.period` <li> `.payor` (including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) |
+| **CapabilityStatement(s)** | [MedMij Core Payer Retrieve](http://medmij.nl/fhir/CapabilityStatement/medmij-core-Payer-Retrieve) <br/> [MedMij Core Payer Serve](http://medmij.nl/fhir/CapabilityStatement/medmij-core-Payer-Serve) |
 
 The FHIR profile is included below.
 

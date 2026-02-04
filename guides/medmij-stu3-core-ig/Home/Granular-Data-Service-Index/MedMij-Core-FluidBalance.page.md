@@ -30,6 +30,7 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|364396009` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effective[x]` <li> `.performer` (including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) |
+| **CapabilityStatement(s)** | [MedMij Core FluidBalance Retrieve](http://medmij.nl/fhir/CapabilityStatement/medmij-core-FluidBalance-Retrieve) <br/> [MedMij Core FluidBalance Serve](http://medmij.nl/fhir/CapabilityStatement/medmij-core-FluidBalance-Serve) |
 
 The FHIR profile is included below.
 

@@ -22,4 +22,5 @@ This index contains all active granular data services that use FHIR STU3 in thei
     - **FHIR version** - the version of FHIR in which the profiles corresponding to the CIM have been created; for all data services mentioned in or linked to from this IG, the FHIR version will be *STU3*.
     - **Search request** - the request to be executed by the PHR to retrieve the data corresponding to the granular data service.
     - **Must Support** - the elements that have to be supported in the manner described {{pagelink: GranularExchange, text: here, anchor: MustSupport}}.
+    - **CapabilityStatement(s)** - the FHIR CapabilityStatements that describe the minimal requirements for a client or server to fulfill the corresponding transaction(s) defined within the data service.
     - Moreover, the relevant FHIR profiles are added in this section.
