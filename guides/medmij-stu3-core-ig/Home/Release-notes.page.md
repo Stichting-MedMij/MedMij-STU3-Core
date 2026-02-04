@@ -4,5 +4,4 @@
  
 | Component             | Description  | Ticket    |
 | --------------------- | ------------ | --------- |
-| n.b.| n.b.| n.b.|
- 
+| FHIR artifacts        | CapabilityStatements for the Retrieve and Serve transactions of the initial set of granular data services have been added. | [DOSINZAGE1-827](https://medmij.atlassian.net/browse/DOSINZAGE1-827) |
