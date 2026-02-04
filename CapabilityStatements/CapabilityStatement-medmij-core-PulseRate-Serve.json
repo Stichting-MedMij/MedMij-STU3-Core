@@ -1,7 +1,7 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "medmij-core-PulseRate-Serve",
-  "url": "http://medmij.nl/fhir/CapabilityStatement/medmij-core-BodyHeight-Serve",
+  "url": "http://medmij.nl/fhir/CapabilityStatement/medmij-core-PulseRate-Serve",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
