@@ -20,7 +20,7 @@ topic: Respiration
 | **CIM** | [zib Respiration](https://zibs.nl/wiki/Respiration-v3.1(2017EN)) |
 | **Functional version** | 3.1(2017) |
 
-The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib2017bbr/zib2017bbr-html-20211029T113909/ds-2.16.840.1.113883.2.4.3.11.60.40.3.12.5-2017-12-31T000000.html).
+The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib2017bbr/zib2017bbr-html-20211029T113909/ds-2.16.840.1.113883.2.4.3.11.60.40.3.12.5-2017-12-31T000000.html). Note that the AdministrationDevice concept (NL-CM:12.5.13) is out of scope.
 
 ## Technical specification
 | | |
