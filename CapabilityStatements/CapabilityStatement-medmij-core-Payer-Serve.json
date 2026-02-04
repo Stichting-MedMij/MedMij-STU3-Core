@@ -51,6 +51,10 @@
     {
       "reference": "http://fhir.nl/fhir/StructureDefinition/nl-core-organization",
       "display": "nl-core-organization"
+    },
+    {
+      "reference": "http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson",
+      "display": "nl-core-relatedperson"
     }
   ],
   "rest": [
@@ -98,6 +102,16 @@
         },
         {
           "type": "Organization",
+          "documentation": "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle.",
+          "interaction": [
+            {
+              "code": "read",
+              "documentation": "If the server always includes this (secondary) resource in the Bundle, support of the `read` interaction is optional."
+            }
+          ]
+        },
+        {
+          "type": "RelatedPerson",
           "documentation": "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle.",
           "interaction": [
             {
