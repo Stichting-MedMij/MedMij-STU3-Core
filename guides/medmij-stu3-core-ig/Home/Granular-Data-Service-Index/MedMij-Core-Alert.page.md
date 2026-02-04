@@ -30,7 +30,7 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Flag` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` (only reference to [http://fhir.nl/fhir/StructureDefinition/nl-core-patient](https://simplifier.net/resolve?canonical=http://fhir.nl/fhir/StructureDefinition/nl-core-patient&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2)) <li> `.period` <li> `.author` (only reference to [http://fhir.nl/fhir/StructureDefinition/nl-core-organization](https://simplifier.net/resolve?canonical=http://fhir.nl/fhir/StructureDefinition/nl-core-organization&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) and [http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner](https://simplifier.net/resolve?canonical=http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2), including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) |
-| **CapabilityStatement(s)** | [MedMij Core Alert Retrieve](http://medmij.nl/fhir/CapabilityStatement/medmij-core-Alert-Retrieve) <br/> [MedMij Core Alert Serve](http://medmij.nl/fhir/CapabilityStatement/medmij-core-Alert-Serve) |
+| **CapabilityStatement(s)** | [MedMij Core Alert Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Alert-Retrieve&scope=medmij.fhir.nl.stu3.core@1.0.0) <br/> [MedMij Core Alert Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Alert-Serve&scope=medmij.fhir.nl.stu3.core@1.0.0) |
 
 The FHIR profile is included below.
 
