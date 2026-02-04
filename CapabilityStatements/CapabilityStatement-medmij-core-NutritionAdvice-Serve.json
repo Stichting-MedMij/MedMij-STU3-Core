@@ -47,6 +47,10 @@
     {
       "reference": "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner",
       "display": "nl-core-practitioner"
+    },
+    {
+      "reference": "http://fhir.nl/fhir/StructureDefinition/nl-core-organization",
+      "display": "nl-core-organization"
     }
   ],
   "rest": [
@@ -91,7 +95,17 @@
               "documentation": "If the server always includes this (secondary) resource in the Bundle, support of the `read` interaction is optional."
             }
           ]
-        }
+        },
+        {
+          "type": "Organization",
+          "documentation": "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle.",
+          "interaction": [
+            {
+              "code": "read",
+              "documentation": "If the server always includes this (secondary) resource in the Bundle, support of the `read` interaction is optional."
+            }
+          ]
+        }        
       ],
       "interaction": [
         {
