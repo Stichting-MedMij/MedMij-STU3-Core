@@ -57,10 +57,26 @@ In the {{pagelink: GranularDataServiceIndex, text: Granular data service index}}
 Note that domain-specific data services are not included here, as these are not part of MedMij STU3 Core. Instead, these are further specified within the respective IGs corresponding to their domain. For instance, the granular data service 'Long-term Healthcare - Nursing report' is described in the IG of [MedMij STU3 Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare).
 
 ## <a name="MustSupport"></a> Must Support
-
 For each granular data service within the {{pagelink: GranularDataServiceIndex, text: Granular data service index}}, one or more elements of the corresponding FHIR resources might be indicated as *Must Support*. Such elements have to be supported, which means that the DVA SHALL convey these in the FHIR resource if the corresponding data is present in the source system, and that the DVP SHALL process (the information in) these elements.
 
 Note that currently, it is only (textually) indicated in this IG whether an element needs to be supported, and no MedMij Core profiles that include the FHIR-native `mustSupport` flag have been created. One of the reasons for this approach is that some FHIR profiles in the [nictiz.fhir.nl.stu3.zib2017](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017) package are based on international profiles which use the `mustSupport` flag. These flags are inherited by the zib profiles, and would also be inherited by the MedMij Core profiles, thus making it unclear which elements need to be supported in the manner described above.
+
+## General technical specifications
+For all granular data services the following technical specifications are applicable, unless deviations are explicitly mentioned on the page of the respective data service.
+
+### PHR: request message
+The PHR executes an HTTP search against the endpoint of the XIS using an URL of the form:
+
+`GET [base]/[type]{?[parameters]}`
+
+Here, `[parameters]` represents a series of encoded name-value pairs representing the filter for the query. The base request for each granular data service is specified on the respective page. The PHR MAY supply additional query parameters (i.e. the query parameters defined for the corresponding FHIR resource by the core FHIR specification), but the XIS is not required to be capable of processing these parameters, unless specified in the respective data service.
+
+### XIS: response message
+The XIS returns an HTTP Status code appropriate to the processing outcome as well as a Bundle, with `Bundle.type` equal to *searchset*, including the resources matching the search query. The resources included in the Bundle SHALL conform to the profiles listed in the respective data service.
+
+Usually, the matching resources include *literal references*, which are references to other FHIR resources that use the `.reference` element. These referenced resources are viewed as *secondary resources* and often are either Patient, Practitioner(Role) or Organization resources. Such resources support and contextualize the data exchanged via the granular data services listed above. Whenever these resources are referenced from other resources, they SHALL be resolvable, either by supporting a `read` interaction or by being explicitly included in the Bundle. Moreover they SHALL be regarded in the same context as the resource that contains the references. This is in line with the MedMij FHIR IGs defined by Nictiz, version [2020.01](https://informatiestandaarden.nictiz.nl/wiki/MedMij:V2020.01/FHIR_IG#Use_of_the_Reference_datatype) and [2020.02](https://informatiestandaarden.nictiz.nl/wiki/MedMij:V2020.02/FHIR_IG#Use_of_the_Reference_datatype).
+
+The previous in particular holds for secondary resources that are referenced by elements of datatype Reference that are marked as Must Support. The corresponding resources are explicitly specified in the CapabilityStatements corresponding to the data service.
 
 ## Care type
 In the transition from traditional to granular data services the context of exchanged data becomes less evident, as this context would normally be provided by the data service itself and its underlying use cases. In order to make the origin and context of data clear, the corresponding care type SHOULD be conveyed. This helps DVPs with filtering, grouping and logging, and makes it easier for citizens to interpret their data.
