@@ -1,5 +1,0 @@
----
-topic: FO
----
-
-# Functioneel ontwerp
