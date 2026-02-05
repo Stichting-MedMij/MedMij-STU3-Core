@@ -1,0 +1,9 @@
+# {{page-title}}
+ 
+## 1.0.0
+ 
+| Component                   | Description  | Ticket    |
+| --------------------------- | ------------ | --------- |
+| Granular exchange           | An initial page on granular exchange, including an overview of granular data services and guidance on care type, has been added. | [DOSINZAGE1-806](https://medmij.atlassian.net/browse/DOSINZAGE1-806) |
+| Granular data service index | The following granular data services have been added: <br/> <ul> <li> Retrieve MedMij Core - Alert (zib2017/STU3), version 1.0.0-beta.1 <li> Retrieve MedMij Core - Blood pressure (zib2017/STU3), version 1.0.0-beta.1 <li> Retrieve MedMij Core - Body height (zib2017/STU3), version 1.0.0-beta.1 <li> Retrieve MedMij Core - Body temperature (zib2017/STU3), version 1.0.0-beta.1 <li> Retrieve MedMij Core - Body weight (zib2017/STU3), version 1.0.0-beta.1 <li> Retrieve MedMij Core - Fluid balance (zib2017/STU3), version 1.0.0-beta.1 <li> Retrieve MedMij Core - Living situation (zib2017/STU3), version 1.0.0-beta.1 <li> Retrieve MedMij Core - Nutrition advice (zib2017/STU3), version 1.0.0-beta.1 <li> Retrieve MedMij Core - Payer (zib2017/STU3), version 1.0.0-beta.1 <li> Retrieve MedMij Core - Pulse rate (zib2017/STU3), version 1.0.0-beta.1 <li> Retrieve MedMij Core - Respiration (zib2017/STU3), version 1.0.0-beta.1 | [DOSINZAGE1-806](https://medmij.atlassian.net/browse/DOSINZAGE1-806) |
+| FHIR artifacts              | CapabilityStatements for the Retrieve and Serve transactions of the initial set of granular data services have been added. | [DOSINZAGE1-827](https://medmij.atlassian.net/browse/DOSINZAGE1-827) |
