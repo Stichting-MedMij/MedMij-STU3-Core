@@ -65,16 +65,16 @@ Note that currently, it is only (textually) indicated in this IG whether an elem
 For all granular data services the following technical specifications are applicable, unless deviations are explicitly mentioned on the page of the respective data service.
 
 ### PHR: request message
-The PHR executes an HTTP search against the endpoint of the XIS using an URL of the form:
+The PHR executes an HTTP search against the endpoint of the XIS using a URL of the form:
 
 `GET [base]/[type]{?[parameters]}`
 
-Here, `[parameters]` represents a series of encoded name-value pairs representing the filter for the query. The base request for each granular data service is specified on the respective page. The PHR MAY supply additional query parameters (i.e. the query parameters defined for the corresponding FHIR resource by the core FHIR specification), but the XIS is not required to be capable of processing these parameters, unless specified in the respective data service.
+Here, `[parameters]` represents a series of encoded name-value pairs representing the filter for the query. The base request for the granular data services is specified on their respective pages. The PHR MAY supply additional query parameters (i.e. the query parameters defined for the corresponding FHIR resource by the core FHIR specification), but the XIS is not required to be capable of processing these parameters, unless specified in the respective data service.
 
 ### XIS: response message
 The XIS returns an HTTP Status code appropriate to the processing outcome as well as a Bundle, with `Bundle.type` equal to *searchset*, including the resources matching the search query. The resources included in the Bundle SHALL conform to the profiles listed in the respective data service.
 
-Usually, the matching resources include *literal references*, which are references to other FHIR resources that use the `.reference` element. These referenced resources are viewed as *secondary resources* and often are either Patient, Practitioner(Role) or Organization resources. Such resources support and contextualize the data exchanged via the granular data services listed above. Whenever these resources are referenced from other resources, they SHALL be resolvable, either by supporting a `read` interaction or by being explicitly included in the Bundle. Moreover they SHALL be regarded in the same context as the resource that contains the references. This is in line with the MedMij FHIR IGs defined by Nictiz, version [2020.01](https://informatiestandaarden.nictiz.nl/wiki/MedMij:V2020.01/FHIR_IG#Use_of_the_Reference_datatype) and [2020.02](https://informatiestandaarden.nictiz.nl/wiki/MedMij:V2020.02/FHIR_IG#Use_of_the_Reference_datatype).
+Almost always, the matching resources include *literal references*, which are references to other FHIR resources that use the `.reference` element. These referenced resources are called *secondary resources* and often are either Patient, Practitioner(Role) or Organization resources. Such resources support and contextualize the data exchanged via the granular data services listed above. Whenever these resources are referenced from other resources, they SHALL be resolvable, either by supporting a `read` interaction or by being explicitly included in the Bundle. Moreover they SHALL be regarded in the same context as the resource that contains the references. This is in line with the MedMij FHIR IGs defined by Nictiz, version [2020.01](https://informatiestandaarden.nictiz.nl/wiki/MedMij:V2020.01/FHIR_IG#Use_of_the_Reference_datatype) and [2020.02](https://informatiestandaarden.nictiz.nl/wiki/MedMij:V2020.02/FHIR_IG#Use_of_the_Reference_datatype).
 
 The previous in particular holds for secondary resources that are referenced by elements of datatype Reference that are marked as Must Support. The corresponding resources are explicitly specified in the CapabilityStatements corresponding to the data service.
 
