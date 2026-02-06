@@ -1,5 +1,10 @@
 # {{page-title}}
- 
+
+## 1.0.1
+| Component                   | Description  | Ticket    |
+| --------------------------- | ------------ | --------- |
+| FHIR artifacts              | The mandatory `.acceptUnknown` element has been added to the CapabilityStatements. | [DOSINZAGE1-832](https://medmij.atlassian.net/browse/DOSINZAGE1-832) |
+
 ## 1.0.0
  
 | Component                   | Description  | Ticket    |
