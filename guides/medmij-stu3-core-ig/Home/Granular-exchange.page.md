@@ -54,14 +54,14 @@ The table below gives an overview of all cross-domain granular data services tha
 
 In the {{pagelink: GranularDataServiceIndex, text: Granular data service index}} each granular data service is described in more detail.
 
-Note that domain-specific data services are not included here, as these are not part of MedMij STU3 Core. Instead, these are further specified within the respective IGs corresponding to their domain. For instance, the granular data service 'Long-term Healthcare - Nursing report' is described in the IG of [MedMij STU3 Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare).
+Note that domain-specific data services are not included here, as these are not part of MedMij STU3 Core. Instead, these are further specified within the respective IGs corresponding to their domain. For instance, the granular data service 'Retrieve Long-term Healthcare - Nursing report' is described in the IG of [MedMij STU3 Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare).
 
 ## <a name="MustSupport"></a> Must Support
 For each granular data service within the {{pagelink: GranularDataServiceIndex, text: Granular data service index}}, one or more elements of the corresponding FHIR resources might be indicated as *Must Support*. Such elements have to be supported, which means that the DVA SHALL convey these in the FHIR resource if the corresponding data is present in the source system, and that the DVP SHALL process (the information in) these elements.
 
 Note that currently, it is only (textually) indicated in this IG whether an element needs to be supported, and no MedMij Core profiles that include the FHIR-native `mustSupport` flag have been created. One of the reasons for this approach is that some FHIR profiles in the [nictiz.fhir.nl.stu3.zib2017](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017) package are based on international profiles which use the `mustSupport` flag. These flags are inherited by the zib profiles, and would also be inherited by the MedMij Core profiles, thus making it unclear which elements need to be supported in the manner described above.
 
-## General technical specifications
+## <a name="GeneralTechnicalSpecifications"></a> General technical specifications
 For all granular data services the following technical specifications are applicable, unless deviations are explicitly mentioned on the page of the respective data service.
 
 ### PHR: request message
