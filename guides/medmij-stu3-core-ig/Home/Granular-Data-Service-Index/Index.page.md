@@ -12,7 +12,7 @@ This index contains all active granular data services that use FHIR STU3 in thei
     - **Data service version** - the version assigned to the data service as a whole (not to be confused with the version of the corresponding functional model or the package version of the corresponding FHIR profiles).
     - **System role(s)** - the system roles corresponding to the different transactions within each data service. Each system is of the form 'MMC-[CIM abbreviation]\[Transaction indicator\](-[Suffix])-[Data service version]-FHIR', where:
         - 'MMC' refers to MedMij Core;
-        - the CIM abbreviation consists of exactly two capital letters;
+        - the CIM abbreviation consists of exactly two capital letters indicating the English name of the CIM;
         - the Suffix is an optional addition, and is described in more detail {{pagelink: GranularExchange, text: here, anchor: PublicationGranularDataServices}};
         - the Transaction indicator is either 'R' or 'B', indicating a Retrieve (Dutch: Raadplegen) or Serve (Dutch: Beschikbaar stellen) transaction, respectively. The former transaction is intended for the PHR, while the latter is relevant for the XIS. As the corresponding transaction (group) can be derived from the system role, the transactions and transaction groups are not specified on the respective data service pages. Instead, these can be found in the [MedMij Catalogus](https://catalogus.medmij.nl/overzicht/actueel/actuele-catalogus).
     - **Relevant domain(s)** - the domains in which the granular data service is used, with links to the corresponding Simplifier projects.
