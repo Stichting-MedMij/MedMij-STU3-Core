@@ -87,7 +87,7 @@
           "interaction": [
             {
               "code": "read",
-              "documentation": "Strictly speaking, the `read` interaction does not need to be supported, since the server always includes this (secondary) resource in the Bundle. However, `.interaction` is mandatory, and `read` was deemed the most appropriate interaction."
+              "documentation": "Strictly speaking, the `read` interaction does not need to be supported, since the server always includes this (secondary) resource in the Bundle. However, `.interaction` is mandatory (note that it is optional from R4 onwards), and `read` was deemed the most appropriate interaction."
             }
           ]
         },
