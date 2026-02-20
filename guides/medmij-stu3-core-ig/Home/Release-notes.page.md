@@ -3,6 +3,7 @@
 ## 1.0.1
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
+| Granular data service index | Guidance on the format of system roles has been added. | [DOSINZAGE1-849](https://medmij.atlassian.net/browse/DOSINZAGE1-849) |
 | FHIR artifacts              | The mandatory `.acceptUnknown` element has been added to the CapabilityStatements. | [DOSINZAGE1-832](https://medmij.atlassian.net/browse/DOSINZAGE1-832) |
 
 ## 1.0.0
