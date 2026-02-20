@@ -8,7 +8,7 @@
   },
   "name": "MedMij Core Respiration Retrieve",
   "status": "active",
-  "date": "2026-02-04",
+  "date": "2026-02-26",
   "publisher": "MedMij",
   "contact": [
     {
@@ -38,6 +38,14 @@
       "display": "zib-Respiration"
     },
     {
+      "reference": "http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen-AdministrationDevice",
+      "display": "zib-Respiration-AdministeredOxygen-AdministrationDevice"
+    },
+    {
+      "reference": "http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen-AdministrationDeviceProduct",
+      "display": "zib-Respiration-AdministeredOxygen-AdministrationDeviceProduct"
+    },
+    {
       "reference": "http://fhir.nl/fhir/StructureDefinition/nl-core-patient",
       "display": "nl-core-patient"
     },
@@ -57,7 +65,7 @@
   "rest": [
     {
       "mode": "client",
-      "documentation": "Minimal requirements for a client to fulfill the 'Retrieve Respiration' transaction within MedMij STU3 Core (system role: MMC-RER-zib2017/STU3-1.0.0-beta.1-FHIR).",
+      "documentation": "Minimal requirements for a client to fulfill the 'Retrieve Respiration' transaction within MedMij STU3 Core (system role: MMC-RER-zib2017/STU3-1.0.0-beta.2-FHIR).",
       "resource": [
         {
           "type": "Observation",
@@ -70,6 +78,26 @@
             {
               "name": "code",
               "type": "token"
+            }
+          ]
+        },
+        {
+          "type": "DeviceUseStatement",
+          "documentation": "This is a secondary resource that needs to be resolvable by explicitly including it in the Bundle, as it is not possible for the client to retrieve the corresponding DeviceUseStatement from the Observation via a `read` (since the DeviceUseStatement references the Observation).",
+          "interaction": [
+            {
+              "code": "read",
+              "documentation": "Strictly speaking, the `read` interaction does not need to be supported, since the server always includes this (secondary) resource in the Bundle. However, `.interaction` is mandatory, and `read` was deemed the most appropriate interaction."
+            }
+          ]
+        },
+        {
+          "type": "Device",
+          "documentation": "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle.",
+          "interaction": [
+            {
+              "code": "read",
+              "documentation": "If the server includes this (secondary) resource in the Bundle, the client does not need to execute a `read`. However, since a server may choose to not include it in the Bundle, support of the `read` interaction is mandatory for a client."
             }
           ]
         },
