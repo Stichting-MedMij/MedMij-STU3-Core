@@ -67,7 +67,9 @@ For all granular data services the following technical specifications are applic
 ### PHR: request message
 The PHR executes an HTTP search against the endpoint of the XIS using a URL of the form:
 
-`GET [base]/[type]{?[parameters]}`
+```
+GET [base]/[type]{?[parameters]}
+```
 
 Here, `[parameters]` represents a series of encoded name-value pairs representing the filter for the query. The base request for the granular data services is specified on their respective pages. The PHR MAY supply additional query parameters (i.e. the query parameters defined for the corresponding FHIR resource by the core FHIR specification), but the XIS is not required to be capable of processing these parameters, unless specified in the respective data service.
 
