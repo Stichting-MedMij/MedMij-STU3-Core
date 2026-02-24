@@ -4,6 +4,7 @@
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
 | Granular data service index | Guidance on the format of system roles has been added. | [DOSINZAGE1-849](https://medmij.atlassian.net/browse/DOSINZAGE1-849) |
+| Granular data service index | The granular data service Retrieve MedMij Core - Respiration (zib2017/STU3) has been updated to version 1.0.0-beta.2. In this version, the AdministrationDevice concept of the Respiration CIM has been included in the scope of the data service. | [DOSINZAGE1-851](https://medmij.atlassian.net/browse/DOSINZAGE1-851) |
 | FHIR artifacts              | The mandatory `.acceptUnknown` element has been added to the CapabilityStatements. | [DOSINZAGE1-832](https://medmij.atlassian.net/browse/DOSINZAGE1-832) |
 
 ## 1.0.0
