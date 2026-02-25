@@ -1,6 +1,6 @@
 # {{page-title}}
 
-## 1.0.1
+## 1.1.0
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
 | Granular data service index | Guidance on the format of system roles has been added. | [DOSINZAGE1-849](https://medmij.atlassian.net/browse/DOSINZAGE1-849) |

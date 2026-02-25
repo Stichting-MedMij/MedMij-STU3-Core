@@ -30,7 +30,7 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Observation?code=http://loinc.org|29463-7` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effective[x]` <li> `.performer` (including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) <li> `.valueQuantity` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
-| **CapabilityStatement(s)** | [MedMij Core BodyWeight Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-BodyWeight-Retrieve&scope=medmij.fhir.nl.stu3.core@1.0.0) <br/> [MedMij Core BodyWeight Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-BodyWeight-Serve&scope=medmij.fhir.nl.stu3.core@1.0.0) |
+| **CapabilityStatement(s)** | [MedMij Core BodyWeight Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-BodyWeight-Retrieve&scope=medmij.fhir.nl.stu3.core@1.1.0) <br/> [MedMij Core BodyWeight Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-BodyWeight-Serve&scope=medmij.fhir.nl.stu3.core@1.1.0) |
 
 The FHIR profile is included below.
 
