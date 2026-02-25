@@ -10,8 +10,8 @@ topic: BodyWeight
 | **Id** | 900000403 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Body weight (zib2017/STU3) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Lichaamsgewicht (zib2017/STU3) |
-| **Data service version** | 1.0.0-beta.1 |
-| **System role(s)** | MMC-BWR-zib2017/STU3-1.0.0-beta.1-FHIR (PHR) <br/> MMC-BWB-zib2017/STU3-1.0.0-beta.1-FHIR (XIS) |
+| **Data service version** | 1.0.0-beta.2 |
+| **System role(s)** | MMC-BWR-zib2017/STU3-1.0.0-beta.2-FHIR (PHR) <br/> MMC-BWB-zib2017/STU3-1.0.0-beta.2-FHIR (XIS) |
 | **Relevant domain(s)** | [Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare/) |
 
 ## Functional model
@@ -29,7 +29,7 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR package** | [nictiz.fhir.nl.stu3.zib2017](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017) version 2.0.0 or compatible |
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Observation?code=http://loinc.org|29463-7` |
-| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effective[x]` <li> `.performer` (including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
+| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effective[x]` <li> `.performer` (including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) <li> `.valueQuantity` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
 | **CapabilityStatement(s)** | [MedMij Core BodyWeight Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-BodyWeight-Retrieve&scope=medmij.fhir.nl.stu3.core@1.0.0) <br/> [MedMij Core BodyWeight Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-BodyWeight-Serve&scope=medmij.fhir.nl.stu3.core@1.0.0) |
 
 The FHIR profile is included below.

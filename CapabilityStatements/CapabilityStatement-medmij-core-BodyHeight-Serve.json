@@ -8,7 +8,7 @@
   },
   "name": "MedMij Core BodyHeight Serve",
   "status": "active",
-  "date": "2026-02-04",
+  "date": "2026-02-26",
   "publisher": "MedMij",
   "contact": [
     {
@@ -57,7 +57,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Body height' transaction within MedMij STU3 Core (system role: MMC-BHB-zib2017/STU3-1.0.0-beta.1-FHIR).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Body height' transaction within MedMij STU3 Core (system role: MMC-BHB-zib2017/STU3-1.0.0-beta.2-FHIR).",
       "resource": [
         {
           "type": "Observation",
