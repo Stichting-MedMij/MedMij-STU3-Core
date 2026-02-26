@@ -10,8 +10,8 @@ topic: FluidBalance
 | **Id** | 900000410 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Fluid balance (zib2017/STU3) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Vochtbalans (zib2017/STU3) |
-| **Data service version** | 1.0.0-beta.1 |
-| **System role(s)** | MMC-FBR-zib2017/STU3-1.0.0-beta.1-FHIR (PHR) <br/> MMC-FBB-zib2017/STU3-1.0.0-beta.1-FHIR (XIS) |
+| **Data service version** | 1.0.0-beta.2 |
+| **System role(s)** | MMC-FBR-zib2017/STU3-1.0.0-beta.2-FHIR (PHR) <br/> MMC-FBB-zib2017/STU3-1.0.0-beta.2-FHIR (XIS) |
 | **Relevant domain(s)** | [Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare/) |
 
 ## Functional model
@@ -29,8 +29,8 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR package** | [nictiz.fhir.nl.stu3.zib2017](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017) version 2.0.0 or compatible |
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|364396009` |
-| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effective[x]` <li> `.performer` (including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
-| **CapabilityStatement(s)** | [MedMij Core FluidBalance Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-FluidBalance-Retrieve&scope=medmij.fhir.nl.stu3.core@1.0.0) <br/> [MedMij Core FluidBalance Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-FluidBalance-Serve&scope=medmij.fhir.nl.stu3.core@1.0.0) |
+| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effective[x]` <li> `.performer` (including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) <li> `.component:FluidTotalIn` <li> `.component:FluidTotalOut` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
+| **CapabilityStatement(s)** | [MedMij Core FluidBalance Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-FluidBalance-Retrieve&scope=medmij.fhir.nl.stu3.core@1.1.0) <br/> [MedMij Core FluidBalance Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-FluidBalance-Serve&scope=medmij.fhir.nl.stu3.core@1.1.0) |
 
 The FHIR profile is included below.
 

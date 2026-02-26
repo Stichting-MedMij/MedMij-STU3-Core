@@ -8,7 +8,7 @@
   },
   "name": "MedMij Core Alert Serve",
   "status": "active",
-  "date": "2026-02-04",
+  "date": "2026-02-26",
   "publisher": "MedMij",
   "contact": [
     {
@@ -27,6 +27,7 @@
   "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
   "kind": "requirements",
   "fhirVersion": "3.0.2",
+  "acceptUnknown": "both",
   "format": [
     "xml",
     "json"
@@ -56,7 +57,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Alert' transaction within MedMij STU3 Core (system role: MMC-ALB-zib2017/STU3-1.0.0-beta.1-FHIR).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Alert' transaction within MedMij STU3 Core (system role: MMC-ALB-zib2017/STU3-1.0.0-beta.2-FHIR).",
       "resource": [
         {
           "type": "Flag",
