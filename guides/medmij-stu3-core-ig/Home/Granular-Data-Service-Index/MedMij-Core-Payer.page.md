@@ -10,7 +10,7 @@ topic: Payer
 | **Id** | 900000407 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Payer (zib2017/STU3) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Betaler (zib2017/STU3) |
-| **Data service version** | 1.0.0-beta.1 |
+| **Data service version** | 1.0.0-beta.2 |
 | **System role(s)** | MMC-PAR-zib2017/STU3-1.0.0-beta.1-FHIR (PHR) <br/> MMC-PAB-zib2017/STU3-1.0.0-beta.1-FHIR (XIS) |
 | **Relevant domain(s)** | [Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare/) |
 
@@ -29,7 +29,7 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR package** | [nictiz.fhir.nl.stu3.zib2017](https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017) version 2.0.0 or compatible |
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Coverage` |
-| **Must Support** | <ul> <li> `.identifier` <li> `.subscriber` (only reference to [http://fhir.nl/fhir/StructureDefinition/nl-core-patient](https://simplifier.net/resolve?canonical=http://fhir.nl/fhir/StructureDefinition/nl-core-patient&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2)) <li> `.beneficiary` <li> `.period` <li> `.payor` (including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
+| **Must Support** | <ul> <li> `.identifier` <li> `.subscriber` (only reference to [http://fhir.nl/fhir/StructureDefinition/nl-core-patient](https://simplifier.net/resolve?canonical=http://fhir.nl/fhir/StructureDefinition/nl-core-patient&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2)) <li> `.beneficiary` <li> `.period` <li> `.payor` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
 | **CapabilityStatement(s)** | [MedMij Core Payer Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Payer-Retrieve&scope=medmij.fhir.nl.stu3.core@1.1.1) <br/> [MedMij Core Payer Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Payer-Serve&scope=medmij.fhir.nl.stu3.core@1.1.1) |
 
 The FHIR profile is included below.
