@@ -42,14 +42,6 @@
       "display": "nl-core-patient"
     },
     {
-      "reference": "http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole",
-      "display": "nl-core-practitionerrole"
-    },
-    {
-      "reference": "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner",
-      "display": "nl-core-practitioner"
-    },
-    {
       "reference": "http://fhir.nl/fhir/StructureDefinition/nl-core-organization",
       "display": "nl-core-organization"
     },
@@ -61,7 +53,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Payer' transaction within MedMij STU3 Core (system role: MMC-PAB-zib2017/STU3-1.0.0-beta.1-FHIR).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Payer' transaction within MedMij STU3 Core (system role: MMC-PAB-zib2017/STU3-1.0.0-beta.2-FHIR).",
       "resource": [
         {
           "type": "Coverage",
@@ -73,26 +65,6 @@
         },
         {
           "type": "Patient",
-          "documentation": "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle.",
-          "interaction": [
-            {
-              "code": "read",
-              "documentation": "If the server always includes this (secondary) resource in the Bundle, support of the `read` interaction is optional."
-            }
-          ]
-        },
-        {
-          "type": "PractitionerRole",
-          "documentation": "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle.",
-          "interaction": [
-            {
-              "code": "read",
-              "documentation": "If the server always includes this (secondary) resource in the Bundle, support of the `read` interaction is optional."
-            }
-          ]
-        },
-        {
-          "type": "Practitioner",
           "documentation": "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle.",
           "interaction": [
             {

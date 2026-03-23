@@ -46,7 +46,7 @@ The table below gives an overview of all cross-domain granular data services tha
 | 900000410 | {{pagelink: FluidBalance, text: Retrieve MedMij Core - Fluid balance (zib2017/STU3)}} | Verzamelen MedMij Core - Vochtbalans (zib2017/STU3) | 1.0.0-beta.2 |
 | 900000406 | {{pagelink: LivingSituation, text: Retrieve MedMij Core - Living situation (zib2017/STU3)}} | Verzamelen MedMij Core - Woonsituatie (zib2017/STU3) | 1.0.0-beta.2 |
 | 900000405 | {{pagelink: NutritionAdvice, text: Retrieve MedMij Core - Nutrition advice (zib2017/STU3)}} | Verzamelen MedMij Core - Voedingsadvies (zib2017/STU3) | 1.0.0-beta.1 |
-| 900000407 | {{pagelink: Payer, text: Retrieve MedMij Core - Payer (zib2017/STU3)}} | Verzamelen MedMij Core - Betaler (zib2017/STU3) | 1.0.0-beta.1 |
+| 900000407 | {{pagelink: Payer, text: Retrieve MedMij Core - Payer (zib2017/STU3)}} | Verzamelen MedMij Core - Betaler (zib2017/STU3) | 1.0.0-beta.2 |
 | 900000412 | {{pagelink: PulseRate, text: Retrieve MedMij Core - Pulse rate (zib2017/STU3)}} | Verzamelen MedMij Core - Polsfrequentie (zib2017/STU3) | 1.0.0-beta.2 |
 | 900000411 | {{pagelink: Respiration, text: Retrieve MedMij Core - Respiration (zib2017/STU3)}} | Verzamelen MedMij Core - Ademhaling (zib2017/STU3) | 1.0.0-beta.2 |
 
