@@ -8,7 +8,7 @@
 | FHIR artifacts              | The mandatory `.acceptUnknown` element has been added to the CapabilityStatements. | [DOSINZAGE1-832](https://medmij.atlassian.net/browse/DOSINZAGE1-832) |
 
 ## 1.0.0
- 
+
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
 | Granular exchange           | An initial page on granular exchange, including an overview of granular data services and guidance on care type, has been added. | [DOSINZAGE1-806](https://medmij.atlassian.net/browse/DOSINZAGE1-806) |

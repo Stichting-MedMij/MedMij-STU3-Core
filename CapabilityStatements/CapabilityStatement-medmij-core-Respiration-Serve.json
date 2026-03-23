@@ -23,7 +23,7 @@
     }
   ],
   "description": "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Respiration' transaction within MedMij STU3 Core.",
-  "purpose": "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide of the corresponding information standard should be consulted.",
+  "purpose": "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted.",
   "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
   "kind": "requirements",
   "fhirVersion": "3.0.2",
@@ -83,7 +83,7 @@
         },
         {
           "type": "DeviceUseStatement",
-          "documentation": "This is a secondary resource that needs to be resolvable by explicitly including it in the Bundle, since it is not possible for the client to retrieve the DeviceUseStatement corresponding to the Observation based on a reference within that Observation, as the reference is reversed (i.e. the DeviceUseStatement references the Observation).",
+          "documentation": "This is a secondary resource that needs to be resolvable by explicitly including it in the Bundle, as it is not possible for the client to retrieve the corresponding DeviceUseStatement from the Observation via a `read` (since the DeviceUseStatement references the Observation).",
           "interaction": [
             {
               "code": "read",
