@@ -12,7 +12,7 @@ topic: Alert
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Alert (zib2017/STU3) |
 | **Data service version** | 1.0.0-rc.1 |
 | **System role(s)** | MMC-ALR-zib2017/STU3-1.0.0-rc.1-FHIR (PHR) <br/> MMC-ALB-zib2017/STU3-1.0.0-rc.1-FHIR (XIS) |
-| **Relevant domain(s)** | [Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare/) |
+| **Used in Implementation Guide(s)** | [Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare/) |
 
 ## Functional model
 | | |
