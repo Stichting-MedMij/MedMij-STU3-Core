@@ -15,7 +15,7 @@ This index contains all active granular data services that use FHIR STU3 in thei
         - the CIM abbreviation consists of exactly two capital letters indicating the English name of the CIM;
         - the Suffix is an optional addition, and is described in more detail {{pagelink: GranularExchange, text: here, anchor: PublicationGranularDataServices}};
         - the Transaction indicator is either 'R' or 'B', indicating a Retrieve (Dutch: Raadplegen) or Serve (Dutch: Beschikbaar stellen) transaction, respectively. The former transaction is intended for the PHR, while the latter is relevant for the XIS. As the corresponding transaction (group) can be derived from the system role, the transactions and transaction groups are not specified on the respective data service pages. Instead, these can be found in the [MedMij Catalogus](https://catalogus.medmij.nl/overzicht/actueel/actuele-catalogus).
-    - **Relevant domain(s)** - the domains in which the granular data service is used, with links to the corresponding Simplifier projects.
+    - **Used in Implementation Guide(s)** - the IGs (and corresponding domains) in which the granular data service is used, with links to the corresponding Simplifier projects.
 - **Functional model**
     - **CIM** - the underlying Clinical Information Model, which is often a zib.
     - **Functional version** - the version of the CIM. For a CIM that is a zib, this version is of the form '*x.y*([zib publication])', e.g. '3.1(2017)'. For CIMs that are defined by MedMij as a Logical Model, the version of the corresponding FHIR package is suitable as the functional version.
@@ -23,7 +23,7 @@ This index contains all active granular data services that use FHIR STU3 in thei
 - **Technical specification**
     - **FHIR profile(s)** - the FHIR profiles that are used to exchange the CIM.
     - **FHIR package** - the FHIR package in which the FHIR profiles have been published.
-    - **FHIR version** - the version of FHIR in which the profiles corresponding to the CIM have been created; for all data services mentioned in or linked to from this IG, the FHIR version will be *STU3*.
+    - **FHIR version** - the version of FHIR in which the profiles corresponding to the CIM have been created, which is always *STU3* in this IG.
     - **Search request** - the request to be executed by the PHR to retrieve the data corresponding to the granular data service.
     - **Must Support** - the elements that have to be supported in the manner described {{pagelink: GranularExchange, text: here, anchor: MustSupport}}.
     - **CapabilityStatement(s)** - the FHIR CapabilityStatements that describe the minimal requirements for a client or server to fulfill the corresponding transaction(s) defined within the data service.
