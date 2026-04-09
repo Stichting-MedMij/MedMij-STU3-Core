@@ -1,5 +1,11 @@
 # {{page-title}}
 
+## 1.2.1
+
+| Component                   | Description  | Ticket    |
+| --------------------------- | ------------ | --------- |
+| Granular exchange           | The guidance on the publication of granular data services has been updated. | [DOSINZAGE1-975](https://medmij.atlassian.net/browse/DOSINZAGE1-975) |
+
 ## 1.2.0
 
 | Component                   | Description  | Ticket    |
