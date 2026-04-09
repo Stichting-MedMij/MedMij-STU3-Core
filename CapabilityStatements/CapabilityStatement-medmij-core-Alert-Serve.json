@@ -8,7 +8,7 @@
   },
   "name": "MedMij Core Alert Serve",
   "status": "active",
-  "date": "2026-04-01",
+  "date": "2026-04-09",
   "publisher": "MedMij",
   "contact": [
     {
@@ -57,7 +57,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Alert' transaction within MedMij STU3 Core (system role: MMC-ALB-zib2017/STU3-1.0.0-rc.1-FHIR).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Alert' transaction within MedMij STU3 Core (system role: MMC-ALB-zib2017/STU3-rc.2).",
       "resource": [
         {
           "type": "Flag",
