@@ -57,7 +57,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Body temperature' transaction within MedMij STU3 Core (system role: MMC-BTB-zib2017/STU3-rc.2
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Body temperature' transaction within MedMij STU3 Core (system role: MMC-BTB-zib2017/STU3-rc.2).",
       "resource": [
         {
           "type": "Observation",
