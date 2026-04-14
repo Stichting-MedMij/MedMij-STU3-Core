@@ -10,8 +10,8 @@ topic: NutritionAdvice
 | **Id** | 900000405 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Nutrition advice (zib2017/STU3) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Voedingsadvies (zib2017/STU3) |
-| **Data service version** | 1.0.0-rc.1 |
-| **System role(s)** | MMC-NAR-zib2017/STU3-1.0.0-rc.1-FHIR (PHR) <br/> MMC-NAB-zib2017/STU3-1.0.0-rc.1-FHIR (XIS) |
+| **Data service version** | 1.0.0-rc.2 |
+| **System role(s)** | MMC-NAR-zib2017/STU3-rc.2 (PHR) <br/> MMC-NAB-zib2017/STU3-rc.2 (XIS) |
 | **Used in Implementation Guide(s)** | [Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare/) |
 
 ## Functional model
@@ -30,7 +30,7 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/NutritionOrder` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.patient` <li> `.dateTime` <li> `.orderer` (including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
-| **CapabilityStatement(s)** | [MedMij Core NutritionAdvice Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-NutritionAdvice-Retrieve&scope=medmij.fhir.nl.stu3.core@1.2.0) <br/> [MedMij Core NutritionAdvice Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-NutritionAdvice-Serve&scope=medmij.fhir.nl.stu3.core@1.2.0) |
+| **CapabilityStatement(s)** | [MedMij Core NutritionAdvice Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-NutritionAdvice-Retrieve&scope=medmij.fhir.nl.stu3.core@1.2.1) <br/> [MedMij Core NutritionAdvice Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-NutritionAdvice-Serve&scope=medmij.fhir.nl.stu3.core@1.2.1) |
 
 The FHIR profile is included below.
 

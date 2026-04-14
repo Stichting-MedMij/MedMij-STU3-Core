@@ -21,34 +21,34 @@ This page explains the way in which granular exchange takes place in the context
 - The DVP determines the set of granular data services to retrieve. Hence, the responsibility for orchestration lies with the DVP, consistent with the MedMij principles. Moreover, the FHIR queries for retrieving the underlying data remain unchanged, as no additional search parameter for domain is required.
 
 ## <a name="PublicationGranularDataServices"></a> Publication of granular data services
-This section describes how cross-domain and domain-specific CIMs are defined and published as separate data services. It focuses on the representation of these data services in the ZAL and the Data Service Name List (Gegevensdienstnamenlijst, abbreviated GNL) of MedMij. It aligns with the two-layer model, consisting of cross-domain and domain-specific data services.
+This section describes how cross-domain and domain-specific CIMs are defined and published as separate data services. It focuses on the definition of these data services in this IG and domain-specific IGs, respectively, as well as their representation in the Data Service Name List (Gegevensdienstnamenlijst, abbreviated GNL) of MedMij.
 
-Cross-domain data services are published as generic data services on the ZAL, and are given a display name of the form '[Function] MedMij Core - [CIM name in Dutch] ([Suffix]) [Data service version]', for instance 'Verzamelen MedMij Core - Bloeddruk (zib2017/STU3) 1.0.0'. The Suffix is an optional addition to the data service name necessary to differentiate data services that have multiple variants (for instance, different functional versions or different FHIR versions). In case a granular data service corresponds to a zib, the corresponding baseline is used as suffix, e.g. 'zib2017/STU3'.
+The technical name of cross-domain data services (which is used in this IG) has the form '[Function] MedMij Core - [CIM name in English] ([Suffix]) [Data service version]', for instance 'Retrieve MedMij Core - Blood pressure (zib2017/STU3) 1.0.0'. The Suffix is an optional addition to the data service name necessary to differentiate data services that have multiple variants (for instance, different functional versions or different FHIR versions). In case a granular data service corresponds to a zib, the corresponding baseline is used as suffix, e.g. 'zib2017/STU3'.
 
-On the other hand, domain-specific data services are registered on the ZAL per domain. This is reflected in the display name, which is of the form '[Function] [Domain name in Dutch] - [CIM name in Dutch] ([Suffix]) [Data service version]', for instance 'Verzamelen Langdurige Zorg - Dagrapportage 1.0.0'.
+On the other hand, domain-specific data services have a technical name of the form '[Function] [Domain name in English] - [CIM name in English] ([Suffix]) [Data service version]', for instance 'Retrieve Long-term Healthcare - Nursing report 1.0.0'.
 
-Note that in this IG, mainly the English names for the granular data services are used.
-
-The following metadata is added to the ZAL and GNL for each granular data service:
+The following metadata is added to the GNL for each granular data service:
 - The *Id* contains the data service number. The exact format of this number for granular data services still needs to be decided upon.
-- The *Data service name* (Gegevensdienstnaam) is the display name of the data service, and follows the formats described above.
+- The *Data service name* is the (patient-friendly) display name of the data service, and follows the formats described below:
+    - For cross-domain data services, the display name has the form '[CIM name in Dutch]', for instance 'Bloeddruk'. Note that multiple cross-domain data services might have the same display name (i.e. if CIMs with the same name are exchanged in both STU3 and R4), but that uniqueness of the data services is ensured by the id;
+    - For domain-specific data services, the display name has the form '[Domain name in Dutch] - [CIM name in Dutch]', for instance 'Langdurige Zorg - Dagrapportage'.
 
 ## Overview of granular data services
 The table below gives an overview of all cross-domain granular data services that use FHIR STU3 in their technical implementation.
 
 | Id | Data service name without version (English) | Data service name without version (Dutch) | Data service version|
 | --- | --- | --- | --- |
-| 900000404 | {{pagelink: Alert, text: Retrieve MedMij Core - Alert (zib2017/STU3)}} | Verzamelen MedMij Core - Alert (zib2017/STU3) | 1.0.0-rc.1 |
-| 900000401 | {{pagelink: BloodPressure, text: Retrieve MedMij Core - Blood pressure (zib2017/STU3)}} | Verzamelen MedMij Core - Bloeddruk (zib2017/STU3) | 1.0.0-rc.1 |
-| 900000402 | {{pagelink: BodyHeight, text: Retrieve MedMij Core - Body height (zib2017/STU3)}} | Verzamelen MedMij Core - Lichaamslengte (zib2017/STU3) | 1.0.0-rc.1 |
-| 900000409 | {{pagelink: BodyTemperature, text: Retrieve MedMij Core - Body temperature (zib2017/STU3)}} | Verzamelen MedMij Core - Lichaamstemperatuur (zib2017/STU3) | 1.0.0-rc.1 |
-| 900000403 | {{pagelink: BodyWeight, text: Retrieve MedMij Core - Body weight (zib2017/STU3)}} | Verzamelen MedMij Core - Lichaamsgewicht (zib2017/STU3) | 1.0.0-rc.1 |
-| 900000410 | {{pagelink: FluidBalance, text: Retrieve MedMij Core - Fluid balance (zib2017/STU3)}} | Verzamelen MedMij Core - Vochtbalans (zib2017/STU3) | 1.0.0-rc.1 |
-| 900000406 | {{pagelink: LivingSituation, text: Retrieve MedMij Core - Living situation (zib2017/STU3)}} | Verzamelen MedMij Core - Woonsituatie (zib2017/STU3) | 1.0.0-rc.1 |
-| 900000405 | {{pagelink: NutritionAdvice, text: Retrieve MedMij Core - Nutrition advice (zib2017/STU3)}} | Verzamelen MedMij Core - Voedingsadvies (zib2017/STU3) | 1.0.0-rc.1 |
-| 900000407 | {{pagelink: Payer, text: Retrieve MedMij Core - Payer (zib2017/STU3)}} | Verzamelen MedMij Core - Betaler (zib2017/STU3) | 1.0.0-rc.1 |
-| 900000412 | {{pagelink: PulseRate, text: Retrieve MedMij Core - Pulse rate (zib2017/STU3)}} | Verzamelen MedMij Core - Polsfrequentie (zib2017/STU3) | 1.0.0-rc.1 |
-| 900000411 | {{pagelink: Respiration, text: Retrieve MedMij Core - Respiration (zib2017/STU3)}} | Verzamelen MedMij Core - Ademhaling (zib2017/STU3) | 1.0.0-rc.1 |
+| 900000404 | {{pagelink: Alert, text: Retrieve MedMij Core - Alert (zib2017/STU3)}} | Verzamelen MedMij Core - Alert (zib2017/STU3) | 1.0.0-rc.2 |
+| 900000401 | {{pagelink: BloodPressure, text: Retrieve MedMij Core - Blood pressure (zib2017/STU3)}} | Verzamelen MedMij Core - Bloeddruk (zib2017/STU3) | 1.0.0-rc.2 |
+| 900000402 | {{pagelink: BodyHeight, text: Retrieve MedMij Core - Body height (zib2017/STU3)}} | Verzamelen MedMij Core - Lichaamslengte (zib2017/STU3) | 1.0.0-rc.2 |
+| 900000409 | {{pagelink: BodyTemperature, text: Retrieve MedMij Core - Body temperature (zib2017/STU3)}} | Verzamelen MedMij Core - Lichaamstemperatuur (zib2017/STU3) | 1.0.0-rc.2 |
+| 900000403 | {{pagelink: BodyWeight, text: Retrieve MedMij Core - Body weight (zib2017/STU3)}} | Verzamelen MedMij Core - Lichaamsgewicht (zib2017/STU3) | 1.0.0-rc.2 |
+| 900000410 | {{pagelink: FluidBalance, text: Retrieve MedMij Core - Fluid balance (zib2017/STU3)}} | Verzamelen MedMij Core - Vochtbalans (zib2017/STU3) | 1.0.0-rc.2 |
+| 900000406 | {{pagelink: LivingSituation, text: Retrieve MedMij Core - Living situation (zib2017/STU3)}} | Verzamelen MedMij Core - Woonsituatie (zib2017/STU3) | 1.0.0-rc.2 |
+| 900000405 | {{pagelink: NutritionAdvice, text: Retrieve MedMij Core - Nutrition advice (zib2017/STU3)}} | Verzamelen MedMij Core - Voedingsadvies (zib2017/STU3) | 1.0.0-rc.2 |
+| 900000407 | {{pagelink: Payer, text: Retrieve MedMij Core - Payer (zib2017/STU3)}} | Verzamelen MedMij Core - Betaler (zib2017/STU3) | 1.0.0-rc.2 |
+| 900000412 | {{pagelink: PulseRate, text: Retrieve MedMij Core - Pulse rate (zib2017/STU3)}} | Verzamelen MedMij Core - Polsfrequentie (zib2017/STU3) | 1.0.0-rc.2 |
+| 900000411 | {{pagelink: Respiration, text: Retrieve MedMij Core - Respiration (zib2017/STU3)}} | Verzamelen MedMij Core - Ademhaling (zib2017/STU3) | 1.0.0-rc.2 |
 
 **Table 1: Granular data services**
 

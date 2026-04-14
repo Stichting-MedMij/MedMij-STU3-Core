@@ -1,5 +1,12 @@
 # {{page-title}}
 
+## 1.2.1
+
+| Component                   | Description  | Ticket    |
+| --------------------------- | ------------ | --------- |
+| Granular exchange           | The guidance on the publication of granular data services has been updated. | [DOSINZAGE1-975](https://medmij.atlassian.net/browse/DOSINZAGE1-975) |
+| Granular data service index | The following granular data services have been updated: <br/> <ul> <li> Retrieve MedMij Core - Alert (zib2017/STU3), version 1.0.0-rc.2 <ul> <li> The system roles have been updated to conform to the 30-character limit. </ul> <li> Retrieve MedMij Core - Blood pressure (zib2017/STU3), version 1.0.0-rc.2 <ul> <li> The system roles have been updated to conform to the 30-character limit. </ul> <li> Retrieve MedMij Core - Body height (zib2017/STU3), version 1.0.0-rc.2 <ul> <li> The system roles have been updated to conform to the 30-character limit. </ul> <li> Retrieve MedMij Core - Body temperature (zib2017/STU3), version 1.0.0-rc.2 <ul> <li> The system roles have been updated to conform to the 30-character limit. </ul> <li> Retrieve MedMij Core - Body weight (zib2017/STU3), version 1.0.0-rc.2 <ul> <li> The system roles have been updated to conform to the 30-character limit. </ul> <li> Retrieve MedMij Core - Fluid balance (zib2017/STU3), version 1.0.0-rc.2 <ul> <li> The system roles have been updated to conform to the 30-character limit. </ul> <li> Retrieve MedMij Core - Living situation (zib2017/STU3), version 1.0.0-rc.2 <ul> <li> The system roles have been updated to conform to the 30-character limit. </ul> <li> Retrieve MedMij Core - Nutrition advice (zib2017/STU3), version 1.0.0-rc.2 <ul> <li> The system roles have been updated to conform to the 30-character limit. </ul> <li> Retrieve MedMij Core - Payer (zib2017/STU3), version 1.0.0-rc.2 <ul> <li> The system roles have been updated to conform to the 30-character limit. </ul> <li> Retrieve MedMij Core - Pulse rate (zib2017/STU3), version 1.0.0-rc.2 <ul> <li> The system roles have been updated to conform to the 30-character limit. </ul> <li> Retrieve MedMij Core - Respiration (zib2017/STU3), version 1.0.0-rc.2 <ul> <li> The system roles have been updated to conform to the 30-character limit. </ul> | [DOSINZAGE1-982](https://medmij.atlassian.net/browse/DOSINZAGE1-982) |
+
 ## 1.2.0
 
 | Component                   | Description  | Ticket    |
