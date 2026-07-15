@@ -10,8 +10,8 @@ topic: PulseRate
 | **Id** | 900000412 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Pulse rate (zib2017/STU3) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Polsfrequentie (zib2017/STU3) |
-| **Data service version** | 1.0.0-rc.2 |
-| **System role(s)** | MMC-PRR-zib2017/STU3-rc.2 (PHR) <br/> MMC-PRB-zib2017/STU3-rc.2 (XIS) |
+| **Data service version** | 1.0.0-rc.3 |
+| **System role(s)** | MMC-PRR-zib2017/STU3-rc.3 (PHR) <br/> MMC-PRB-zib2017/STU3-rc.3 (XIS) |
 | **Used in Implementation Guide(s)** | [Long-term Healthcare](https://simplifier.net/medmij-stu3-long-term-healthcare/) |
 
 ## Functional model
@@ -20,7 +20,7 @@ topic: PulseRate
 | **CIM** | [zib PulseRate](https://zibs.nl/wiki/PulseRate-v3.1(2017EN)) |
 | **Functional version** | 3.1(2017) |
 
-The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib2017bbr/zib2017bbr-html-20211029T113909/ds-2.16.840.1.113883.2.4.3.11.60.40.3.12.7-2017-12-31T000000.html).
+The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib2017bbr/zib2017bbr-html-20211029T113909/tr-2.16.840.1.113883.2.4.3.11.60.7.4.2.12.7-2017-12-31T000000.html).
 
 ## Technical specification
 | | |
