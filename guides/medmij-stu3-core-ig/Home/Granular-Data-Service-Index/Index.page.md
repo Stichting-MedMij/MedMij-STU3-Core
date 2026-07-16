@@ -9,7 +9,7 @@ This index contains all active granular data services that use FHIR STU3 in thei
 - **Overview**
     - **Id** - the id of the data service that is used to uniquely define it in the [MedMij Catalogus](https://catalogus.medmij.nl/overzicht/actueel/actuele-catalogus).
     - **Data service name without version** - the name of the data service, both in English and Dutch, of which the Dutch one, appended with the data service version, is used in the MedMij Catalogus.
-    - **Data service version** - the version assigned to the data service as a whole (not to be confused with the version of the corresponding functional model or the package version of the corresponding FHIR profiles).
+    - **Data service version** - the version assigned to the data service as a whole (not to be confused with the version of the corresponding functional model or the package version of the corresponding FHIR profiles). More guidance on this version can be found {{pagelink: GranularExchange, text: here, anchor: VersioningGranularDataServices}}.
     - **System role(s)** - the system roles corresponding to the different transactions within each data service. Each system is of the form 'MMC-[CIM abbreviation]\[Transaction indicator\](-[Suffix])-[Data service version (abbreviated)]', where:
         - 'MMC' refers to MedMij Core;
         - the CIM abbreviation consists of exactly two capital letters indicating the English name of the CIM;
@@ -19,7 +19,7 @@ This index contains all active granular data services that use FHIR STU3 in thei
     - **Used in Implementation Guide(s)** - the IGs (and corresponding domains) in which the granular data service is used, with links to the corresponding Simplifier projects.
 - **Functional model**
     - **CIM** - the underlying Clinical Information Model, which is often a zib.
-    - **Functional version** - the version of the CIM. For a CIM that is a zib, this version is of the form '*x.y*([zib publication])', e.g. '3.1(2017)'. For CIMs that are defined by MedMij as a Logical Model, the version of the corresponding FHIR package is suitable as the functional version.
+    - **Functional version** - the version of the CIM. For a CIM that is a zib, this version is of the form '*x.y*([zib publication])', e.g. '3.1(2017)'. For CIMs that are defined by MedMij as a Logical Model, the version of the corresponding FHIR package is suitable as the functional version. More guidance on this version can be found {{pagelink: GranularExchange, text: here, anchor: VersioningGranularDataServices}}.
     - Moreover, either a link to the functional model in ART-DECOR, or a Logical Model is included in this section.
 - **Technical specification**
     - **FHIR profile(s)** - the FHIR profiles that are used to exchange the CIM.
