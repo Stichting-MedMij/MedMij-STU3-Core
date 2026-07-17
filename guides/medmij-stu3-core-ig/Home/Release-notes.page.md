@@ -5,6 +5,7 @@
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
 | Granular exchange           | More elaborate guidance on the versioning of granular data services has been added. | [MC-3](https://medmij.atlassian.net/browse/MC-3) |
+| Dataset                     | Logical Models corresponding to the HealthcareProvider and HealthProfessional information models have been added. | [MC-2](https://medmij.atlassian.net/browse/MC-2) |
 
 ## 1.2.1
 
