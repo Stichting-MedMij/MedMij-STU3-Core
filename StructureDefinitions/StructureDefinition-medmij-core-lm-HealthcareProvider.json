@@ -38,7 +38,7 @@
   "description": "A healthcare provider is an organization that offers and provides medical, paramedic and/or nursing care to patients/clients. Examples include: hospitals, nursing homes, doctor's offices.",
   "purpose": "This LogicalModel represents the HealthcareProvider Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) HealthcareProvider v3.1.1 (2020)](https://zibs.nl/wiki/HealthcareProvider-v3.1.1(2017EN)) adjusted such that it is suitable for implementation purposes in the context of MedMij.",
   "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
-  "fhirVersion": "4.0.1",
+  "fhirVersion": "3.0.2",
   "mapping": [
     {
       "identity": "zib-healthcareprovider-v3.1.1-2017EN",

@@ -38,7 +38,7 @@
   "description": "A health professional is a person who is authorized to perform actions in the field of individual healthcare.",
   "purpose": "This LogicalModel represents the HealthProfessional Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) HealthProfessional v3.2 (2017)](https://zibs.nl/wiki/HealthProfessional-v3.2(2017EN)) adjusted such that it is suitable for implementation purposes in the context of MedMij.",
   "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
-  "fhirVersion": "4.0.1",
+  "fhirVersion": "3.0.2",
   "mapping": [
     {
       "identity": "zib-healthprofessional-v3.2-2017EN",
