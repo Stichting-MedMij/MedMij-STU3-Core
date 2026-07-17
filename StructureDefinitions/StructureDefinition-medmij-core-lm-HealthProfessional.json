@@ -72,7 +72,7 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "medmij-core-lm-HealthProfessional",
+  "type": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-HealthProfessional",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "differential": {
@@ -265,7 +265,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.4.1--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.4.1--20171231000000"
         },
         "mapping": [
           {
@@ -465,7 +465,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.22--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.22--20171231000000"
         },
         "mapping": [
           {
@@ -647,7 +647,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.4--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.4--20171231000000"
         },
         "mapping": [
           {
@@ -763,7 +763,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.10--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.10--20171231000000"
         },
         "mapping": [
           {
@@ -823,7 +823,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20171231000000"
         },
         "mapping": [
           {
@@ -945,7 +945,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000"
         },
         "mapping": [
           {
@@ -977,7 +977,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20171231000000"
         },
         "mapping": [
           {
@@ -1065,7 +1065,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20171231000000"
         },
         "mapping": [
           {
@@ -1093,9 +1093,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": [
-              "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-HealthcareProvider"
-            ]
+            "targetProfile": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-HealthcareProvider"
           }
         ],
         "mapping": [
@@ -1125,7 +1123,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.1.5--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.1.5--20171231000000"
         },
         "mapping": [
           {

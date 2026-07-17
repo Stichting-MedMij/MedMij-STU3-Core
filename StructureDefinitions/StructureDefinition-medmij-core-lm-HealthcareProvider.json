@@ -67,7 +67,7 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "medmij-core-lm-HealthcareProvider",
+  "type": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-HealthcareProvider",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "differential": {
@@ -199,7 +199,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20171231000000"
         },
         "mapping": [
           {
@@ -320,7 +320,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000"
         },
         "mapping": [
           {
@@ -352,7 +352,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20171231000000"
         },
         "mapping": [
           {
@@ -440,7 +440,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20171231000000"
         },
         "mapping": [
           {
@@ -612,7 +612,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.4--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.4--20171231000000"
         },
         "mapping": [
           {
@@ -728,7 +728,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.10--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.10--20171231000000"
         },
         "mapping": [
           {
@@ -788,7 +788,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20171231000000"
         },
         "mapping": [
           {
@@ -820,7 +820,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20171231000000"
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20171231000000"
         },
         "mapping": [
           {
