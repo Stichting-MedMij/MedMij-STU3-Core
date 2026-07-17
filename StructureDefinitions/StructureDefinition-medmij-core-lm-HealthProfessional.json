@@ -72,7 +72,7 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-HealthProfessional",
+  "type": "medmij-core-lm-HealthProfessional",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "differential": {
