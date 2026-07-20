@@ -1,0 +1,840 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "medmij-core-lm-HealthcareProvider",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+      "valueCode": "can-be-target"
+    }
+  ],
+  "url": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-HealthcareProvider",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.528.1.1023.3.6.3"
+    }
+  ],
+  "name": "MedMijCoreLmHealthcareProvider",
+  "title": "HealthcareProvider",
+  "status": "active",
+  "publisher": "MedMij",
+  "contact": [
+    {
+      "name": "MedMij",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "A healthcare provider is an organization that offers and provides medical, paramedic and/or nursing care to patients/clients. Examples include: hospitals, nursing homes, doctor's offices.",
+  "purpose": "This LogicalModel represents the HealthcareProvider Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) HealthcareProvider v3.1.1 (2020)](https://zibs.nl/wiki/HealthcareProvider-v3.1.1(2017EN)) adjusted such that it is suitable for implementation purposes in the context of MedMij.",
+  "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
+  "fhirVersion": "3.0.2",
+  "mapping": [
+    {
+      "identity": "zib-healthcareprovider-v3.1.1-2017EN",
+      "name": "zib HealthcareProvider-v3.1.1(2017EN)",
+      "uri": "https://zibs.nl/wiki/HealthcareProvider-v3.1.1(2017EN)"
+    },
+    {
+      "identity": "zib-contactinformation-v1.0-2017EN",
+      "name": "zib ContactInformation-v1.0(2017EN)",
+      "uri": "https://zibs.nl/wiki/ContactInformation-v1.0(2017EN)"
+    },
+    {
+      "identity": "zib-addressinformation-v1.0-2017EN",
+      "name": "zib AddressInformation-v1.0(2017EN)",
+      "uri": "https://zibs.nl/wiki/AddressInformation-v1.0(2017EN)"
+    },
+    {
+      "identity": "medmij-core-dataset-130-2026xxyy",
+      "name": "Dataset MedMij STU3 Core 1.3.0 2026xxyy"
+    },
+    {
+      "identity": "SNOMED",
+      "name": "SNOMED CT",
+      "uri": "http://snomed.info/sct"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "medmij-core-lm-HealthcareProvider",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "medmij-core-lm-HealthcareProvider",
+        "path": "medmij-core-lm-HealthcareProvider",
+        "short": "HealthcareProvider",
+        "definition": "A healthcare provider is an organization that offers and provides medical, paramedic and/or nursing care to patients/clients. Examples include: hospitals, nursing homes, doctor's offices.",
+        "alias": [
+          "Zorgaanbieder"
+        ],
+        "mapping": [
+          {
+            "identity": "zib-healthcareprovider-v3.1.1-2017EN",
+            "map": "NL-CM:17.2.1",
+            "comment": "HealthcareProvider"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-45",
+            "comment": "HealthcareProvider"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "257622000",
+            "comment": "zorginstelling"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.HealthcareProviderIdentificationNumber",
+        "path": "medmij-core-lm-HealthcareProvider.HealthcareProviderIdentificationNumber",
+        "short": "Healthcare provider identification number",
+        "definition": "The organization's identification number. For Dutch healthcare providers, the URA number or the AGB number is used, if possible. Depending on the context other IDs are also possible. For foreign or non-affiliated healthcare providers, another unique identification number can be used. This must be accompanied by the name and/or code of the issuing organization.",
+        "alias": [
+          "ZorgaanbiederIdentificatienummer"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-healthcareprovider-v3.1.1-2017EN",
+            "map": "NL-CM:17.2.2",
+            "comment": "HealthcareProviderIdentificationNumber"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-46",
+            "comment": "HealthcareProviderIdentificationNumber"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.OrganizationName",
+        "path": "medmij-core-lm-HealthcareProvider.OrganizationName",
+        "short": "Organization name",
+        "definition": "Name of the organization. If an identification number is given, the name must match the name that corresponds to the identification number.",
+        "alias": [
+          "OrganisatieNaam"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-healthcareprovider-v3.1.1-2017EN",
+            "map": "NL-CM:17.2.3",
+            "comment": "OrganizationName"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-47",
+            "comment": "OrganizationName"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.OrganizationLocation",
+        "path": "medmij-core-lm-HealthcareProvider.OrganizationLocation",
+        "short": "Organization location",
+        "definition": "Name of the location, in case a healthcare organization has more than one location.",
+        "alias": [
+          "OrganisatieLocatie"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-healthcareprovider-v3.1.1-2017EN",
+            "map": "NL-CM:17.2.8",
+            "comment": "OrganizationLocation"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-72",
+            "comment": "OrganizationLocation"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.DepartmentSpecialty",
+        "path": "medmij-core-lm-HealthcareProvider.DepartmentSpecialty",
+        "short": "Department specialty",
+        "definition": "The specialty of the healthcare provider's department. The departmental specialty can be filled in if further indication of the healthcare provider is needed. This refers to the recognized medical specialties as stated in the BIG Act.",
+        "alias": [
+          "AfdelingSpecialisme"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20171231000000"
+        },
+        "mapping": [
+          {
+            "identity": "zib-healthcareprovider-v3.1.1-2017EN",
+            "map": "NL-CM:17.2.7",
+            "comment": "DepartmentSpecialty"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-48",
+            "comment": "DepartmentSpecialty"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.ContactInformation",
+        "path": "medmij-core-lm-HealthcareProvider.ContactInformation",
+        "short": "Contact information",
+        "definition": "The information needed to contact the healthcare organization via telephone and/or e-mail.",
+        "alias": [
+          "Contactgegevens"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-healthcareprovider-v3.1.1-2017EN",
+            "map": "NL-CM:17.2.6",
+            "comment": "ContactInformation"
+          },
+          {
+            "identity": "zib-contactinformation-v1.0-2017EN",
+            "map": "NL-CM:20.6.1",
+            "comment": "ContactInformation"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-49",
+            "comment": "ContactInformation"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.ContactInformation.TelephoneNumbers",
+        "path": "medmij-core-lm-HealthcareProvider.ContactInformation.TelephoneNumbers",
+        "short": "Telephone numbers",
+        "definition": "Container of the TelephoneNumbers concept. This container contains all data elements of the TelephoneNumbers concept.",
+        "alias": [
+          "Telefoonnummers"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.0-2017EN",
+            "map": "NL-CM:20.6.2",
+            "comment": "TelephoneNumbers"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-50",
+            "comment": "TelephoneNumbers"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.ContactInformation.TelephoneNumbers.TelephoneNumber",
+        "path": "medmij-core-lm-HealthcareProvider.ContactInformation.TelephoneNumbers.TelephoneNumber",
+        "short": "Telephone number",
+        "definition": "The healthcare provider's telephone number.",
+        "alias": [
+          "Telefoonnummer"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.0-2017EN",
+            "map": "NL-CM:20.6.4",
+            "comment": "TelephoneNumber"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-51",
+            "comment": "TelephoneNumber"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.ContactInformation.TelephoneNumbers.TelecomType",
+        "path": "medmij-core-lm-HealthcareProvider.ContactInformation.TelephoneNumbers.TelecomType",
+        "short": "Telecom type",
+        "definition": "The telecom or device type that the telephone number is connected to.",
+        "alias": [
+          "TelecomType"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000"
+        },
+        "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.0-2017EN",
+            "map": "NL-CM:20.6.5",
+            "comment": "TelecomType"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-52",
+            "comment": "TelecomType"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.ContactInformation.TelephoneNumbers.NumberType",
+        "path": "medmij-core-lm-HealthcareProvider.ContactInformation.TelephoneNumbers.NumberType",
+        "short": "Number type",
+        "definition": "The number type indicates whether the number is a landline, temporary or work telephone number.",
+        "alias": [
+          "NummerSoort"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20171231000000"
+        },
+        "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.0-2017EN",
+            "map": "NL-CM:20.6.6",
+            "comment": "NumberType"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-53",
+            "comment": "NumberType"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.ContactInformation.EmailAddresses",
+        "path": "medmij-core-lm-HealthcareProvider.ContactInformation.EmailAddresses",
+        "short": "E-mail addresses",
+        "definition": "Container of the EmailAddresses concept. This container contains all data elements of the E-mailAddresses concept.",
+        "alias": [
+          "EmailAdressen"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.0-2017EN",
+            "map": "NL-CM:20.6.3",
+            "comment": "EmailAddresses"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-55",
+            "comment": "EmailAddresses"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.ContactInformation.EmailAddresses.EmailAddress",
+        "path": "medmij-core-lm-HealthcareProvider.ContactInformation.EmailAddresses.EmailAddress",
+        "short": "E-mail address",
+        "definition": "The healthcare provider's e-mail address.",
+        "alias": [
+          "EmailAdres"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.0-2017EN",
+            "map": "NL-CM:20.6.7",
+            "comment": "EmailAddress"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-56",
+            "comment": "EmailAddress"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.ContactInformation.EmailAddresses.EmailAddressType",
+        "path": "medmij-core-lm-HealthcareProvider.ContactInformation.EmailAddresses.EmailAddressType",
+        "short": "E-mail address type",
+        "definition": "The e-mail address type indicates whether it is a private or business e-mail address.",
+        "alias": [
+          "EmailSoort"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20171231000000"
+        },
+        "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.0-2017EN",
+            "map": "NL-CM:20.6.8",
+            "comment": "EmailAddressType"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-57",
+            "comment": "EmailAddressType"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.AddressInformation",
+        "path": "medmij-core-lm-HealthcareProvider.AddressInformation",
+        "short": "Address information",
+        "definition": "The physical address of the healthcare provider's location.",
+        "alias": [
+          "Adresgegevens"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-healthcareprovider-v3.1.1-2017EN",
+            "map": "NL-CM:17.2.5",
+            "comment": "AddressInformation"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-58",
+            "comment": "AddressInformation"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.AddressInformation.Street",
+        "path": "medmij-core-lm-HealthcareProvider.AddressInformation.Street",
+        "short": "Street",
+        "definition": "Street name of the address.",
+        "alias": [
+          "Straat"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.2",
+            "comment": "Street"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-59",
+            "comment": "Street"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.AddressInformation.HouseNumber",
+        "path": "medmij-core-lm-HealthcareProvider.AddressInformation.HouseNumber",
+        "short": "House number",
+        "definition": "House number of the address.",
+        "alias": [
+          "Huisnummer"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.12",
+            "comment": "HouseNumber"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-60",
+            "comment": "HouseNumber"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.AddressInformation.HouseNumberLetter",
+        "path": "medmij-core-lm-HealthcareProvider.AddressInformation.HouseNumberLetter",
+        "short": "House number letter",
+        "definition": "A letter following the house number as assigned by the municipal authorities.",
+        "alias": [
+          "Huisnummerletter"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.11",
+            "comment": "HouseNumberLetter"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-61",
+            "comment": "HouseNumberLetter"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.AddressInformation.HouseNumberAddition",
+        "path": "medmij-core-lm-HealthcareProvider.AddressInformation.HouseNumberAddition",
+        "short": "House number addition",
+        "definition": "The letters or signs needed to locate the mailbox, in addition to the house number and letter.",
+        "alias": [
+          "Huisnummertoevoeging"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.10",
+            "comment": "HouseNumberAddition"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-62",
+            "comment": "HouseNumberAddition"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.AddressInformation.HouseNumberIndication",
+        "path": "medmij-core-lm-HealthcareProvider.AddressInformation.HouseNumberIndication",
+        "short": "House number indication",
+        "definition": "The indication used for addresses which do not consist of the usual street name and house number.",
+        "alias": [
+          "AanduidingBijNummer"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.4--20171231000000"
+        },
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.9",
+            "comment": "HouseNumberIndication"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-63",
+            "comment": "HouseNumberIndication"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.AddressInformation.Postcode",
+        "path": "medmij-core-lm-HealthcareProvider.AddressInformation.Postcode",
+        "short": "Postcode",
+        "definition": "Postcode of the address.\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15).",
+        "alias": [
+          "Postcode"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.6",
+            "comment": "Postcode"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-64",
+            "comment": "Postcode"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.AddressInformation.PlaceOfResidence",
+        "path": "medmij-core-lm-HealthcareProvider.AddressInformation.PlaceOfResidence",
+        "short": "Place of residence",
+        "definition": "A geographically determined area which forms part of the municipal area.\nFor Dutch places of residence, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14).",
+        "alias": [
+          "Woonplaats"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.3",
+            "comment": "PlaceOfResidence"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-65",
+            "comment": "PlaceOfResidence"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.AddressInformation.Municipality",
+        "path": "medmij-core-lm-HealthcareProvider.AddressInformation.Municipality",
+        "short": "Municipality",
+        "definition": "Municipality of residence.\nFor Dutch municipalities, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14).",
+        "alias": [
+          "Gemeente"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.4",
+            "comment": "Municipality"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-66",
+            "comment": "Municipality"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.AddressInformation.Country",
+        "path": "medmij-core-lm-HealthcareProvider.AddressInformation.Country",
+        "short": "Country",
+        "definition": "Country in which the address is located.",
+        "alias": [
+          "Land"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://medmij.nl/fhir/ValueSet/LandCodelijsten"
+        },
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.5",
+            "comment": "Country"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-67",
+            "comment": "Country"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.AddressInformation.AdditionalInformation",
+        "path": "medmij-core-lm-HealthcareProvider.AddressInformation.AdditionalInformation",
+        "short": "Additional information",
+        "definition": "Extra information such as the building name, building number, entrance, route number.",
+        "alias": [
+          "AdditioneleInformatie"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.7",
+            "comment": "AdditionalInformation"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-68",
+            "comment": "AdditionalInformation"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.AddressInformation.AddressType",
+        "path": "medmij-core-lm-HealthcareProvider.AddressInformation.AddressType",
+        "short": "Address type",
+        "definition": "The type of address in question, such as a home address or mailing address.",
+        "alias": [
+          "AdresSoort"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20171231000000"
+        },
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.8",
+            "comment": "AddressType"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-69",
+            "comment": "AddressType"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthcareProvider.OrganizationType",
+        "path": "medmij-core-lm-HealthcareProvider.OrganizationType",
+        "short": "Organization type",
+        "definition": "The type of healthcare provider, such as general hospital, or nursing home. If this field is filled in and an AGB code is used for the HealthcareProviderIdentificationNumber, the type must match the type implicitly contained in the AGB code.",
+        "alias": [
+          "OrganisatieType"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20171231000000"
+        },
+        "mapping": [
+          {
+            "identity": "zib-healthcareprovider-v3.1.1-2017EN",
+            "map": "NL-CM:17.2.4",
+            "comment": "OrganizationType"
+          },
+          {
+            "identity": "medmij-core-dataset-130-2026xxyy",
+            "map": "medmij-core-dataelement-70",
+            "comment": "OrganizationType"
+          }
+        ]
+      }
+    ]
+  }
+}
