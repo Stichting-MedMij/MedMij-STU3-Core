@@ -20,7 +20,7 @@
             <use value = "work"/>
         </telecom>
     </contact>
-    <description value="Value set combining the distinct value sets that the zib HealthProfessional binds to for NL-CM:17.1.4 Specialty. This value set as such does not exist in the zib but facilitates referencing all these value sets at the same time.\nThis value set is the counterpart of the [SpecialismeCodelijsten used in zib publication 2020](http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.22--20200901000000) and has been published by MedMij as it has not (yet) been made available by Nictiz within ART-DECOR."/>
+    <description value="Value set combining the distinct value sets that the zib HealthProfessional binds to for NL-CM:17.1.4 Specialty. This value set as such does not exist in the zib but facilitates referencing all these value sets at the same time.&#xD;&#xA;&#xD;&#xA;This value set is the counterpart of the [SpecialismeCodelijsten used in zib publication 2020](http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.22--20200901000000) and has been published by MedMij as it has not (yet) been made available by Nictiz within ART-DECOR."/>
     <immutable value="false"/>
     <compose>
         <include>
