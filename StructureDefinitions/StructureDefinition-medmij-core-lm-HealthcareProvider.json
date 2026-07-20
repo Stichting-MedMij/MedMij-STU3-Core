@@ -819,7 +819,7 @@
           }
         ],
         "binding": {
-          "strength": "extensible",
+          "strength": "required",
           "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20171231000000"
         },
         "mapping": [
