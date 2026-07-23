@@ -65,7 +65,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Respiration' transaction within MedMij STU3 Core (system role: MMC-REB-zib2017/STU3-rc.2).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Respiration' transaction within MedMij STU3 Core (system role: MMC-REB-zib2017/STU3-rc.3).",
       "resource": [
         {
           "type": "Observation",

@@ -53,7 +53,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Payer' transaction within MedMij STU3 Core (system role: MMC-PAB-zib2017/STU3-rc.2).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Payer' transaction within MedMij STU3 Core (system role: MMC-PAB-zib2017/STU3-rc.3).",
       "resource": [
         {
           "type": "Coverage",
