@@ -12,7 +12,7 @@ topic: fql-get-mappings-zib
   for
     snapshot.element
   select
-    id, join mapping.where(identity.startsWith('zib-')) {identity, map, comment}
+    id, join mapping.where(identity.startsWith('hcim-')) {identity, map, comment}
   order by identity
   select
     'Mapping name': identity,

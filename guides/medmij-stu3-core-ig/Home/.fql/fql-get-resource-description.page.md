@@ -6,7 +6,7 @@ topic: fql-get-resource-description
   for
     Resource
   where
-    url=%canonical
+    url = %canonical
   select
     description
 </fql>
