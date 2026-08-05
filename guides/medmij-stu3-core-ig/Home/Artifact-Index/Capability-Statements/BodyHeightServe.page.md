@@ -3,7 +3,7 @@ topic: BodyHeightServe
 canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-BodyHeight-Serve
 ---
 
-# BodyHeight Serve
+# Body Height (Serve)
 
 {{page:fql-get-resource-description}}
 

@@ -3,7 +3,7 @@ topic: BloodPressureServe
 canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-BloodPressure-Serve
 ---
 
-# BloodPressure Serve
+# Blood Pressure (Serve)
 
 {{page:fql-get-resource-description}}
 

@@ -3,7 +3,7 @@ topic: NutritionAdviceServe
 canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-NutritionAdvice-Serve
 ---
 
-# NutritionAdvice Serve
+# Nutrition Advice (Serve)
 
 {{page:fql-get-resource-description}}
 

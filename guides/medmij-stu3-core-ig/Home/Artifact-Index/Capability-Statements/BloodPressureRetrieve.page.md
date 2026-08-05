@@ -3,7 +3,7 @@ topic: BloodPressureRetrieve
 canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-BloodPressure-Retrieve
 ---
 
-# BloodPressure Retrieve
+# Blood Pressure (Retrieve)
 
 {{page:fql-get-resource-description}}
 

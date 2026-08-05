@@ -3,7 +3,7 @@ topic: FluidBalanceRetrieve
 canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-FluidBalance-Retrieve
 ---
 
-# FluidBalance Retrieve
+# Fluid Balance (Retrieve)
 
 {{page:fql-get-resource-description}}
 

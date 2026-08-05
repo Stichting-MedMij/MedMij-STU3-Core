@@ -3,7 +3,7 @@ topic: LivingSituationRetrieve
 canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-LivingSituation-Retrieve
 ---
 
-# LivingSituation Retrieve
+# Living Situation (Retrieve)
 
 {{page:fql-get-resource-description}}
 

@@ -3,7 +3,7 @@ topic: BodyHeightRetrieve
 canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-BodyHeight-Retrieve
 ---
 
-# BodyHeight Retrieve
+# Body Height (Retrieve)
 
 {{page:fql-get-resource-description}}
 

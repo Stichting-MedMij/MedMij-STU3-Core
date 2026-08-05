@@ -3,7 +3,7 @@ topic: LivingSituationServe
 canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-LivingSituation-Serve
 ---
 
-# LivingSituation Serve
+# Living Situation (Serve)
 
 {{page:fql-get-resource-description}}
 

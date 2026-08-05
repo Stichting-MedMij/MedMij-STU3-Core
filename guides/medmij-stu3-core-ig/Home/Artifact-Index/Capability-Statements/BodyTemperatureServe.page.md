@@ -3,7 +3,7 @@ topic: BodyTemperatureServe
 canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-BodyTemperature-Serve
 ---
 
-# BodyTemperature Serve
+# Body Temperature (Serve)
 
 {{page:fql-get-resource-description}}
 

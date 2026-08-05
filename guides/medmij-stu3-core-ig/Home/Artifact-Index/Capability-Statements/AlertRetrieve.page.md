@@ -3,7 +3,7 @@ topic: AlertRetrieve
 canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-Alert-Retrieve
 ---
 
-# Alert Retrieve
+# Alert (Retrieve)
 
 {{page:fql-get-resource-description}}
 

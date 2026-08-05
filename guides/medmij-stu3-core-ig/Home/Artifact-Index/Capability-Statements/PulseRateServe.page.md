@@ -3,7 +3,7 @@ topic: PulseRateServe
 canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-PulseRate-Serve
 ---
 
-# PulseRate Serve
+# Pulse Rate (Serve)
 
 {{page:fql-get-resource-description}}
 

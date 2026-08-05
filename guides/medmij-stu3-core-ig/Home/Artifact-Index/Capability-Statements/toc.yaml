@@ -4,41 +4,41 @@
   filename: AlertRetrieve.page.md
 - name: Alert (Serve)
   filename: AlertServe.page.md
-- name: BloodPressure (Retrieve)
+- name: Blood Pressure (Retrieve)
   filename: BloodPressureRetrieve.page.md
-- name: BloodPressure (Serve)
+- name: Blood Pressure (Serve)
   filename: BloodPressureServe.page.md
-- name: BodyHeight (Retrieve)
+- name: Body Height (Retrieve)
   filename: BodyHeightRetrieve.page.md
-- name: BodyHeight (Serve)
+- name: Body Height (Serve)
   filename: BodyHeightServe.page.md
-- name: BodyTemperature (Retrieve)
+- name: Body Temperature (Retrieve)
   filename: BodyTemperatureRetrieve.page.md
-- name: BodyTemperature (Serve)
+- name: Body Temperature (Serve)
   filename: BodyTemperatureServe.page.md
-- name: BodyWeight (Retrieve)
+- name: Body Weight (Retrieve)
   filename: BodyWeightRetrieve.page.md
-- name: BodyWeight (Serve)
+- name: Body Weight (Serve)
   filename: BodyWeightServe.page.md
-- name: FluidBalance (Retrieve)
+- name: Fluid Balance (Retrieve)
   filename: FluidBalanceRetrieve.page.md
-- name: FluidBalance (Serve)
+- name: Fluid Balance (Serve)
   filename: FluidBalanceServe.page.md
-- name: LivingSituation (Retrieve)
+- name: Living Situation (Retrieve)
   filename: LivingSituationRetrieve.page.md
-- name: LivingSituation (Serve)
+- name: Living Situation (Serve)
   filename: LivingSituationServe.page.md
-- name: NutritionAdvice (Retrieve)
+- name: Nutrition Advice (Retrieve)
   filename: NutritionAdviceRetrieve.page.md
-- name: NutritionAdvice (Serve)
+- name: Nutrition Advice (Serve)
   filename: NutritionAdviceServe.page.md
 - name: Payer (Retrieve)
   filename: PayerRetrieve.page.md
 - name: Payer (Serve)
   filename: PayerServe.page.md
-- name: PulseRate (Retrieve)
+- name: Pulse Rate (Retrieve)
   filename: PulseRateRetrieve.page.md
-- name: PulseRate (Serve)
+- name: Pulse Rate (Serve)
   filename: PulseRateServe.page.md
 - name: Respiration (Retrieve)
   filename: RespirationRetrieve.page.md

@@ -3,7 +3,7 @@ topic: FluidBalanceServe
 canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-FluidBalance-Serve
 ---
 
-# FluidBalance Serve
+# Fluid Balance (Serve)
 
 {{page:fql-get-resource-description}}
 
