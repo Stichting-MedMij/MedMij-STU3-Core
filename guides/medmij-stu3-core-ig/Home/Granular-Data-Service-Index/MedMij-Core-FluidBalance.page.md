@@ -34,14 +34,4 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 
 The FHIR profile is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://nictiz.nl/fhir/StructureDefinition/zib-FluidBalance, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://nictiz.nl/fhir/StructureDefinition/zib-FluidBalance}}
-    </tab>
-    <tab title="Json">
-      {{json:http://nictiz.nl/fhir/StructureDefinition/zib-FluidBalance}}
-    </tab>
-</tabs>
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/zib-FluidBalance}}
