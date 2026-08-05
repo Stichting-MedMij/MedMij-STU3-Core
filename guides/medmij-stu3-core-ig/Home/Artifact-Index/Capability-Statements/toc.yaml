@@ -2,3 +2,45 @@
   filename: Index.page.md
 - name: Alert (Retrieve)
   filename: AlertRetrieve.page.md
+- name: Alert (Serve)
+  filename: AlertServe.page.md
+- name: BloodPressure (Retrieve)
+  filename: BloodPressureRetrieve.page.md
+- name: BloodPressure (Serve)
+  filename: BloodPressureServe.page.md
+- name: BodyHeight (Retrieve)
+  filename: BodyHeightRetrieve.page.md
+- name: BodyHeight (Serve)
+  filename: BodyHeightServe.page.md
+- name: BodyTemperature (Retrieve)
+  filename: BodyTemperatureRetrieve.page.md
+- name: BodyTemperature (Serve)
+  filename: BodyTemperatureServe.page.md
+- name: BodyWeight (Retrieve)
+  filename: BodyWeightRetrieve.page.md
+- name: BodyWeight (Serve)
+  filename: BodyWeightServe.page.md
+- name: FluidBalance (Retrieve)
+  filename: FluidBalanceRetrieve.page.md
+- name: FluidBalance (Serve)
+  filename: FluidBalanceServe.page.md
+- name: LivingSituation (Retrieve)
+  filename: LivingSituationRetrieve.page.md
+- name: LivingSituation (Serve)
+  filename: LivingSituationServe.page.md
+- name: NutritionAdvice (Retrieve)
+  filename: NutritionAdviceRetrieve.page.md
+- name: NutritionAdvice (Serve)
+  filename: NutritionAdviceServe.page.md
+- name: Payer (Retrieve)
+  filename: PayerRetrieve.page.md
+- name: Payer (Serve)
+  filename: PayerServe.page.md
+- name: PulseRate (Retrieve)
+  filename: PulseRateRetrieve.page.md
+- name: PulseRate (Serve)
+  filename: PulseRateServe.page.md
+- name: Respiration (Retrieve)
+  filename: RespirationRetrieve.page.md
+- name: Respiration (Serve)
+  filename: RespirationServe.page.md
