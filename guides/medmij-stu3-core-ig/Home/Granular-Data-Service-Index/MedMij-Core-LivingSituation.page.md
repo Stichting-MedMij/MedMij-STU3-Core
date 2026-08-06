@@ -30,18 +30,8 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|365508006` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effective[x]` <li> `.performer` (including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) <li> `.valueCodeableConcept` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
-| **CapabilityStatement(s)** | [MedMij Core LivingSituation Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-LivingSituation-Retrieve&scope=medmij.fhir.nl.stu3.core@1.3.0) <br/> [MedMij Core LivingSituation Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-LivingSituation-Serve&scope=medmij.fhir.nl.stu3.core@1.3.0) |
+| **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: Living Situation (Retrieve), anchor: LivingSituationRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: Living Situation (Serve), anchor: LivingSituationServe}} |
 
 The FHIR profile is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://nictiz.nl/fhir/StructureDefinition/zib-LivingSituation, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://nictiz.nl/fhir/StructureDefinition/zib-LivingSituation}}
-    </tab>
-    <tab title="Json">
-      {{json:http://nictiz.nl/fhir/StructureDefinition/zib-LivingSituation}}
-    </tab>
-</tabs>
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/zib-LivingSituation}}

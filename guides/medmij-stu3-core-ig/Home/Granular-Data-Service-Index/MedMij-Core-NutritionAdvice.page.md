@@ -30,18 +30,8 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/NutritionOrder` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.patient` <li> `.dateTime` <li> `.orderer` (including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
-| **CapabilityStatement(s)** | [MedMij Core NutritionAdvice Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-NutritionAdvice-Retrieve&scope=medmij.fhir.nl.stu3.core@1.3.0) <br/> [MedMij Core NutritionAdvice Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-NutritionAdvice-Serve&scope=medmij.fhir.nl.stu3.core@1.3.0) |
+| **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: Nutrition Advice (Retrieve), anchor: NutritionAdviceRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: Nutrition Advice (Serve), anchor: NutritionAdviceServe}} |
 
 The FHIR profile is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice}}
-    </tab>
-    <tab title="Json">
-      {{json:http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice}}
-    </tab>
-</tabs>
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice}}

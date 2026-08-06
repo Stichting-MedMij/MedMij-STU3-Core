@@ -30,18 +30,8 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Flag` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` (only reference to [http://fhir.nl/fhir/StructureDefinition/nl-core-patient](https://simplifier.net/resolve?canonical=http://fhir.nl/fhir/StructureDefinition/nl-core-patient&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2)) <li> `.period` <li> `.author` (only reference to [http://fhir.nl/fhir/StructureDefinition/nl-core-organization](https://simplifier.net/resolve?canonical=http://fhir.nl/fhir/StructureDefinition/nl-core-organization&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) and [http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner](https://simplifier.net/resolve?canonical=http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2), including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) <li> `.code` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
-| **CapabilityStatement(s)** | [MedMij Core Alert Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Alert-Retrieve&scope=medmij.fhir.nl.stu3.core@1.3.0) <br/> [MedMij Core Alert Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Alert-Serve&scope=medmij.fhir.nl.stu3.core@1.3.0) |
+| **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: Alert (Retrieve), anchor: AlertRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: Alert (Serve), anchor: AlertServe}} |
 
 The FHIR profile is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://nictiz.nl/fhir/StructureDefinition/zib-Alert, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://nictiz.nl/fhir/StructureDefinition/zib-Alert}}
-    </tab>
-    <tab title="Json">
-      {{json:http://nictiz.nl/fhir/StructureDefinition/zib-Alert}}
-    </tab>
-</tabs>
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/zib-Alert}}

@@ -30,45 +30,15 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|422834003` <br/> Specific guidance on the response message is provided {{pagelink: Respiration, text: below, anchor: SpecificXISResponseMessage}}. |
 | **Must Support** | Observation <ul> <li> `.identifier` <li> `.subject` <li> `.effective[x]` <li> `.performer` (including the [practitionerrole-reference](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2) extension) <li> `.component:BreathingFrequency` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) </ul> DeviceUseStatement <ul> <li> `.identifier` <li> `.subject` <li> `.whenUsed` <li> `.device` <li> `.extension:reasonReference` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) </ul> Device <ul> <li> `.identifier` <li> `.patient` <li> `.type` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
-| **CapabilityStatement(s)** | [MedMij Core Respiration Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Respiration-Retrieve&scope=medmij.fhir.nl.stu3.core@1.3.0) <br/> [MedMij Core Respiration Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Respiration-Serve&scope=medmij.fhir.nl.stu3.core@1.3.0) |
+| **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: Respiration (Retrieve), anchor: RespirationRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: Respiration (Serve), anchor: RespirationServe}} |
 
 The FHIR profiles are included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://nictiz.nl/fhir/StructureDefinition/zib-Respiration, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://nictiz.nl/fhir/StructureDefinition/zib-Respiration}}
-    </tab>
-    <tab title="Json">
-      {{json:http://nictiz.nl/fhir/StructureDefinition/zib-Respiration}}
-    </tab>
-</tabs>
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/zib-Respiration}}
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen-AdministrationDevice, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen-AdministrationDevice}}
-    </tab>
-    <tab title="Json">
-      {{json:http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen-AdministrationDevice}}
-    </tab>
-</tabs>
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen-AdministrationDevice}}
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen-AdministrationDeviceProduct, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen-AdministrationDeviceProduct}}
-    </tab>
-    <tab title="Json">
-      {{json:http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen-AdministrationDeviceProduct}}
-    </tab>
-</tabs>
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen-AdministrationDeviceProduct}}
 
 ### Specific technical specifications
 #### <a name="SpecificXISResponseMessage"></a> XIS: response message

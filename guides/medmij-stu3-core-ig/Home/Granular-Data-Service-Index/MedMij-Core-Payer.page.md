@@ -30,18 +30,8 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib
 | **FHIR version** | STU3 |
 | **Search request** | `GET [base]/Coverage` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subscriber` (only reference to [http://fhir.nl/fhir/StructureDefinition/nl-core-patient](https://simplifier.net/resolve?canonical=http://fhir.nl/fhir/StructureDefinition/nl-core-patient&scope=nictiz.fhir.nl.stu3.zib2017@2.3.2)) <li> `.beneficiary` <li> `.period` <li> `.payor` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
-| **CapabilityStatement(s)** | [MedMij Core Payer Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Payer-Retrieve&scope=medmij.fhir.nl.stu3.core@1.3.0) <br/> [MedMij Core Payer Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Payer-Serve&scope=medmij.fhir.nl.stu3.core@1.3.0) |
+| **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: Payer (Retrieve), anchor: PayerRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: Payer (Serve), anchor: PayerServe}} |
 
 The FHIR profile is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://nictiz.nl/fhir/StructureDefinition/zib-Payer, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://nictiz.nl/fhir/StructureDefinition/zib-Payer}}
-    </tab>
-    <tab title="Json">
-      {{json:http://nictiz.nl/fhir/StructureDefinition/zib-Payer}}
-    </tab>
-</tabs>
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/zib-Payer}}

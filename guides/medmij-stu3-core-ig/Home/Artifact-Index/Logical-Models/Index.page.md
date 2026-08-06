@@ -2,7 +2,7 @@
 topic: LogicalModelsIndex
 ---
 
-# Logical models
+# Logical Models
 Logical Models represent data structures, and contain data elements and their constraints and relationships. They allow data requirements to be described from a functional perspective. In this IG, the functional dataset and the underlying use cases for the information models that are not present in ART-DECOR, are represented by [FHIR Logical Models](http://hl7.org/fhir/R5/logical.html) (note that this link redirects to the R5 specification, as there is no dedicated page for Logical Models in the STU3 specification). These use FHIR to capture the data structures (namely by specifying a [StructureDefinition](https://hl7.org/fhir/STU3/structuredefinition.html) and underlying [ElementDefinitions](https://hl7.org/fhir/STU3/elementdefinition.html), for each data structure), but they are not (directly) attached to FHIR resources.
 
 The Logical Models contain all functional concepts, including corresponding data type, terminology binding (if applicable) and an id.

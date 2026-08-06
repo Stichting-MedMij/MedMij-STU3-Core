@@ -1,16 +1,18 @@
 ---
-topic: fql-get-mappings
+topic: fql-get-mappings-zib
 ---
 
 <fql>
+  using scope
+  
   from
     StructureDefinition
   where
     url = %canonical
   for
-    differential.element
+    snapshot.element
   select
-    id, join mapping {identity, map, comment}
+    id, join mapping.where(identity.startsWith('hcim-')) {identity, map, comment}
   order by identity
   select
     'Mapping name': identity,
