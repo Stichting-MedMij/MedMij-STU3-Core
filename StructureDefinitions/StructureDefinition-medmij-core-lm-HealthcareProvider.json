@@ -56,8 +56,8 @@
       "uri": "https://zibs.nl/wiki/AddressInformation-v1.0(2017EN)"
     },
     {
-      "identity": "medmij-core-dataset-130-2026xxyy",
-      "name": "Dataset MedMij STU3 Core 1.3.0 2026xxyy"
+      "identity": "medmij-core-dataset-130-20260811",
+      "name": "Dataset MedMij STU3 Core 1.3.0 20260811"
     },
     {
       "identity": "SNOMED",
@@ -87,7 +87,7 @@
             "comment": "HealthcareProvider"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-45",
             "comment": "HealthcareProvider"
           },
@@ -120,7 +120,7 @@
             "comment": "HealthcareProviderIdentificationNumber"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-46",
             "comment": "HealthcareProviderIdentificationNumber"
           }
@@ -148,7 +148,7 @@
             "comment": "OrganizationName"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-47",
             "comment": "OrganizationName"
           }
@@ -176,7 +176,7 @@
             "comment": "OrganizationLocation"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-72",
             "comment": "OrganizationLocation"
           }
@@ -208,7 +208,7 @@
             "comment": "DepartmentSpecialty"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-48",
             "comment": "DepartmentSpecialty"
           }
@@ -241,7 +241,7 @@
             "comment": "ContactInformation"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-49",
             "comment": "ContactInformation"
           }
@@ -269,7 +269,7 @@
             "comment": "TelephoneNumbers"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-50",
             "comment": "TelephoneNumbers"
           }
@@ -297,7 +297,7 @@
             "comment": "TelephoneNumber"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-51",
             "comment": "TelephoneNumber"
           }
@@ -329,7 +329,7 @@
             "comment": "TelecomType"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-52",
             "comment": "TelecomType"
           }
@@ -361,7 +361,7 @@
             "comment": "NumberType"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-53",
             "comment": "NumberType"
           }
@@ -389,7 +389,7 @@
             "comment": "EmailAddresses"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-55",
             "comment": "EmailAddresses"
           }
@@ -417,7 +417,7 @@
             "comment": "EmailAddress"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-56",
             "comment": "EmailAddress"
           }
@@ -449,7 +449,7 @@
             "comment": "EmailAddressType"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-57",
             "comment": "EmailAddressType"
           }
@@ -477,7 +477,7 @@
             "comment": "AddressInformation"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-58",
             "comment": "AddressInformation"
           }
@@ -505,7 +505,7 @@
             "comment": "Street"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-59",
             "comment": "Street"
           }
@@ -533,7 +533,7 @@
             "comment": "HouseNumber"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-60",
             "comment": "HouseNumber"
           }
@@ -561,7 +561,7 @@
             "comment": "HouseNumberLetter"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-61",
             "comment": "HouseNumberLetter"
           }
@@ -589,7 +589,7 @@
             "comment": "HouseNumberAddition"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-62",
             "comment": "HouseNumberAddition"
           }
@@ -621,7 +621,7 @@
             "comment": "HouseNumberIndication"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-63",
             "comment": "HouseNumberIndication"
           }
@@ -649,7 +649,7 @@
             "comment": "Postcode"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-64",
             "comment": "Postcode"
           }
@@ -677,7 +677,7 @@
             "comment": "PlaceOfResidence"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-65",
             "comment": "PlaceOfResidence"
           }
@@ -705,7 +705,7 @@
             "comment": "Municipality"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-66",
             "comment": "Municipality"
           }
@@ -737,7 +737,7 @@
             "comment": "Country"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-67",
             "comment": "Country"
           }
@@ -765,7 +765,7 @@
             "comment": "AdditionalInformation"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-68",
             "comment": "AdditionalInformation"
           }
@@ -797,7 +797,7 @@
             "comment": "AddressType"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-69",
             "comment": "AddressType"
           }
@@ -829,7 +829,7 @@
             "comment": "OrganizationType"
           },
           {
-            "identity": "medmij-core-dataset-130-2026xxyy",
+            "identity": "medmij-core-dataset-130-20260811",
             "map": "medmij-core-dataelement-70",
             "comment": "OrganizationType"
           }
