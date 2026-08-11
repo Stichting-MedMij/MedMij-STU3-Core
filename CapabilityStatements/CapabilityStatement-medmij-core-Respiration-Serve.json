@@ -6,9 +6,9 @@
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
   },
-  "name": "MedMij Core Respiration Serve",
+  "name": "medmij core Respiration Serve",
   "status": "active",
-  "date": "2026-04-13",
+  "date": "2026-08-11",
   "publisher": "MedMij",
   "contact": [
     {
@@ -65,7 +65,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Respiration' transaction within MedMij STU3 Core (system role: MMC-REB-zib2017/STU3-rc.2).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Respiration' transaction within MedMij STU3 Core (system role: MMC-REB-zib2017/STU3-rc.3).",
       "resource": [
         {
           "type": "Observation",

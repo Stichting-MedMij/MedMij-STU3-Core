@@ -1,0 +1,33 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="SpecialismeCodelijsten"/>
+    <url value="http://medmij.nl/fhir/ValueSet/SpecialismeCodelijsten"/>
+    <identifier>
+        <use value="official"/>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:2.16.528.1.1023.4.6.2"/>
+    </identifier>
+    <version value="2017-12-31T00:00:00"/>
+    <name value="SpecialismeCodelijsten"/>
+    <title value="SpecialismeCodelijsten"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="MedMij"/>
+    <contact>
+        <name value="MedMij"/>
+        <telecom>
+            <system value="email"/>
+            <value value="info@medmij.nl"/>
+            <use value = "work"/>
+        </telecom>
+    </contact>
+    <description value="Value set combining the distinct value sets that the zib HealthProfessional binds to for NL-CM:17.1.4 Specialty. This value set as such does not exist in the zib but facilitates referencing all these value sets at the same time.&#xD;&#xA;&#xD;&#xA;This value set is the counterpart of the [SpecialismeCodelijsten used in zib publication 2020](http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.22--20200901000000) and has been published by MedMij as it has not (yet) been made available by Nictiz within ART-DECOR."/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.1.6--20171231000000"/>
+        </include>
+        <include>
+            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.1.7--20171231000000"/>
+        </include>
+    </compose>
+</ValueSet>

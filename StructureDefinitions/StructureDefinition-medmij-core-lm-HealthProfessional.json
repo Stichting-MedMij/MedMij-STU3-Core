@@ -1,0 +1,1143 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "medmij-core-lm-HealthProfessional",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+      "valueCode": "can-be-target"
+    }
+  ],
+  "url": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-HealthProfessional",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.528.1.1023.3.6.2"
+    }
+  ],
+  "name": "MedMijCoreLmHealthProfessional",
+  "title": "HealthProfessional",
+  "status": "active",
+  "publisher": "MedMij",
+  "contact": [
+    {
+      "name": "MedMij",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "A health professional is a person who is authorized to perform actions in the field of individual healthcare.",
+  "purpose": "This LogicalModel represents the HealthProfessional Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) HealthProfessional v3.2 (2017)](https://zibs.nl/wiki/HealthProfessional-v3.2(2017EN)) adjusted such that it is suitable for implementation purposes in the context of MedMij.",
+  "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
+  "fhirVersion": "3.0.2",
+  "mapping": [
+    {
+      "identity": "zib-healthprofessional-v3.2-2017EN",
+      "name": "zib HealthProfessional-v3.2(201EN)",
+      "uri": "https://zibs.nl/wiki/HealthProfessional-v3.2(2017EN)"
+    },
+    {
+      "identity": "zib-nameinformation-v1.0.1-2017EN",
+      "name": "zib NameInformation-v1.0.1(2017EN)",
+      "uri": "https://zibs.nl/wiki/NameInformation-v1.0.1(2017EN)"
+    },
+    {
+      "identity": "zib-addressinformation-v1.0-2017EN",
+      "name": "zib AddressInformation-v1.0(2017EN)",
+      "uri": "https://zibs.nl/wiki/AddressInformation-v1.0(2017EN)"
+    },
+    {
+      "identity": "zib-contactinformation-v1.0-2017EN",
+      "name": "zib ContactInformation-v1.0(2017EN)",
+      "uri": "https://zibs.nl/wiki/ContactInformation-v1.0(2017EN)"
+    },
+    {
+      "identity": "medmij-core-dataset-130-20260811",
+      "name": "Dataset MedMij STU3 Core 1.3.0 20260811"
+    },
+    {
+      "identity": "SNOMED",
+      "name": "SNOMED CT",
+      "uri": "http://snomed.info/sct"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "medmij-core-lm-HealthProfessional",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "medmij-core-lm-HealthProfessional",
+        "path": "medmij-core-lm-HealthProfessional",
+        "short": "HealthProfessional",
+        "definition": "A health professional is a person who is authorized to perform actions in the field of individual healthcare.",
+        "alias": [
+          "Zorgverlener"
+        ],
+        "mapping": [
+          {
+            "identity": "zib-healthprofessional-v3.2-2017EN",
+            "map": "NL-CM:17.1.1",
+            "comment": "HealthProfessional"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-6",
+            "comment": "HealthProfessional"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "223366009",
+            "comment": "gezondheidszorgpersoneel"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.HealthProfessionalIdentificationNumber",
+        "path": "medmij-core-lm-HealthProfessional.HealthProfessionalIdentificationNumber",
+        "short": "Health professional identification number",
+        "definition": "The health professional identification number is a number that uniquely identifies the health professional.\nThe following numbers are used in the Netherlands: 1. UZI Health Professionals. Identification of health professionals (people) in the Dutch healthcare industry. 2. VEKTIS AGB-Z. Identifies health professionals and healthcare organizations 3. BIG-ID. The ID of the health professional listed in the BIG Register.\nThis information is not readily available for foreign health professionals.",
+        "alias": [
+          "ZorgverlenerIdentificatienummer"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-healthprofessional-v3.2-2017EN",
+            "map": "NL-CM:17.1.2",
+            "comment": "HealthProfessionalIdentificationNumber"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-7",
+            "comment": "HealthProfessionalIdentificationNumber"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.NameInformation",
+        "path": "medmij-core-lm-HealthProfessional.NameInformation",
+        "short": "Name information",
+        "definition": "Health professional's full name. If a health professional identification number is entered, it will be the name as listed in UZI, AGB or by the healthcare center.",
+        "alias": [
+          "Naamgegevens"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-healthprofessional-v3.2-2017EN",
+            "map": "NL-CM:17.1.3",
+            "comment": "NameInformation"
+          },
+          {
+            "identity": "zib-nameinformation-v1.0.1-2017EN",
+            "map": "NL-CM:20.4.1",
+            "comment": "NameInformation"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-8",
+            "comment": "NameInformation"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.NameInformation.FirstNames",
+        "path": "medmij-core-lm-HealthProfessional.NameInformation.FirstNames",
+        "short": "First names",
+        "definition": "The official first names of the health professional.",
+        "alias": [
+          "Voornamen"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-nameinformation-v1.0.1-2017EN",
+            "map": "NL-CM:20.4.4",
+            "comment": "FirstNames"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-9",
+            "comment": "FirstNames"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.NameInformation.Initials",
+        "path": "medmij-core-lm-HealthProfessional.NameInformation.Initials",
+        "short": "Initials",
+        "definition": "The initials of the health professional.",
+        "alias": [
+          "Initialen"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-nameinformation-v1.0.1-2017EN",
+            "map": "NL-CM:20.4.5",
+            "comment": "Initials"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-10",
+            "comment": "Initials"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.NameInformation.GivenName",
+        "path": "medmij-core-lm-HealthProfessional.NameInformation.GivenName",
+        "short": "Given name",
+        "definition": "The name normally used to address the health professional.",
+        "alias": [
+          "Roepnaam"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-nameinformation-v1.0.1-2017EN",
+            "map": "NL-CM:20.4.6",
+            "comment": "GivenName"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-11",
+            "comment": "GivenName"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.NameInformation.NameUsage",
+        "path": "medmij-core-lm-HealthProfessional.NameInformation.NameUsage",
+        "short": "Name usage",
+        "definition": "This concept indicates the last name or order of last names with which the health professional is to be addressed.",
+        "alias": [
+          "Naamgebruik"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.4.1--20171231000000"
+        },
+        "mapping": [
+          {
+            "identity": "zib-nameinformation-v1.0.1-2017EN",
+            "map": "NL-CM:20.4.7",
+            "comment": "NameUsage"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-12",
+            "comment": "NameUsage"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.NameInformation.LastName",
+        "path": "medmij-core-lm-HealthProfessional.NameInformation.LastName",
+        "short": "Last name",
+        "definition": "Container of the LastName concept. This container contains all data elements of the LastName concept.",
+        "alias": [
+          "Geslachtsnaam"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-nameinformation-v1.0.1-2017EN",
+            "map": "NL-CM:20.4.2",
+            "comment": "LastName"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-13",
+            "comment": "LastName"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.NameInformation.LastName.Prefix",
+        "path": "medmij-core-lm-HealthProfessional.NameInformation.LastName.Prefix",
+        "short": "Prefix",
+        "definition": "Prefix to the last name of the health professional.",
+        "alias": [
+          "Voorvoegsels"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-nameinformation-v1.0.1-2017EN",
+            "map": "NL-CM:20.4.11",
+            "comment": "Prefix"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-14",
+            "comment": "Prefix"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.NameInformation.LastName.LastName",
+        "path": "medmij-core-lm-HealthProfessional.NameInformation.LastName.LastName",
+        "short": "Last name",
+        "definition": "The official last name of the health professional.",
+        "alias": [
+          "Achternaam"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-nameinformation-v1.0.1-2017EN",
+            "map": "NL-CM:20.4.10",
+            "comment": "LastName"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-15",
+            "comment": "LastName"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.NameInformation.LastNamePartner",
+        "path": "medmij-core-lm-HealthProfessional.NameInformation.LastNamePartner",
+        "short": "Last name partner",
+        "definition": "Container of the LastNamePartner concept. This container contains all data elements of the LastNamePartner concept.",
+        "alias": [
+          "GeslachtsnaamPartner"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-nameinformation-v1.0.1-2017EN",
+            "map": "NL-CM:20.4.3",
+            "comment": "LastNamePartner"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-16",
+            "comment": "LastNamePartner"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.NameInformation.LastNamePartner.PartnerPrefix",
+        "path": "medmij-core-lm-HealthProfessional.NameInformation.LastNamePartner.PartnerPrefix",
+        "short": "Partner prefix",
+        "definition": "Prefix to the partner's last name of the health professional.",
+        "alias": [
+          "VoorvoegselsPartner"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-nameinformation-v1.0.1-2017EN",
+            "map": "NL-CM:20.4.9",
+            "comment": "PartnerPrefix"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-17",
+            "comment": "PartnerPrefix"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.NameInformation.LastNamePartner.PartnerLastName",
+        "path": "medmij-core-lm-HealthProfessional.NameInformation.LastNamePartner.PartnerLastName",
+        "short": "Partner last name",
+        "definition": "The partner's official last name of the health professional.",
+        "alias": [
+          "AchternaamPartner"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-nameinformation-v1.0.1-2017EN",
+            "map": "NL-CM:20.4.8",
+            "comment": "PartnerLastName"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-18",
+            "comment": "PartnerLastName"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.Specialty",
+        "path": "medmij-core-lm-HealthProfessional.Specialty",
+        "short": "Specialty",
+        "definition": "Health professional's medical specialty. This refers to the recognized medical specialties as stated in the BIG Act. For example general practitioner or cardiologist.",
+        "alias": [
+          "Specialisme"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://medmij.nl/fhir/ValueSet/SpecialismeCodelijsten"
+        },
+        "mapping": [
+          {
+            "identity": "zib-healthprofessional-v3.2-2017EN",
+            "map": "NL-CM:17.1.4",
+            "comment": "Specialty"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-20",
+            "comment": "Specialty"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "394658006",
+            "comment": "klinisch specialisme"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.AddressInformation",
+        "path": "medmij-core-lm-HealthProfessional.AddressInformation",
+        "short": "Address information",
+        "definition": "Health professional's address information.",
+        "alias": [
+          "Adresgegevens"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-healthprofessional-v3.2-2017EN",
+            "map": "NL-CM:17.1.7",
+            "comment": "AddressInformation"
+          },
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.1",
+            "comment": "AddressInformation"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-22",
+            "comment": "AddressInformation"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.AddressInformation.Street",
+        "path": "medmij-core-lm-HealthProfessional.AddressInformation.Street",
+        "short": "Street",
+        "definition": "Street name of the address.",
+        "alias": [
+          "Straat"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.2",
+            "comment": "Street"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-23",
+            "comment": "Street"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.AddressInformation.HouseNumber",
+        "path": "medmij-core-lm-HealthProfessional.AddressInformation.HouseNumber",
+        "short": "House number",
+        "definition": "House number of the address.",
+        "alias": [
+          "Huisnummer"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.12",
+            "comment": "HouseNumber"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-24",
+            "comment": "HouseNumber"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.AddressInformation.HouseNumberLetter",
+        "path": "medmij-core-lm-HealthProfessional.AddressInformation.HouseNumberLetter",
+        "short": "House number letter",
+        "definition": "A letter following the house number as assigned by the municipal authorities.",
+        "alias": [
+          "Huisnummerletter"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.11",
+            "comment": "HouseNumberLetter"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-25",
+            "comment": "HouseNumberLetter"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.AddressInformation.HouseNumberAddition",
+        "path": "medmij-core-lm-HealthProfessional.AddressInformation.HouseNumberAddition",
+        "short": "House number addition",
+        "definition": "The letters or signs needed to locate the mailbox, in addition to the house number and letter.",
+        "alias": [
+          "Huisnummertoevoeging"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.10",
+            "comment": "HouseNumberAddition"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-26",
+            "comment": "HouseNumberAddition"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.AddressInformation.HouseNumberIndication",
+        "path": "medmij-core-lm-HealthProfessional.AddressInformation.HouseNumberIndication",
+        "short": "House number indication",
+        "definition": "The indication used for addresses which do not consist of the usual street name and house number.",
+        "alias": [
+          "AanduidingBijNummer"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.4--20171231000000"
+        },
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.9",
+            "comment": "HouseNumberIndication"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-27",
+            "comment": "HouseNumberIndication"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.AddressInformation.Postcode",
+        "path": "medmij-core-lm-HealthProfessional.AddressInformation.Postcode",
+        "short": "Postcode",
+        "definition": "Postcode of the address.\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15).",
+        "alias": [
+          "Postcode"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.6",
+            "comment": "Postcode"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-28",
+            "comment": "Postcode"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.AddressInformation.PlaceOfResidence",
+        "path": "medmij-core-lm-HealthProfessional.AddressInformation.PlaceOfResidence",
+        "short": "Place of residence",
+        "definition": "A geographically determined area which forms part of the municipal area.\nFor Dutch places of residence, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14).",
+        "alias": [
+          "Woonplaats"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.3",
+            "comment": "PlaceOfResidence"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-29",
+            "comment": "PlaceOfResidence"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.AddressInformation.Municipality",
+        "path": "medmij-core-lm-HealthProfessional.AddressInformation.Municipality",
+        "short": "Municipality",
+        "definition": "Municipality of residence.\nFor Dutch municipalities, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14).",
+        "alias": [
+          "Gemeente"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.4",
+            "comment": "Municipality"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-30",
+            "comment": "Municipality"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.AddressInformation.Country",
+        "path": "medmij-core-lm-HealthProfessional.AddressInformation.Country",
+        "short": "Country",
+        "definition": "Country in which the address is located.",
+        "alias": [
+          "Land"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://medmij.nl/fhir/ValueSet/LandCodelijsten"
+        },
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.5",
+            "comment": "Country"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-31",
+            "comment": "Country"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.AddressInformation.AdditionalInformation",
+        "path": "medmij-core-lm-HealthProfessional.AddressInformation.AdditionalInformation",
+        "short": "Additional information",
+        "definition": "Extra information such as the building name, building number, entrance, route number.",
+        "alias": [
+          "AdditioneleInformatie"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.7",
+            "comment": "AdditionalInformation"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-32",
+            "comment": "AdditionalInformation"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.AddressInformation.AddressType",
+        "path": "medmij-core-lm-HealthProfessional.AddressInformation.AddressType",
+        "short": "Address type",
+        "definition": "The type of address in question, such as a home address or mailing address.",
+        "alias": [
+          "AdresSoort"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20171231000000"
+        },
+        "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.0-2017EN",
+            "map": "NL-CM:20.5.8",
+            "comment": "AddressType"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-33",
+            "comment": "AddressType"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.ContactInformation",
+        "path": "medmij-core-lm-HealthProfessional.ContactInformation",
+        "short": "Contact information",
+        "definition": "Health professional's telephone number(s) or e-mail address(es).",
+        "comment": "Even though the corresponding zib has cardinality `0..*` for this concept, `0..1` is used here (in line with zib publication 2020), as it is already possible to convey multiple telephone numbers and e-mail addresses within ContactInformation.",
+        "alias": [
+          "Contactgegevens"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-healthprofessional-v3.2-2017EN",
+            "map": "NL-CM:17.1.8",
+            "comment": "ContactInformation"
+          },
+          {
+            "identity": "zib-contactinformation-v1.0-2017EN",
+            "map": "NL-CM:20.6.1",
+            "comment": "ContactInformation"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-34",
+            "comment": "ContactInformation"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.ContactInformation.TelephoneNumbers",
+        "path": "medmij-core-lm-HealthProfessional.ContactInformation.TelephoneNumbers",
+        "short": "Telephone numbers",
+        "definition": "Container of the TelephoneNumbers concept. This container contains all data elements of the TelephoneNumbers concept.",
+        "alias": [
+          "Telefoonnummers"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.0-2017EN",
+            "map": "NL-CM:20.6.2",
+            "comment": "TelephoneNumbers"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-35",
+            "comment": "TelephoneNumbers"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.ContactInformation.TelephoneNumbers.TelephoneNumber",
+        "path": "medmij-core-lm-HealthProfessional.ContactInformation.TelephoneNumbers.TelephoneNumber",
+        "short": "Telephone number",
+        "definition": "The health professional's telephone number.",
+        "alias": [
+          "Telefoonnummer"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.0-2017EN",
+            "map": "NL-CM:20.6.4",
+            "comment": "TelephoneNumber"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-36",
+            "comment": "TelephoneNumber"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.ContactInformation.TelephoneNumbers.TelecomType",
+        "path": "medmij-core-lm-HealthProfessional.ContactInformation.TelephoneNumbers.TelecomType",
+        "short": "Telecom type",
+        "definition": "The telecom or device type that the telephone number is connected to.",
+        "alias": [
+          "TelecomType"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000"
+        },
+        "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.0-2017EN",
+            "map": "NL-CM:20.6.5",
+            "comment": "TelecomType"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-37",
+            "comment": "TelecomType"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.ContactInformation.TelephoneNumbers.NumberType",
+        "path": "medmij-core-lm-HealthProfessional.ContactInformation.TelephoneNumbers.NumberType",
+        "short": "Number type",
+        "definition": "The number type indicates whether the number is a landline, temporary or work telephone number.",
+        "alias": [
+          "NummerSoort"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20171231000000"
+        },
+        "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.0-2017EN",
+            "map": "NL-CM:20.6.6",
+            "comment": "NumberType"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-38",
+            "comment": "NumberType"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.ContactInformation.EmailAddresses",
+        "path": "medmij-core-lm-HealthProfessional.ContactInformation.EmailAddresses",
+        "short": "E-mail addresses",
+        "definition": "Container of the EmailAddresses concept. This container contains all data elements of the E-mailAddresses concept.",
+        "alias": [
+          "EmailAdressen"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.0-2017EN",
+            "map": "NL-CM:20.6.3",
+            "comment": "EmailAddresses"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-40",
+            "comment": "EmailAddresses"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.ContactInformation.EmailAddresses.EmailAddress",
+        "path": "medmij-core-lm-HealthProfessional.ContactInformation.EmailAddresses.EmailAddress",
+        "short": "E-mail address",
+        "definition": "The health professional's e-mail address.",
+        "alias": [
+          "EmailAdres"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.0-2017EN",
+            "map": "NL-CM:20.6.7",
+            "comment": "EmailAddress"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-41",
+            "comment": "EmailAddress"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.ContactInformation.EmailAddresses.EmailAddressType",
+        "path": "medmij-core-lm-HealthProfessional.ContactInformation.EmailAddresses.EmailAddressType",
+        "short": "E-mail address type",
+        "definition": "The e-mail address type indicates whether it is a private or business e-mail address.",
+        "alias": [
+          "EmailSoort"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20171231000000"
+        },
+        "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.0-2017EN",
+            "map": "NL-CM:20.6.8",
+            "comment": "EmailAddressType"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-42",
+            "comment": "EmailAddressType"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.HealthcareProvider",
+        "path": "medmij-core-lm-HealthProfessional.HealthcareProvider",
+        "short": "Healthcare provider",
+        "definition": "The organization the health professional works for.",
+        "alias": [
+          "Zorgaanbieder"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-HealthcareProvider"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-healthprofessional-v3.2-2017EN",
+            "map": "NL-CM:17.1.6",
+            "comment": "HealthcareProvider"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-43",
+            "comment": "HealthcareProvider"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.HealthProfessionalRole",
+        "path": "medmij-core-lm-HealthProfessional.HealthProfessionalRole",
+        "short": "Health professional role",
+        "definition": "The role the health professional fulfils in the healthcare process. For health professionals, this could be for example attender, referrer or performer.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.1.5--20171231000000"
+        },
+        "mapping": [
+          {
+            "identity": "zib-healthprofessional-v3.2-2017EN",
+            "map": "NL-CM:17.1.5",
+            "comment": "HealthProfessionalRole"
+          },
+          {
+            "identity": "medmij-core-dataset-130-20260811",
+            "map": "medmij-core-dataelement-44",
+            "comment": "HealthProfessionalRole"
+          }
+        ]
+      }
+    ]
+  }
+}
