@@ -19,7 +19,7 @@ This index contains all active granular data services that use FHIR STU3 in thei
     - **Used in Implementation Guide(s)** - the IGs (and corresponding domains) in which the granular data service is used, with links to the corresponding Simplifier projects.
 - **Functional model**
     - **CIM** - the underlying Clinical Information Model, which is often a zib.
-    - **Functional version** - the version of the CIM. For a CIM that is a zib, this version is of the form '*x.y*([zib publication])', e.g. '3.1(2017)'. For CIMs that are defined by MedMij as a Logical Model, the version of the corresponding FHIR package is suitable as the functional version. More guidance on this version can be found {{pagelink: GranularExchange, text: here, anchor: VersioningGranularDataServices}}.
+    - **Functional version** - the version of the CIM. For a CIM that is a zib, this version is of the form '_x.y_([zib publication])', e.g. '3.1(2017)'. For CIMs that are defined by MedMij as a Logical Model, the version of the corresponding FHIR package is suitable as the functional version. More guidance on this version can be found {{pagelink: GranularExchange, text: here, anchor: VersioningGranularDataServices}}.
     - Moreover, either a link to the functional model in ART-DECOR, or a Logical Model is included in this section.
 - **Technical specification**
     - **FHIR profile(s)** - the FHIR profiles that are used to exchange the CIM.
