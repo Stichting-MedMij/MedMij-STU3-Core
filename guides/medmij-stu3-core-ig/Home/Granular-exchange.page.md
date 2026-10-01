@@ -28,7 +28,7 @@ The technical name of cross-domain data services (which is used in this IG) has 
 On the other hand, domain-specific data services have a technical name of the form '[Function] [Domain name in English] - [CIM name in English] ([Suffix]) [Data service version]', for instance 'Retrieve Long-term Healthcare - Nursing report 1.0.0'.
 
 The following metadata is added to the GNL for each granular data service:
-- The _Id_ contains the data service number. The exact format of this number for granular data services still needs to be decided upon.
+- The _Id_ contains the data service number.
 - The _Data service name_ is the (patient-friendly) display name of the data service, and follows the formats described below:
     - For cross-domain data services, the display name has the form '[CIM name in Dutch]', for instance 'Bloeddruk'. Note that multiple cross-domain data services might have the same display name (i.e. if CIMs with the same name are exchanged in both STU3 and R4), but that uniqueness of the data services is ensured by the id;
     - For domain-specific data services, the display name has the form '[Domain name in Dutch] - [CIM name in Dutch]', for instance 'Langdurige Zorg - Dagrapportage'.
