@@ -10,10 +10,10 @@ topic: fql-get-lm-mappings
   for
     differential.element
   select
-    id, join mapping {identity, map, comment}
-  order by identity
+    id, join mapping {name: defineVariable('elementIdentity', identity).select((%resource.mapping.where(identity = %elementIdentity).name | identity).first()), map, comment}
+  order by name
   select
-    'Mapping name': identity,
+    'Mapping name': name,
     'Concept id': map,
     'Logical element': id.replace('medmij-core-lm-', ''),
     Comments: comment
