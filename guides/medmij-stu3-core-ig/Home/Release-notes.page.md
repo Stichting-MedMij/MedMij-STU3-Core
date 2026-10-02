@@ -1,5 +1,11 @@
 # {{page-title}}
 
+## 1.4.0
+
+| Component                   | Description  | Ticket    |
+| --------------------------- | ------------ | --------- |
+| FHIR artifacts              | The terminology resources (ValueSets) have been added to the Artifact index. | [MC-28](https://medmij.atlassian.net/browse/MC-28) |
+
 ## 1.3.0
 
 | Component                   | Description  | Ticket    |

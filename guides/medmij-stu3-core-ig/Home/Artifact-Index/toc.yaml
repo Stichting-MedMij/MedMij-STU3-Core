@@ -2,3 +2,5 @@
   filename: Logical-Models
 - name: Capability Statements
   filename: Capability-Statements
+- name: Terminology
+  filename: Terminology
